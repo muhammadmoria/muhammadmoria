@@ -1,28 +1,38 @@
-email = input("Enter Your Email Here : ")
-k,j,d = 0,0,0
-if len(email)>=6:
-    if email[0].isalpha():
-        if ("@" in email) and (email.count("@") == 1):
-            if (email[-4] == "." ) ^ (email[-3] == "."):
-                for i in email:
-                    if i ==i.isspace():
-                        k=1
-                    elif i.isalpha():
-                        if i==i.upper():
-                            j=1
-                    elif i.isdigit():
-                        continue
-                    elif i == "_" or i == "." or i == "@":
-                        continue
-                    else:
-                        d=1
-                if k==1 or j==1:
-                    print("Wrong Email ")
-            else:
-                print("Wrong Email ")
-        else:
-            print("Wrong  Email   ")
-    else:
-        print("Wrong Email ")
-else:
-    print("Wrong Email  ")
+import os
+from tkinter import *
+
+def Restart():
+    os.system("shutdown /r /t 1")
+def Restart_time():
+    os.system("shutdown /r /t  20")
+def Log_Out():
+    os.system("shutdown /r /t  1")
+def ShutDown():
+    os.system("shutdown /r /t  1")
+
+
+
+
+
+st=Tk()
+st.title("ShutDown App")
+st.geometry("500x500")
+st.config(bg="Blue")
+
+r_button = Button(st,text="Restart",font=("Time New Roman",20,"bold"),relief=RAISED,cursor="plus",command=Restart)
+r_button.place(x=150,y=60,height=50,width=200)
+
+rt_button = Button(st,text="Restart_time",font=("Time New Roman",20,"bold"),relief=RAISED,cursor="plus",command=Restart_time)
+rt_button.place(x=150,y=170,height=50,width=200)
+
+
+lg_button = Button(st,text="Log_Out",font=("Time New Roman",20,"bold"),relief=RAISED,cursor="plus",command=Log_Out)
+lg_button.place(x=150,y=270,height=50,width=200)
+
+
+st_button = Button(st,text="ShutDown",font=("Time New Roman",20,"bold"),relief=RAISED,cursor="plus",command=ShutDown)
+st_button.place(x=150,y=370,height=50,width=200)
+
+
+
+st.mainloop()
