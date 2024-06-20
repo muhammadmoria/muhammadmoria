@@ -1,0 +1,11 @@
+ecommerce-website/
+│
+├── index.html (Home Page)
+├── about.html (About Page)
+├── login.html (Login Page)
+├── signup.html (Signup Page)
+├── product_detail.html (Product Detail Page)
+├── checkout.html (Checkout Page)
+├── styles.css (CSS Styles)
+├── products.js (Products Data)
+└── app.js (JavaScript Logic)
