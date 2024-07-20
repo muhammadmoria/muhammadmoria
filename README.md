@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Muhammad Dawood</h1>
-<h3 align="center">"Data Analyst and Python Developer: Unraveling Insights with Code"</h3>
+<h3 align="center">"Data Scientist and Python Developer: Unraveling Insights with Code"</h3>
 <img align="right" alt="coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif"
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=muhammadmoria&label=Profile%20views&color=0e75b6&style=flat" alt="muhammadmoria" /> </p>
 
