@@ -2,7 +2,6 @@
 <h1 align="center">Hi 👋, I'm Muhammad Dawood</h1>
 <h3 align="center">"Data Scientist and Python Developer: Unraveling Insights with Code"</h3>
 <img align="right" alt="coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
-<p align="left"> <img src="68747470733a2f2f696d616765696f2e666f726265732e636f6d2f7370656369616c732d696d616765732f696d61676573657276652f3631356138343462306536373864396431316335666332362f3078302e6a70673f666f726d61743d6a7067266865696768743d3930302677696474683d31363030266669743d626f756e6473" /> </p>
 
 - 🔭 I’m currently working on [Students Exam Score Data Set](https://www.kaggle.com/datasets/desalegngeb/students-exam-scores)
 
