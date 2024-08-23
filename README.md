@@ -1,8 +1,8 @@
-<img align="right" alt="coding" width="400" src="https://camo.githubusercontent.com/a482599e43a2abae602f295bbf57d935351f7711bbd50886a32a289822acee06/68747470733a2f2f7777772e69626d2e636f6d2f626c6f672f77702d636f6e74656e742f75706c6f6164732f323032332f30392f64736330323238312d656469742d656469742d352d656469742e626c6f672d6c6561642d73706163652d34307832312d312e6a7067">
+
 <h1 align="center">Hi 👋, I'm Muhammad Dawood</h1>
 <h3 align="center">"Data Scientist and Python Developer: Unraveling Insights with Code"</h3>
 <img align="right" alt="coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=muhammadmoria&label=Profile%20views&color=0e75b6&style=flat" alt="muhammadmoria" /> </p>
+<p align="left"> <img src="68747470733a2f2f696d616765696f2e666f726265732e636f6d2f7370656369616c732d696d616765732f696d61676573657276652f3631356138343462306536373864396431316335666332362f3078302e6a70673f666f726d61743d6a7067266865696768743d3930302677696474683d31363030266669743d626f756e6473" /> </p>
 
 - 🔭 I’m currently working on [Students Exam Score Data Set](https://www.kaggle.com/datasets/desalegngeb/students-exam-scores)
 
@@ -14,8 +14,7 @@
 
 - 📫 How to reach me **muhammaddawoodmoria@gmail.com**
 
-- 📄 Know about my experiences [https://app.luminpdf.com/viewer/6659093daf3235a0e9e034b9?credentials-id=ff89cf3c-5166-4def-9886-50b7ca9f083b](https://app.luminpdf.com/viewer/6659093daf3235a0e9e034b9?credentials-id=ff89cf3c-5166-4def-9886-50b7ca9f083b)
-
+- 📄 Know about my experiences (https://muhammadmoria.github.io/Portfolio/)
 - ⚡ Fun fact **I am funny**
 
 <h3 align="left">Connect with me:</h3>
