@@ -1,6 +1,7 @@
+<img align="right" alt="coding" width="400" src="https://camo.githubusercontent.com/a482599e43a2abae602f295bbf57d935351f7711bbd50886a32a289822acee06/68747470733a2f2f7777772e69626d2e636f6d2f626c6f672f77702d636f6e74656e742f75706c6f6164732f323032332f30392f64736330323238312d656469742d656469742d352d656469742e626c6f672d6c6561642d73706163652d34307832312d312e6a7067">
 <h1 align="center">Hi 👋, I'm Muhammad Dawood</h1>
 <h3 align="center">"Data Scientist and Python Developer: Unraveling Insights with Code"</h3>
-<img align="right" alt="coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif"
+<img align="right" alt="coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=muhammadmoria&label=Profile%20views&color=0e75b6&style=flat" alt="muhammadmoria" /> </p>
 
 - 🔭 I’m currently working on [Students Exam Score Data Set](https://www.kaggle.com/datasets/desalegngeb/students-exam-scores)
