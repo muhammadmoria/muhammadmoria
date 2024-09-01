@@ -3,7 +3,7 @@
 <h3 align="center">"Data Scientist and Python Developer: Unraveling Insights with Code"</h3>
 <img align="right" alt="coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
 
-- 🔭 I’m currently working on [Tesla Stock Data 2010 - 2024](https://www.kaggle.com/datasets/iamtanmayshukla/tesla-stocks-dataset)
+- 🔭 I’m currently working on [Titanic](https://www.kaggle.com/datasets/heptapod/titanic)
 
 - 🌱 I’m currently learning **Datascience**
 
