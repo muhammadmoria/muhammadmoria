@@ -3,7 +3,7 @@
 <h3 align="center">"Data Scientist and Python Developer: Unraveling Insights with Code"</h3>
 <img align="right" alt="coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
 
-- 🔭 I’m currently working on [Child Mind Institute — Problematic Internet Use]([https://www.kaggle.com/datasets/heptapod/titanic](https://www.kaggle.com/competitions/child-mind-institute-problematic-internet-use))
+- 🔭 I’m currently working on [Child Mind ]([https://www.kaggle.com/datasets/heptapod/titanic](https://www.kaggle.com/competitions/child-mind-institute-problematic-internet-use])
 
 - 🌱 I’m currently learning **Datascience**
 
