@@ -1,28 +1,118 @@
+<!---
+Muhammad Dawood/Muhammad Dawood is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
 
-<h1 align="center">Hi 👋, I'm Muhammad Dawood</h1>
-<h3 align="center">"Data Scientist and Python Developer: Unraveling Insights with Code"</h3>
-<img align="right" alt="coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
+# Hi there, I'm Muhammad Dawood 👋
+  
+I'm an aspiring **Data Scientist** passionate about using data to uncover hidden insights and solve real-world problems. Welcome to my GitHub profile, where I showcase my projects, skills, and interests in the fields of **Data Science**, **Machine Learning**, **Deep Learning**, and more! 
 
+## I'm a Data Scientist! [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammaddawood361510306/)
+    
+---
 
-- 🌱 I’m currently learning **Datascience**
+### 🔭 Current Focus
+I am currently working as a **Data Scientist** and actively looking for new opportunities to contribute my skills. Whether it's using machine learning to optimize processes, developing predictive models, or generating insights from complex datasets, I'm ready to tackle new challenges. 
 
-- 👨‍💻 All of my projects are available at [https://github.com/muhammadmoria](https://github.com/muhammadmoria)
+### 🌱 What I'm Learning
+- Deep diving into **Data Science** techniques, exploring advanced topics like **Computer Vision**, **Natural Language Processing (NLP)**, and **Time Series Analysis**.
+- Expanding my knowledge in **Audio Deep Learning** and **Satellite Image Segmentation**.
+- Continuously improving my skills with **Deep Learning** frameworks such as TensorFlow and PyTorch.
 
-- 💬 Ask me about **Data Analysing**
+### 🧠 Expertise
+- **Data Analysis**: I have experience in analyzing datasets for business insights and decision-making using tools like **Power BI**, **MS Excel**, and **SQL**.
+- **Machine Learning**: Skilled in building classification, regression, and clustering models using **Scikit-learn** and **XGBoost**.
+- **NLP**: Proficient in **NLP** techniques, including **Tokenization**, **POS Tagging**, **Stemming**, **Lemmatization**, **NER**, and various text representation methods (e.g., **Bag of Words**, **TF-IDF**, **Word Embeddings**).
+- **Transformers and Language Models**: Experienced in working with **Transformers**, including **GPT**, **BERT**, and their variants, for advanced **NLP** tasks like text classification, question answering, and language generation.
+- **Customer Churn Analysis**: Conducted analysis for **customer churn** using **Power BI**, helping businesses make informed decisions.
+- **Chatbot Development**: Built a chatbot using **Dialogflow** and **FastAPI**, handling backend logic, intent management, and MySQL database integration.
+- **Reinforcement Learning**: Familiar with **UCB** and **Thompson Sampling** algorithms, applied to decision-making problems.
+- **Clustering Techniques**: Experience in **K-Means** clustering and **Eclat** for customer segmentation and market basket analysis.
+- **Recommendation Systems**: Worked on recommendation system projects, gaining a deep understanding of user behavior and personalized suggestions.
 
-- 📫 How to reach me **muhammaddawoodmoria@gmail.com**
+### 🥅 Goals
+- Conduct research in **Cutting-Edge AI** fields, particularly in **Time Series Forecasting**, **NLP**, and **Generative AI**.
+- Contribute to open-source **AI projects**.
+- Build impactful, real-world applications with **Machine Learning**, **Deep Learning**, and **AI** to solve business problems.
+- Collaborate with AI communities to advance shared learning.
 
-- 📄 Know about my experiences (https://muhammadmoria.github.io/Portfolio/)
-- ⚡ Fun fact **I am funny**
+### ⚡ Fun Fact
+I’m a huge coding enthusiast. When I'm not training machine learning models, you'll often find me experimenting with new libraries and frameworks, participating in hackathons, or teaching others about AI.
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/muhammad-moria" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="muhammad-moria" height="30" width="40" /></a>
-<a href="https://kaggle.com/muhammaddawood42" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="muhammaddawood42" height="30" width="40" /></a>
-<a href="https://fb.com/muhammaddawood" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="muhammaddawood" height="30" width="40" /></a>
-</p>
+---
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> </p>
+## 💻 Technologies and Tools I Use
 
+I am proficient in a variety of programming languages, frameworks, and tools that help me solve complex data science problems and build efficient solutions.
 
+<div align="center">
+    <table align="center">
+        <tr>
+            <td align="center" width="140" height="112.43">
+                <img src="./assests/python.png" width="65px"/>
+                <br /> Python
+            </td>
+            <td align="center" width="140" height="112.43">
+                <img src="./assests/Jupyter.png" width="65px"/>
+                <br /> Jupyter Notebooks
+            </td>
+            <td align="center" width="140" height="112.43">
+                <img src="./assests/tensorflow.png" width="65px"/>
+                <br /> TensorFlow
+            </td>
+            <td align="center" width="140" height="112.43">
+                <img src="./assests/scikitlearn.png" width="65px"/>
+                <br /> Scikit Learn
+            </td>
+            <td align="center" width="140" height="112.43">
+                <img src="./assests/fastapi.png" width="65px"/>
+                <br /> FastAPI
+            </td>
+            <td align="center" width="140" height="112.43">
+                <img src="./assests/docker.png" width="65px"/>
+                <br /> Docker
+            </td>
+        </tr>
+        <tr>
+            <td align="center" width="140" height="112.43">
+                <img src="./assests/pytorch.png" width="65px"/>
+                <br /> PyTorch
+            </td>
+            <td align="center" width="140" height="112.43">
+                <img src="./assests/numpy.png" width="65px"/>
+                <br /> NumPy
+            </td>
+            <td align="center" width="140" height="112.43">
+                <img src="./assests/pandas.png" width="65px"/>
+                <br /> Pandas
+            </td>
+            <td align="center" width="140" height="112.43">
+                <img src="./assests/sql.png" width="65px"/>
+                <br /> SQL
+            </td>
+            <td align="center" width="140" height="112.43">
+                <img src="./assests/power bi.png" width="65px"/>
+                <br /> Power BI
+            </td>
+            <td align="center" width="140" height="112.43">
+                <img src="./assests/git.png" width="65px"/>
+                <br /> Git
+            </td>
+        </tr>
+    </table>
+</div>
+
+---
+
+Feel free to explore projects in my repositories!
+
+---
+
+## 🌐 Connect with Me
+- LinkedIn: [Muhammad Umer Khan](https://www.linkedin.com/in/muhammaddawood361510306/)
+- GitHub: [MuhammadUmerKhan]([https://github.com/MuhammadUmerKhan](https://github.com/muhammadmoria))
+- Portfolio: [My Portfolio](https://muhammadmoria.github.io/portfolio-new/)
+
+---
+
+***Thanks for visiting my profile! Feel free to reach out if you'd like to collaborate or chat about anything related to AI, Data Science, or coding.*** 😊
