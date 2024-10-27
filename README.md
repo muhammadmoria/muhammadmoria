@@ -49,53 +49,53 @@ I am proficient in a variety of programming languages, frameworks, and tools tha
     <table align="center">
         <tr>
             <td align="center" width="140" height="112.43">
-                <img src="/assests/python.png" width="65px"/>
+                <img src="./assets/python.png" width="65px"/>
                 <br /> Python
             </td>
             <td align="center" width="140" height="112.43">
-                <img src="/assests/Jupyter.png" width="65px"/>
+                <img src="./assets/Jupyter.png" width="65px"/>
                 <br /> Jupyter Notebooks
             </td>
             <td align="center" width="140" height="112.43">
-                <img src="/assests/tensorflow.png" width="65px"/>
+                <img src="./assets/tensorflow.png" width="65px"/>
                 <br /> TensorFlow
             </td>
             <td align="center" width="140" height="112.43">
-                <img src="/assests/scikitlearn.png" width="65px"/>
+                <img src="./assets/scikitlearn.png" width="65px"/>
                 <br /> Scikit Learn
             </td>
             <td align="center" width="140" height="112.43">
-                <img src="/assests/fastapi.png" width="65px"/>
+                <img src="./assets/fastapi.png" width="65px"/>
                 <br /> FastAPI
             </td>
             <td align="center" width="140" height="112.43">
-                <img src="/assests/docker.png" width="65px"/>
+                <img src="./assets/docker.png" width="65px"/>
                 <br /> Docker
             </td>
         </tr>
         <tr>
             <td align="center" width="140" height="112.43">
-                <img src="/assests/pytorch.png" width="65px"/>
+                <img src="./assets/pytorch.png" width="65px"/>
                 <br /> PyTorch
             </td>
             <td align="center" width="140" height="112.43">
-                <img src="/assests/numpy.png" width="65px"/>
+                <img src="./assets/numpy.png" width="65px"/>
                 <br /> NumPy
             </td>
             <td align="center" width="140" height="112.43">
-                <img src="/assests/pandas.png" width="65px"/>
+                <img src="./assets/pandas.png" width="65px"/>
                 <br /> Pandas
             </td>
             <td align="center" width="140" height="112.43">
-                <img src="/assests/sql.png" width="65px"/>
+                <img src="./assets/sql.png" width="65px"/>
                 <br /> SQL
             </td>
             <td align="center" width="140" height="112.43">
-                <img src="/assests/power bi.png" width="65px"/>
+                <img src="./assets/power bi.png" width="65px"/>
                 <br /> Power BI
             </td>
             <td align="center" width="140" height="112.43">
-                <img src="/assests/git.png" width="65px"/>
+                <img src="./assets/git.png" width="65px"/>
                 <br /> Git
             </td>
         </tr>
