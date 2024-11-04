@@ -1,5 +1,5 @@
 <!---
-Muhammad Dawood/Muhammad Dawood is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Muhammad Dawood/Muh]ammad Dawood is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
 
