@@ -107,12 +107,7 @@ I am proficient in a variety of programming languages, frameworks, and tools tha
 Feel free to explore projects in my repositories!
 
 ---
-<center>
-<b>My GitHub Stats</b>
-<p>
-<a href="http://www.github.com/muhammadmoria"><img src="https://github-readme-streak-stats.herokuapp.com/?user=muhammadmoria&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
-</p>
-</center>
+
 
 ## 🌐 Connect with Me
 - LinkedIn: [Muhammad Dawood](https://www.linkedin.com/in/muhammaddawood361510306/)
