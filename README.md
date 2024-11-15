@@ -2,6 +2,8 @@
   <h1>👋 Welcome to My Digital Lab – I’m Muhammad Dawood!</h1>
   <h3>Data Scientist | AI Engineer | Creator of Intelligent Solutions</h3>
   <hr>
+  <img src="360_F_751616029_sQM19hyqNdkbOvdvJiQKDFpyQYzlHmpg.jpg" alt="AI" width="300" height="300">
+
 
   <p align="center">
     <img src="https://your-cool-animation.com/welcome-typing.gif" width="700px" alt="Typewriter Animation - Welcome to My GitHub">
