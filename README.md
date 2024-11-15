@@ -1,27 +1,30 @@
 <div align="center">
+  <h1>👋 Welcome to My Digital Lab – I’m Muhammad Dawood!</h1>
+  <h3>Data Scientist | AI Engineer | Creator of Intelligent Solutions</h3>
+  <hr>
 
-# 👋 Welcome to My Digital Lab – I’m Muhammad Dawood!
-### Data Scientist | AI Engineer | Creator of Intelligent Solutions
----
-
-<p align="center">
-  <img src="https://your-cool-animation.com/welcome-typing.gif" width="700px" alt="Typewriter Animation - Welcome to My GitHub">
-</p>
-
+  <p align="center">
+    <img src="https://your-cool-animation.com/welcome-typing.gif" width="700px" alt="Typewriter Animation - Welcome to My GitHub">
+  </p>
 </div>
 
----
+<hr>
 
 ## 🌌 **About Me**
+<p align="center">
+  <a href="https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&multiline=true&width=800&height=100&lines=Data+Scientist+%7C+AI+Engineer;Machine+Learning+%7C+Deep+Learning;NLP+%7C+Computer+Vision;Innovation+in+AI+and+Data">
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&multiline=true&width=800&height=100&lines=Data+Scientist+%7C+AI+Engineer;Machine+Learning+%7C+Deep+Learning;NLP+%7C+Computer+Vision;Innovation+in+AI+and+Data" alt="Typing Animation">
+  </a>
+</p>
 
-I'm a **Data Scientist** with a mission to **redefine how data interacts with the world**. My work lies at the intersection of **Machine Learning**, **Deep Learning**, **Computer Vision**, and **NLP**—the frontier of tomorrow’s technologies. Each project you’ll find here aims to make **data-driven decisions smarter and AI solutions more accessible**.
+<p>I'm a **Data Scientist** passionate about **AI**, **Machine Learning**, **Deep Learning**, and **NLP**. Every project here focuses on making **AI solutions smarter** and **data-driven decisions better**.</p>
 
-**Fun Fact**: When I’m not coding, you’ll find me exploring new libraries, participating in hackathons, or teaching others the nuances of data and AI.
+<p>Fun Fact: When I’m not coding, I explore new libraries, participate in hackathons, and share knowledge about AI!</p>
 
----
+<hr>
 
 <div align="center">
-<h2> 🚀 **Projects Portfolio** 🚀 </h2>
+  <h2> 🚀 **Projects Portfolio** 🚀 </h2>
 </div>
 
 ### **Featured Projects**
@@ -30,47 +33,47 @@ I'm a **Data Scientist** with a mission to **redefine how data interacts with th
   <tr>
     <td align="center" width="300" style="padding: 20px;">
       <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
-        <img src="https://your-image-link.com/movie-recommendation.gif" width="200px" style="transition: transform 0.3s ease-in-out;" alt="Movie Recommendation Engine">
+        <img src="https://your-image-link.com/movie-recommendation.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="Movie Recommendation Engine" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
       </div>
       <h3>🎬 **Movie Recommendation System**</h3>
-      <p>Personalized movie recommendations using advanced collaborative filtering.</p>
+      <p>Personalized movie recommendations using collaborative filtering.</p>
       <a href="https://movie-recommendation-system-dawood-moria.streamlit.app/" target="_blank">
         <img src="https://img.shields.io/badge/-Explore%20Project-%2331A8FF?style=for-the-badge">
       </a>
     </td>
     <td align="center" width="300" style="padding: 20px;">
       <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
-        <img src="https://your-image-link.com/churn-analysis-dashboard.gif" width="200px" style="transition: transform 0.3s ease-in-out;" alt="Churn Analysis Dashboard">
+        <img src="https://your-image-link.com/churn-analysis-dashboard.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="Churn Analysis Dashboard" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
       </div>
       <h3>📊 **Churn Analysis Dashboard**</h3>
-      <p>Data dashboard for predicting and visualizing customer churn.</p>
+      <p>Predict and visualize customer churn with this interactive dashboard.</p>
       <span style="opacity: 0.5;">Coming Soon!</span>
     </td>
   </tr>
   <tr>
     <td align="center" width="300" style="padding: 20px;">
       <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
-        <img src="https://your-image-link.com/ai-chatbot.gif" width="200px" style="transition: transform 0.3s ease-in-out;" alt="AI Chatbot">
+        <img src="https://your-image-link.com/ai-chatbot.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="AI Chatbot" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
       </div>
       <h3>🤖 **AI Chatbot**</h3>
-      <p>Advanced NLP-driven chatbot for real-time customer interactions.</p>
+      <p>Advanced NLP-driven chatbot for real-time customer interaction.</p>
       <span style="opacity: 0.5;">Coming Soon!</span>
     </td>
     <td align="center" width="300" style="padding: 20px;">
       <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
-        <img src="https://your-image-link.com/time-series.gif" width="200px" style="transition: transform 0.3s ease-in-out;" alt="Time Series Forecasting">
+        <img src="https://your-image-link.com/time-series.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="Time Series Forecasting" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
       </div>
       <h3>📈 **Time Series Forecasting**</h3>
-      <p>Predicting future trends using temporal data analysis.</p>
+      <p>Analyze and forecast trends using advanced time series models.</p>
       <span style="opacity: 0.5;">Coming Soon!</span>
     </td>
   </tr>
 </table>
 
----
+<hr>
 
 <div align="center">
-<h2> 🛠️ **Technologies & Tools** 🛠️ </h2>
+  <h2> 🛠️ **Technologies & Tools** 🛠️ </h2>
 </div>
 
 <p align="center">
@@ -80,34 +83,33 @@ I'm a **Data Scientist** with a mission to **redefine how data interacts with th
     <img src="./assets/git.png" alt="Git" width="50px" title="Git" style="margin: 5px; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"/>
 </p>
 
----
+<hr>
 
 ## 🌱 **Currently Exploring**
 
-- **Advanced NLP with Transformers**: Working with models like **BERT**, **GPT**, and **T5** for text generation, classification, and complex NLP tasks.
-- **Generative AI and GANs**: Creating deep generative models for unique applications.
-- **Forecasting with Time Series Analysis**: Utilizing **LSTM** and **ARIMA** for predicting trends and time-bound insights.
+- **Advanced NLP with Transformers**: Working with **BERT**, **GPT**, and **T5** models for next-gen NLP tasks.
+- **Generative AI and GANs**: Exploring creative applications with generative models.
+- **Time Series Forecasting**: Using **LSTM** and **ARIMA** to predict future trends and insights.
 
----
+<hr>
 
 <div align="center">
-<h2>📬 **Connect with Me** 📬</h2>
-<p>Let's discuss AI, data science, or just connect over shared ideas and innovations! </p>
+  <h2>📬 **Connect with Me** 📬</h2>
+  <p>Let’s collaborate on projects, discuss AI innovations, or share knowledge!</p>
 
-<a href="https://www.linkedin.com/in/muhammaddawood361510306/" target="_blank">
-  <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
-</a>
-<a href="https://github.com/muhammadmoria" target="_blank">
-  <img src="https://img.shields.io/badge/-GitHub-%23181717?style=for-the-badge&logo=github&logoColor=white">
-</a>
-<a href="https://muhammadmoria.github.io/portfolio-new/" target="_blank">
-  <img src="https://img.shields.io/badge/-Portfolio-%2312100E?style=for-the-badge&logo=portfolio&logoColor=white">
-</a>
-
+  <a href="https://www.linkedin.com/in/muhammaddawood361510306/" target="_blank">
+    <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+  </a>
+  <a href="https://github.com/muhammadmoria" target="_blank">
+    <img src="https://img.shields.io/badge/-GitHub-%23181717?style=for-the-badge&logo=github&logoColor=white">
+  </a>
+  <a href="https://muhammadmoria.github.io/portfolio-new/" target="_blank">
+    <img src="https://img.shields.io/badge/-Portfolio-%2312100E?style=for-the-badge&logo=portfolio&logoColor=white">
+  </a>
 </div>
 
----
+<hr>
 
 <div align="center">
-  <p>✨ **Thanks for stopping by my profile! Let’s push boundaries with data!** ✨</p>
+  <p>✨ **Thanks for stopping by! Let’s push boundaries with data!** ✨</p>
 </div>
