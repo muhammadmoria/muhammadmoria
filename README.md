@@ -12,24 +12,24 @@
 
 <hr>
 
-## 🌌 **About Me**
+## 🌌 About Me
 <p align="center">
   <a href="https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&multiline=true&width=800&height=100&lines=Data+Scientist+%7C+AI+Engineer;Machine+Learning+%7C+Deep+Learning;NLP+%7C+Computer+Vision;Innovation+in+AI+and+Data">
     <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&multiline=true&width=800&height=100&lines=Data+Scientist+%7C+AI+Engineer;Machine+Learning+%7C+Deep+Learning;NLP+%7C+Computer+Vision;Innovation+in+AI+and+Data" alt="Typing Animation">
   </a>
 </p>
 
-<p>I'm a **Data Scientist** passionate about **AI**, **Machine Learning**, **Deep Learning**, and **NLP**. Every project here focuses on making **AI solutions smarter** and **data-driven decisions better**.</p>
+<p>I'm a |Data Scientist| passionate about |AI| |Machine Learning| |Deep Learning| and |NLP|. Every project here focuses on making |AI solutions smarter| and |data-driven decisions better|.</p>
 
 <p>Fun Fact: When I’m not coding, I explore new libraries, participate in hackathons, and share knowledge about AI!</p>
 
 <hr>
 
 <div align="center">
-  <h2> 🚀 **Projects Portfolio** 🚀 </h2>
+  <h2> 🚀 Projects Portfolio 🚀 </h2>
 </div>
 
-### **Featured Projects**
+### Featured Projects
 
 <table align="center" style="width:100%; table-layout:fixed;">
   <tr>
@@ -77,7 +77,7 @@
 <hr>
 
 <div align="center">
-  <h2> 🛠️ **Technologies & Tools** 🛠️ </h2>
+  <h2> 🛠️ Technologies & Tools 🛠️ </h2>
 </div>
 
 <p align="center">
@@ -89,7 +89,7 @@
 
 <hr>
 
-## 🌱 **Currently Exploring**
+## 🌱 Currently Exploring
 
 - **Advanced NLP with Transformers**: Working with **BERT**, **GPT**, and **T5** models for next-gen NLP tasks.
 - **Generative AI and GANs**: Exploring creative applications with generative models.
@@ -98,7 +98,7 @@
 <hr>
 
 <div align="center">
-  <h2>📬 **Connect with Me** 📬</h2>
+  <h2>📬 Connect with Me 📬</h2>
   <p>Let’s collaborate on projects, discuss AI innovations, or share knowledge!</p>
 
   <a href="https://www.linkedin.com/in/muhammaddawood361510306/" target="_blank">
@@ -115,5 +115,5 @@
 <hr>
 
 <div align="center">
-  <p>✨ **Thanks for stopping by! Let’s push boundaries with data!** ✨</p>
+  <p>✨ Thanks for stopping by! Let’s push boundaries with data! ✨</p>
 </div>
