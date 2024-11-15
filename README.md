@@ -1,88 +1,107 @@
-# 👋 Hello, I'm Muhammad Dawood!
+<div align="center">
 
-Welcome to my GitHub profile! I’m a **Data Scientist** passionate about solving complex problems and creating impactful solutions through **Data Science**, **Machine Learning**, and **AI**. I specialize in turning data into insights, building scalable ML models, and crafting AI-driven applications to tackle real-world challenges.
+# 🌟 **Muhammad Dawood** 🌟  
+**Transforming Data into Impactful Insights**
 
----
+</div>
 
 <div align="center">
-    <h2><b>Explore My World of Data Science 🌎</b></h2>
+
+#### *“Data is the new oil, and I'm here to refine it!”*  
+I’m a **Data Scientist** passionate about solving real-world problems through **AI**, **Machine Learning**, and **Deep Learning**.  
+Let’s uncover hidden patterns, predict the future, and drive innovation together.
+
 </div>
 
 ---
 
 <div align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=muhammadmoria&show_icons=true&theme=tokyonight" alt="Muhammad Dawood's GitHub stats" width="450"/>
+  <h2 style="font-weight: bold; font-size: 28px;">🔮 Welcome to My Digital Universe! 🌌</h2>
 </div>
 
----
-
-### 🧠 **Core Expertise** 
-I'm currently focused on:
-- **Machine Learning**: Crafting predictive models for **classification**, **regression**, and **clustering** using **Scikit-learn** and **XGBoost**.
-- **Deep Learning**: Implementing **NLP** techniques with **Transformers** (e.g., BERT, GPT) and applying **Computer Vision**.
-- **Data Analytics**: Generating business insights using **Power BI**, **SQL**, and advanced **Python** libraries.
-
-### 🔍 **Learning & Exploring**
-Deep diving into:
-- Advanced **AI topics** like **Generative AI** and **Reinforcement Learning**.
-- Emerging techniques in **Audio Deep Learning** and **Satellite Image Segmentation**.
-- Optimization for **Time Series Forecasting** and **Recommendation Systems**.
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/123456789/animated-text.gif" alt="Dynamic Text Animation" width="600px"/>
+</p>
 
 ---
 
-### 🚀 **Project Highlights**
+## **🚀 What I Bring to the Table**
 
-Here are some of my latest projects that showcase my expertise:
-
-| Project | Description | Demo |
-| ------- | ----------- | ---- |
-| 🎬 **Movie Recommendation Engine** | A personalized movie recommendation system built with **Machine Learning** algorithms and deployed on **Streamlit**. | [Explore the App](https://movie-recommendation-system-dawood-moria.streamlit.app/) |
-| 🤖 **Customer Churn Prediction** | An analytical model to predict and prevent customer churn for businesses. | Coming Soon! |
-| 💬 **Smart AI Chatbot** | A chatbot built with **Dialogflow** and **FastAPI** to simulate human interaction, including intent management and MySQL integration. | Coming Soon! |
-
----
-
-### 🛠 **Technologies & Tools I Use**
-
-I employ a versatile stack of tools and technologies to deliver efficient, high-quality solutions:
-
-<div align="center">
-    <table>
-        <tr>
-            <td align="center" width="100"><img src="https://img.icons8.com/color/50/000000/python.png" alt="Python"/><br>Python</td>
-            <td align="center" width="100"><img src="https://img.icons8.com/color/50/000000/tensorflow.png" alt="TensorFlow"/><br>TensorFlow</td>
-            <td align="center" width="100"><img src="https://img.icons8.com/color/50/000000/pytorch.png" alt="PyTorch"/><br>PyTorch</td>
-            <td align="center" width="100"><img src="https://img.icons8.com/ios/50/000000/sql.png" alt="SQL"/><br>SQL</td>
-            <td align="center" width="100"><img src="https://img.icons8.com/color/50/000000/pandas.png" alt="Pandas"/><br>Pandas</td>
-            <td align="center" width="100"><img src="https://img.icons8.com/color/50/000000/git.png" alt="Git"/><br>Git</td>
-        </tr>
-    </table>
-</div>
-
----
-
-### ✨ **Goals and Future Endeavors**
-- Pioneering **AI research** in **Time Series Forecasting**, **NLP**, and **Generative AI**.
-- Engaging in collaborative, open-source projects in **AI** and **Machine Learning**.
-- Building scalable, real-world applications that leverage **Data Science** to solve pressing problems.
+### 👨‍💻 **Core Expertise**
+- **AI Solutions**: Mastery of **Machine Learning**, **Deep Learning**, and **NLP** to solve diverse challenges.
+- **Data Analysis**: Crafting actionable insights with tools like **SQL**, **Power BI**, and **Excel**.
+- **End-to-End Projects**: Building scalable solutions from **idea to deployment**.
 
 ---
 
 <div align="center">
-    <h2><b>Let’s Connect!</b></h2>
+
+<h2>⚡ **Innovative Projects** ⚡</h2>
+
 </div>
+
+| **Project**                     | **Description**                                                                                   | **Demo**                                                                                  |
+|----------------------------------|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| 🎬 **Movie Recommendation Engine** | A cutting-edge, personalized movie recommendation system powered by advanced ML models.          | [🎥 Explore Demo](https://movie-recommendation-system-dawood-moria.streamlit.app/)       |
+| 🤖 **AI Chatbot**                | An intelligent chatbot leveraging **Dialogflow**, **FastAPI**, and dynamic NLP capabilities.      | *Coming Soon!*                                                                          |
+| 📊 **Churn Analysis Dashboard**  | Interactive dashboards that help businesses retain customers by predicting churn behavior.       | *Coming Soon!*                                                                          |
+
+---
+
+## **🌱 Currently Learning**
+- Advanced **NLP Techniques**: Transformers, **BERT**, **GPT**, and their real-world applications.
+- **Generative AI**: Diving deep into models like **Stable Diffusion** and **GANs**.
+- **Time Series Forecasting**: Optimizing predictive capabilities for dynamic datasets.
+- **Audio Deep Learning**: Analyzing speech and sound data for AI solutions.
+
+---
 
 <div align="center">
-    <a href="https://www.linkedin.com/in/muhammaddawood361510306/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-    <a href="https://github.com/muhammadmoria" target="_blank"><img src="https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-    <a href="https://muhammadmoria.github.io/portfolio-new/" target="_blank"><img src="https://img.shields.io/badge/Portfolio-%2312100E.svg?style=for-the-badge&logo=portfolio&logoColor=white" alt="Portfolio"/></a>
+
+<h2>🛠️ **Tools & Technologies I Love** 🛠️</h2>
+
+<p align="center">
+    <img src="./assets/python.png" alt="Python" width="50px"/>
+    <img src="./assets/pytorch.png" alt="PyTorch" width="50px"/>
+    <img src="./assets/tensorflow.png" alt="TensorFlow" width="50px"/>
+    <img src="./assets/pandas.png" alt="Pandas" width="50px"/>
+    <img src="./assets/numpy.png" alt="NumPy" width="50px"/>
+    <img src="./assets/sql.png" alt="SQL" width="50px"/>
+    <img src="./assets/docker.png" alt="Docker" width="50px"/>
+    <img src="./assets/fastapi.png" alt="FastAPI" width="50px"/>
+    <img src="./assets/git.png" alt="Git" width="50px"/>
+</p>
+
 </div>
 
 ---
 
-### ⚡ **Fun Fact**
-When I’m not building ML models, I’m either exploring new tech libraries or sharing AI insights with the community. 😄
+## 🎯 **My Vision**
+- Lead AI research in **Generative Models** and **Forecasting Techniques**.
+- Build AI-driven solutions that **empower businesses** and improve lives.
+- Collaborate with global communities to advance open-source AI projects.
 
 ---
 
-**Thank you for visiting my profile!** Feel free to reach out if you'd like to discuss AI, Data Science, or just chat about interesting projects. 😊
+<div align="center">
+
+<h2>📬 **Let’s Get in Touch!** 📬</h2>
+
+<a href="https://www.linkedin.com/in/muhammaddawood361510306/">
+  <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
+<a href="https://github.com/muhammadmoria">
+  <img src="https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
+<a href="https://muhammadmoria.github.io/portfolio-new/">
+  <img src="https://img.shields.io/badge/Portfolio-%2312100E.svg?style=for-the-badge&logo=portfolio&logoColor=white" alt="Portfolio">
+</a>
+
+</div>
+
+---
+
+<div align="center">
+  <h3>✨ *Thank you for stopping by!* ✨</h3>
+  <p>Feel free to connect for collaborations, AI discussions, or just a quick chat about data science. 😊</p>
+</div>
