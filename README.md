@@ -47,7 +47,9 @@
       </div>
       <h3>AI-Powered Banking Fraud Detection 🚀</h3>
       <p>Predict and visualize customer churn with this interactive dashboard.</p>
-      <span style="opacity: 0.5;">Coming Soon!</span>
+      <a href="https://ai-fraud-detector-for-banking-system-by-dawood-moria.streamlit.app/" target="_blank">
+        <img src="https://img.shields.io/badge/-Explore%20Project-%2331A8FF?style=for-the-badge">
+      </a>
     </td>
   </tr>
   <tr>
