@@ -35,7 +35,7 @@
       <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
         <img src="https://your-image-link.com/movie-recommendation.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="Movie Recommendation Engine" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
       </div>
-      <h3>🎬 **Movie Recommendation System**</h3>
+      <h3>🎬 Movie Recommendation System</h3>
       <p>Personalized movie recommendations using collaborative filtering.</p>
       <a href="https://movie-recommendation-system-dawood-moria.streamlit.app/" target="_blank">
         <img src="https://img.shields.io/badge/-Explore%20Project-%2331A8FF?style=for-the-badge">
@@ -45,7 +45,7 @@
       <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
         <img src="https://your-image-link.com/churn-analysis-dashboard.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="Churn Analysis Dashboard" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
       </div>
-      <h3>📊 **Churn Analysis Dashboard**</h3>
+      <h3>AI-Powered Banking Fraud Detection 🚀</h3>
       <p>Predict and visualize customer churn with this interactive dashboard.</p>
       <span style="opacity: 0.5;">Coming Soon!</span>
     </td>
@@ -55,7 +55,7 @@
       <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
         <img src="https://your-image-link.com/ai-chatbot.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="AI Chatbot" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
       </div>
-      <h3>🤖 **AI Chatbot**</h3>
+      <h3>🤖 AI Chatbot</h3>
       <p>Advanced NLP-driven chatbot for real-time customer interaction.</p>
       <span style="opacity: 0.5;">Coming Soon!</span>
     </td>
@@ -63,7 +63,7 @@
       <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
         <img src="https://your-image-link.com/time-series.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="Time Series Forecasting" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
       </div>
-      <h3>📈 **Time Series Forecasting**</h3>
+      <h3>📈 Time Series Forecasting</h3>
       <p>Analyze and forecast trends using advanced time series models.</p>
       <span style="opacity: 0.5;">Coming Soon!</span>
     </td>
