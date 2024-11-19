@@ -60,7 +60,7 @@
         <img src="https://your-image-link.com/ai-chatbot.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="AI Chatbot" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
       </div>
       <h3>📉 Data Analysis Tool</h3>
-       <p>Analze Your Data Without Code.</p>
+       <p>Analyze Your Data Without Code.</p>
       <a href="https://data-analysis-tool-by-dawood.streamlit.app/" target="_blank">
         <img src="https://img.shields.io/badge/-Explore%20Project-%2331A8FF?style=for-the-badge">
       </a>
