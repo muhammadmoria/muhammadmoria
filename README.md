@@ -48,7 +48,7 @@
         <img src="https://your-image-link.com/churn-analysis-dashboard.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="Churn Analysis Dashboard" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
       </div>
       <h3>AI-Powered Banking Fraud Detection 🚀</h3>
-      <p>Predict and visualize customer churn with this interactive dashboard.</p>
+      <p>Your Solution to predict the Fraud Detection.</p>
       <a href="https://ai-fraud-detector-for-banking-system-by-dawood-moria.streamlit.app/" target="_blank">
         <img src="https://img.shields.io/badge/-Explore%20Project-%2331A8FF?style=for-the-badge">
       </a>
@@ -59,9 +59,10 @@
       <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
         <img src="https://your-image-link.com/ai-chatbot.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="AI Chatbot" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
       </div>
-      <h3>🤖 AI Chatbot</h3>
-      <p>Advanced NLP-driven chatbot for real-time customer interaction.</p>
-      <span style="opacity: 0.5;">Coming Soon!</span>
+      <h3>📉 Data Analysis Tool</h3>
+      <a href="https://data-analysis-tool-by-dawood.streamlit.app/" target="_blank">
+        <img src="https://img.shields.io/badge/-Explore%20Project-%2331A8FF?style=for-the-badge">
+      </a>
     </td>
     <td align="center" width="300" style="padding: 20px;">
       <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
