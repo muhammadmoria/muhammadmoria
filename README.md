@@ -78,20 +78,6 @@
       <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
         <img src="https://your-image-link.com/time-series.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="Time Series Forecasting" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
       </div>
-      <h3>📈Data Scientist portal</h3>
-       <p>Do every thing with your Your Data Without Code.</p>
-      <a href="https://data-science-app-by-dawood-moria.streamlit.app/" target="_blank">
-        <img src="https://img.shields.io/badge/-Explore%20Project-%2331A8FF?style=for-the-badge">
-    </td>
-     <td align="center" width="300" style="padding: 20px;">
-      <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
-        <img src="https://your-image-link.com/time-series.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="Time Series Forecasting" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-      </div>
-      <h3>📈Data Scientist portal</h3>
-       <p>Do every thing with your Your Data Without Code.</p>
-      <a href="https://data-science-app-by-dawood-moria.streamlit.app/" target="_blank">
-        <img src="https://img.shields.io/badge/-Explore%20Project-%2331A8FF?style=for-the-badge">
-    </td>
   </tr>
 </table>
 
