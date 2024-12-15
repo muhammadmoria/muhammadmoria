@@ -78,8 +78,8 @@
       <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
         <img src="https://your-image-link.com/time-series.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="Time Series Forecasting" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
       </div>
-  </tr>
-</table>
+    </tr>
+</table
 
 <hr>
 
