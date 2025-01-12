@@ -1,126 +1,116 @@
 <div align="center">
-  <h1>👋 Welcome to My Digital Lab – I’m Muhammad Dawood!</h1>
-  <h3>Data Scientist | AI Engineer | Creator of Intelligent Solutions</h3>
-  <hr>
-  <img src="360_F_751616029_sQM19hyqNdkbOvdvJiQKDFpyQYzlHmpg.jpg" alt="AI" width="4000" height="370">
-
-
-  <p align="center">
-    <img src="https://your-cool-animation.com/welcome-typing.gif" width="700px" alt="Typewriter Animation - Welcome to My GitHub">
-  </p>
+  <img src="https://your-high-tech-banner-link.com" alt="Banner Image" width="100%" height="auto">
+  <h1>🌟 Welcome to My High-Tech Digital Lab – I'm Muhammad Dawood! 🌟</h1>
+  <h3>🚀 Data Scientist | AI Innovator | Builder of Next-Gen Solutions</h3>
 </div>
 
 <hr>
 
-## 🌌 About Me
 <p align="center">
-  <a href="https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&multiline=true&width=800&height=100&lines=Data+Scientist+%7C+AI+Engineer;Machine+Learning+%7C+Deep+Learning;NLP+%7C+Computer+Vision;Innovation+in+AI+and+Data">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&multiline=true&width=800&height=100&lines=Data+Scientist+%7C+AI+Engineer;Machine+Learning+%7C+Deep+Learning;NLP+%7C+Computer+Vision;Innovation+in+AI+and+Data" alt="Typing Animation">
-  </a>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=F7A900&center=true&vCenter=true&width=1000&lines=Exploring+the+Frontiers+of+AI;Engineer+with+a+Vision+for+the+Future;Building+Smarter+Solutions+Every+Day;Innovation%2C+Code%2C+and+Beyond!" alt="Typing Animation">
 </p>
 
-<p>I'm a |Data Scientist| passionate about |AI| |Machine Learning| |Deep Learning| and |NLP|. Every project here focuses on making |AI solutions smarter| and |data-driven decisions better|.</p>
-
-<p>Fun Fact: When I’m not coding, I explore new libraries, participate in hackathons, and share knowledge about AI!</p>
-
-<hr>
-
 <div align="center">
-  <h2> 🚀 Projects Portfolio 🚀 </h2>
+  <img src="https://your-ai-animated-visual.com" alt="AI Animation" width="60%" style="border-radius: 20px; border: 5px solid #4CAF50; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);">
 </div>
 
-### Featured Projects
+---
+
+## 🌌 About Me
+
+<p align="center">
+  <img src="https://img.shields.io/badge/-Data%20Science-%2331A8FF?style=for-the-badge&logo=data-science&logoColor=white">
+  <img src="https://img.shields.io/badge/-AI%20Engineering-%23FF6F61?style=for-the-badge&logo=artificial-intelligence&logoColor=white">
+  <img src="https://img.shields.io/badge/-Innovation-%237C4DFF?style=for-the-badge&logo=creativity&logoColor=white">
+</p>
+
+I’m a visionary **Data Scientist** and **AI Engineer**, pushing the limits of technology to craft groundbreaking solutions. My passion lies in:
+
+- 🌟 **Machine Learning** and **Deep Learning** innovations
+- 🌟 **NLP** for smarter communication systems
+- 🌟 **Computer Vision** for real-world AI applications
+
+🎯 **Mission**: To make data-driven decisions and AI smarter, better, and more impactful.
+
+---
+
+## 🚀 Featured Projects Portfolio
+
+<p align="center">
+  <img src="https://your-tech-animation-link.com/rocket-launch.gif" alt="Rocket Launch Animation" width="150px">
+</p>
 
 <table align="center" style="width:100%; table-layout:fixed;">
   <tr>
     <td align="center" width="300" style="padding: 20px;">
-      <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
-        <img src="https://your-image-link.com/movie-recommendation.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="Movie Recommendation Engine" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-      </div>
+      <img src="https://your-image-link.com/movie-recommendation.gif" width="200px" style="border-radius: 10px; transition: transform 0.3s;" alt="Movie Recommendation Engine" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
       <h3>🎬 Movie Recommendation System</h3>
       <p>Personalized movie recommendations using collaborative filtering.</p>
       <a href="https://movie-recommendation-system-dawood-moria.streamlit.app/" target="_blank">
-        <img src="https://img.shields.io/badge/-Explore%20Project-%2331A8FF?style=for-the-badge">
+        <img src="https://img.shields.io/badge/-Explore%20Project-%23F39C12?style=for-the-badge&logo=project&logoColor=white">
       </a>
     </td>
     <td align="center" width="300" style="padding: 20px;">
-      <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
-        <img src="https://your-image-link.com/churn-analysis-dashboard.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="Churn Analysis Dashboard" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-      </div>
-      <h3>AI-Powered Banking Fraud Detection 🚀</h3>
-      <p>Your Solution to predict the Fraud Detection.</p>
+      <img src="https://your-image-link.com/fraud-detection.gif" width="200px" style="border-radius: 10px; transition: transform 0.3s;" alt="Fraud Detection System" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+      <h3>💳 Fraud Detection AI</h3>
+      <p>AI-powered system for real-time banking fraud detection.</p>
       <a href="https://ai-fraud-detector-for-banking-system-by-dawood-moria.streamlit.app/" target="_blank">
-        <img src="https://img.shields.io/badge/-Explore%20Project-%2331A8FF?style=for-the-badge">
+        <img src="https://img.shields.io/badge/-Explore%20Project-%234CAF50?style=for-the-badge&logo=project&logoColor=white">
       </a>
     </td>
   </tr>
   <tr>
     <td align="center" width="300" style="padding: 20px;">
-      <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
-        <img src="https://your-image-link.com/ai-chatbot.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="AI Chatbot" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-      </div>
+      <img src="https://your-image-link.com/data-tool.gif" width="200px" style="border-radius: 10px; transition: transform 0.3s;" alt="Data Analysis Tool" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
       <h3>📉 Data Analysis Tool</h3>
-       <p>Analyze Your Data Without Code.</p>
+      <p>Analyze complex datasets without writing a single line of code.</p>
       <a href="https://data-analysis-tool-by-dawood.streamlit.app/" target="_blank">
-        <img src="https://img.shields.io/badge/-Explore%20Project-%2331A8FF?style=for-the-badge">
+        <img src="https://img.shields.io/badge/-Explore%20Project-%2364B5F6?style=for-the-badge&logo=project&logoColor=white">
       </a>
     </td>
     <td align="center" width="300" style="padding: 20px;">
-      <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
-        <img src="https://your-image-link.com/time-series.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="Time Series Forecasting" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-      </div>
-      <h3>📈Data Scientist portal</h3>
-       <p>Do every thing with your Your Data Without Code.</p>
+      <img src="https://your-image-link.com/time-series.gif" width="200px" style="border-radius: 10px; transition: transform 0.3s;" alt="Time Series Forecasting" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+      <h3>📈 Time Series Forecaster</h3>
+      <p>Predict trends with precision using advanced forecasting models.</p>
       <a href="https://data-science-app-by-dawood-moria.streamlit.app/" target="_blank">
-        <img src="https://img.shields.io/badge/-Explore%20Project-%2331A8FF?style=for-the-badge">
+        <img src="https://img.shields.io/badge/-Explore%20Project-%23D35400?style=for-the-badge&logo=project&logoColor=white">
+      </a>
     </td>
-     <td align="center" width="300" style="padding: 20px;">
-      <div style="position: relative; overflow: hidden; width: 200px; height: 150px; border-radius: 10px;">
-        <img src="https://your-image-link.com/time-series.gif" width="200px" style="transition: transform 0.3s ease-in-out; cursor: pointer;" alt="Time Series Forecasting" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-      </div>
-    </tr>
-</table
+  </tr>
+</table>
 
-<hr>
+---
 
-<div align="center">
-  <h2> 🛠️ Technologies & Tools 🛠️ </h2>
-</div>
+## 🛠️ Technologies & Tools
 
 <p align="center">
-    <img src="./assets/python.png" alt="Python" width="50px" title="Python" style="margin: 5px; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"/>
-    <img src="./assets/tensorflow.png" alt="TensorFlow" width="50px" title="TensorFlow" style="margin: 5px; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"/>
-    <img src="./assets/docker.png" alt="Docker" width="50px" title="Docker" style="margin: 5px; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"/>
-    <img src="./assets/git.png" alt="Git" width="50px" title="Git" style="margin: 5px; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"/>
+  <img src="./assets/python.png" alt="Python" width="50px" title="Python">
+  <img src="./assets/tensorflow.png" alt="TensorFlow" width="50px" title="TensorFlow">
+  <img src="./assets/docker.png" alt="Docker" width="50px" title="Docker">
+  <img src="./assets/git.png" alt="Git" width="50px" title="Git">
 </p>
 
-<hr>
+---
 
 ## 🌱 Currently Exploring
 
-- **Advanced NLP with Transformers**: Working with **BERT**, **GPT**, and **T5** models for next-gen NLP tasks.
-- **Generative AI and GANs**: Exploring creative applications with generative models.
-- **Time Series Forecasting**: Using **LSTM** and **ARIMA** to predict future trends and insights.
+- **Transformers in NLP**: Exploring BERT, GPT, and cutting-edge models.
+- **Generative AI**: Unleashing creativity with GANs and diffusion models.
+- **Advanced Forecasting**: Using LSTM and hybrid models for time series.
 
-<hr>
+---
 
 <div align="center">
   <h2>📬 Connect with Me 📬</h2>
-  <p>Let’s collaborate on projects, discuss AI innovations, or share knowledge!</p>
-
-  <a href="https://www.linkedin.com/in/muhammaddawood361510306/" target="_blank">
-    <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+  <p>Let’s innovate together!</p>
+  <a href="https://linkedin.com/in/muhammaddawood361510306" target="_blank">
+    <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin">
   </a>
   <a href="https://github.com/muhammadmoria" target="_blank">
-    <img src="https://img.shields.io/badge/-GitHub-%23181717?style=for-the-badge&logo=github&logoColor=white">
-  </a>
-  <a href="https://muhammadmoria.github.io/portfolio-new/" target="_blank">
-    <img src="https://img.shields.io/badge/-Portfolio-%2312100E?style=for-the-badge&logo=portfolio&logoColor=white">
+    <img src="https://img.shields.io/badge/-GitHub-%23181717?style=for-the-badge&logo=github">
   </a>
 </div>
 
-<hr>
-
 <div align="center">
-  <p>✨ Thanks for stopping by! Let’s push boundaries with data! ✨</p>
+  <p>✨ Thank you for visiting! Together, let's push the boundaries of technology. ✨</p>
 </div>
