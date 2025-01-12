@@ -28,10 +28,10 @@
   <p style="color: #A0A0A0; font-size: 1.2rem; margin: 20px 0;">
     I'm Muhammad Dawood, a **Visionary Architect of AI Innovations** with a vision to create smarter technologies for a better future. My expertise spans:
     <ol style="list-style-type: '✨'; padding: 0 25px; color: #FFFFFF; text-align: left;">
-      <li>🚀 *Machine Learning Solutions* that redefine industries.</li>
-      <li>🤖 *NLP and Conversational AI* for seamless human-machine interactions.</li>
-      <li>🧠 *Generative AI** for groundbreaking creativity.</li>
-      <li>🌐 *Real-World Applications* that impact lives globally.</li>
+      <li>🚀 **Machine Learning Solutions** that redefine industries.</li>
+      <li>🤖 **NLP and Conversational AI** for seamless human-machine interactions.</li>
+      <li>🧠 **Generative AI** for groundbreaking creativity.</li>
+      <li>🌐 **Real-World Applications** that impact lives globally.</li>
     </ol>
   </p>
   <h3 style="color: #00FFC6; margin-top: 20px;">🌟 "Innovation is not just a goal; it's a mindset."</h3>
