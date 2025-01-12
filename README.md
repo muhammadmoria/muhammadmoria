@@ -28,10 +28,10 @@
   <p style="color: #A0A0A0; font-size: 1.2rem; margin: 20px 0;">
     I'm Muhammad Dawood, a **Visionary Architect of AI Innovations** with a vision to create smarter technologies for a better future. My expertise spans:
     <ol style="list-style-type: '✨'; padding: 0 25px; color: #FFFFFF; text-align: left;">
-      <li>🚀 **Machine Learning Solutions** that redefine industries.</li>
-      <li>🤖 **NLP and Conversational AI** for seamless human-machine interactions.</li>
-      <li>🧠 **Generative AI** for groundbreaking creativity.</li>
-      <li>🌐 **Real-World Applications** that impact lives globally.</li>
+      <li>🚀 Machine Learning Solutions that redefine industries.</li>
+      <li>🤖 NLP and Conversational AI for seamless human-machine interactions.</li>
+      <li>🧠 Generative AI for groundbreaking creativity.</li>
+      <li>🌐 Real-World Applications that impact lives globally.</li>
     </ol>
   </p>
   <h3 style="color: #00FFC6; margin-top: 20px;">🌟 "Innovation is not just a goal; it's a mindset."</h3>
@@ -57,9 +57,9 @@
     </td>
     <td align="center" style="padding: 20px; background-color: #1F1F1F; border: 3px solid #FF6F91; border-radius: 15px; box-shadow: 0px 6px 20px rgba(255, 111, 145, 0.5);">
       <img src="https://your-project-image.com/project2.gif" alt="Project 2" width="200px" style="border-radius: 15px;">
-      <h3 style="color: #FF6F91; margin: 15px 0;">💳 Fraud Detection AI</h3>
+      <h3 style="color: #FF6F91; margin: 15px 0;">💳 DefrauderAI</h3>
       <p style="color: #A0A0A0;">Real-time fraud detection for secure banking.</p>
-      <a href="https://github.com/your-repo-link/project2" target="_blank">
+      <a href="https://ai-fraud-detector-for-banking-system-by-dawood-moria.streamlit.app/" target="_blank">
         <img src="https://img.shields.io/badge/-View%20Project-%23FF6F91?style=for-the-badge&logo=python">
       </a>
     </td>
@@ -67,17 +67,17 @@
   <tr>
     <td align="center" style="padding: 20px; background-color: #1F1F1F; border: 3px solid #FFD700; border-radius: 15px; box-shadow: 0px 6px 20px rgba(255, 215, 0, 0.5);">
       <img src="https://your-project-image.com/project3.gif" alt="Project 3" width="200px" style="border-radius: 15px;">
-      <h3 style="color: #FFD700; margin: 15px 0;">📉 Visual Data Analyzer</h3>
-      <p style="color: #A0A0A0;">Interactive exploration of data insights.</p>
-      <a href="https://github.com/your-repo-link/project3" target="_blank">
+      <h3 style="color: #FFD700; margin: 15px 0;">AutoMLX🧠</h3>
+      <p style="color: #A0A0A0;">Ultimate Platform for Machine Learning, Deep Learning.</p>
+      <a href="https://data-science-app-by-dawood-moria.streamlit.app/" target="_blank">
         <img src="https://img.shields.io/badge/-View%20Project-%23FFD700?style=for-the-badge&logo=jupyter">
       </a>
     </td>
     <td align="center" style="padding: 20px; background-color: #1F1F1F; border: 3px solid #3FA9F5; border-radius: 15px; box-shadow: 0px 6px 20px rgba(63, 169, 245, 0.5);">
       <img src="https://your-project-image.com/project4.gif" alt="Project 4" width="200px" style="border-radius: 15px;">
-      <h3 style="color: #3FA9F5; margin: 15px 0;">📈 Time Series Forecaster</h3>
-      <p style="color: #A0A0A0;">AI-driven predictions for smarter decisions.</p>
-      <a href="https://github.com/your-repo-link/project4" target="_blank">
+      <h3 style="color: #3FA9F5; margin: 15px 0;">StockFlow💰</h3>
+      <p style="color: #A0A0A0;">🔍 Fetch Historical Stock Data predictions for decisions.</p>
+      <a href="https://stockflow.streamlit.app/" target="_blank">
         <img src="https://img.shields.io/badge/-View%20Project-%233FA9F5?style=for-the-badge&logo=analytics">
       </a>
     </td>
@@ -89,14 +89,14 @@
 ## 🛠️ **Technologies & Tools**
 
 <div align="center">
+  <img src="https://img.icons8.com/color/48/000000/pandas.png" alt="Pandas" style="margin: 12px;">
+  <img src="https://img.icons8.com/color/48/000000/numpy.png" alt="NumPy" style="margin: 12px;">
+  <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/48/000000/external-graph-data-analytics-flaticons-lineal-color-flat-icons.png" alt="Matplotlib" style="margin: 12px;">
+  <img src="https://img.icons8.com/color/48/000000/data-analysis.png" alt="Seaborn" style="margin: 12px;">
   <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" style="margin: 12px;">
   <img src="https://img.icons8.com/color/48/000000/tensorflow.png" alt="TensorFlow" style="margin: 12px;">
-  <img src="https://img.icons8.com/color/48/000000/pytorch.png" alt="PyTorch" style="margin: 12px;">
   <img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker" style="margin: 12px;">
   <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git" style="margin: 12px;">
-  <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" style="margin: 12px;">
-  <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5" style="margin: 12px;">
-  <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3" style="margin: 12px;">
   <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS" style="margin: 12px;">
 </div>
 
