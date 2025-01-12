@@ -91,8 +91,7 @@
 <div align="center">
   <img src="https://img.icons8.com/color/48/000000/pandas.png" alt="Pandas" style="margin: 12px;">
   <img src="https://img.icons8.com/color/48/000000/numpy.png" alt="NumPy" style="margin: 12px;">
-  <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/48/000000/external-graph-data-analytics-flaticons-lineal-color-flat-icons.png" alt="Matplotlib" style="margin: 12px;">
-  <img src="https://img.icons8.com/color/48/000000/data-analysis.png" alt="Seaborn" style="margin: 12px;">
+  <img src="https://img.icons8.com/color/48/000000/keras.png" alt="Keras" style="margin: 12px;">
   <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" style="margin: 12px;">
   <img src="https://img.icons8.com/color/48/000000/tensorflow.png" alt="TensorFlow" style="margin: 12px;">
   <img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker" style="margin: 12px;">
