@@ -91,7 +91,6 @@
 <div align="center">
   <img src="https://img.icons8.com/color/48/000000/pandas.png" alt="Pandas" style="margin: 12px;">
   <img src="https://img.icons8.com/color/48/000000/numpy.png" alt="NumPy" style="margin: 12px;">
-  <img src="https://img.icons8.com/color/48/000000/keras.png" alt="Keras" style="margin: 12px;">
   <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" style="margin: 12px;">
   <img src="https://img.icons8.com/color/48/000000/tensorflow.png" alt="TensorFlow" style="margin: 12px;">
   <img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker" style="margin: 12px;">
@@ -104,16 +103,16 @@
 ## 🌐 **Connect with Me**
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/muhammad-dawood" target="_blank">
+  <a href="https://www.linkedin.com/in/muhammadmoria/" target="_blank">
     <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
   </a>
   <a href="https://twitter.com/muhammad_dawood" target="_blank">
     <img src="https://img.shields.io/badge/-Twitter-%231DA1F2?style=for-the-badge&logo=twitter&logoColor=white">
   </a>
-  <a href="mailto:muhammad.dawood@example.com">
+  <a href="mailto:muhammaddawoodmoria@gmail.com">
     <img src="https://img.shields.io/badge/-Email-%23D14836?style=for-the-badge&logo=gmail&logoColor=white">
   </a>
-  <a href="https://github.com/muhammad-dawood" target="_blank">
+  <a href="https://github.com/muhammadmoria" target="_blank">
     <img src="https://img.shields.io/badge/-GitHub-%23181717?style=for-the-badge&logo=github&logoColor=white">
   </a>
 </div>
