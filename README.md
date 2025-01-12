@@ -26,13 +26,13 @@
     <img src="https://img.shields.io/badge/-Technologist-%233FA9F5?style=for-the-badge&logo=tech&logoColor=white">
   </p>
   <p style="color: #A0A0A0; font-size: 1.2rem; margin: 20px 0;">
-    I'm Muhammad Dawood, a **passionate AI pioneer** with a vision to create smarter technologies for a better future. My expertise spans:
-    <ul style="list-style-type: '✨'; padding: 0 25px; color: #FFFFFF; text-align: left;">
-      <li>🚀 **Machine Learning Solutions** that redefine industries.</li>
-      <li>🤖 **NLP and Conversational AI** for seamless human-machine interactions.</li>
-      <li>🧠 **Generative AI** for groundbreaking creativity.</li>
-      <li>🌐 **Real-World Applications** that impact lives globally.</li>
-    </ul>
+    I'm Muhammad Dawood, a **Visionary Architect of AI Innovations** with a vision to create smarter technologies for a better future. My expertise spans:
+    <ol style="list-style-type: '✨'; padding: 0 25px; color: #FFFFFF; text-align: left;">
+      <li>🚀 *Machine Learning Solutions* that redefine industries.</li>
+      <li>🤖 *NLP and Conversational AI* for seamless human-machine interactions.</li>
+      <li>🧠 *Generative AI** for groundbreaking creativity.</li>
+      <li>🌐 *Real-World Applications* that impact lives globally.</li>
+    </ol>
   </p>
   <h3 style="color: #00FFC6; margin-top: 20px;">🌟 "Innovation is not just a goal; it's a mindset."</h3>
 </div>
@@ -49,9 +49,9 @@
   <tr>
     <td align="center" style="padding: 20px; background-color: #1F1F1F; border: 3px solid #00FFC6; border-radius: 15px; box-shadow: 0px 6px 20px rgba(0, 255, 198, 0.5);">
       <img src="https://your-project-image.com/project1.gif" alt="Project 1" width="200px" style="border-radius: 15px;">
-      <h3 style="color: #00FFC6; margin: 15px 0;">🎬 AI Movie Recommender</h3>
+      <h3 style="color: #00FFC6; margin: 15px 0;">🎬CineMancer</h3>
       <p style="color: #A0A0A0;">Smart suggestions using embeddings and collaborative filtering.</p>
-      <a href="https://github.com/your-repo-link/project1" target="_blank">
+      <a href="https://movie-recommendation-system-dawood-moria.streamlit.app/" target="_blank">
         <img src="https://img.shields.io/badge/-View%20Project-%2300FFC6?style=for-the-badge&logo=streamlit">
       </a>
     </td>
