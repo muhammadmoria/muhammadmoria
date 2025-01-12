@@ -26,7 +26,7 @@
     <img src="https://img.shields.io/badge/-Technologist-%233FA9F5?style=for-the-badge&logo=tech&logoColor=white">
   </p>
   <p style="color: #A0A0A0; font-size: 1.2rem; margin: 20px 0;">
-    I'm Muhammad Dawood, a **Visionary Architect of AI Innovations** with a vision to create smarter technologies for a better future. My expertise spans:
+    I'm Muhammad Dawood, a Visionary Architect of AI Innovations with a vision to create smarter technologies for a better future. My expertise spans:
     <ol style="list-style-type: '✨'; padding: 0 25px; color: #FFFFFF; text-align: left;">
       <li>🚀 Machine Learning Solutions that redefine industries.</li>
       <li>🤖 NLP and Conversational AI for seamless human-machine interactions.</li>
@@ -106,8 +106,8 @@
   <a href="https://www.linkedin.com/in/muhammadmoria/" target="_blank">
     <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
   </a>
-  <a href="https://twitter.com/muhammad_dawood" target="_blank">
-    <img src="https://img.shields.io/badge/-Twitter-%231DA1F2?style=for-the-badge&logo=twitter&logoColor=white">
+  <a href="https://muhammadmoria.github.io/Portfolio-/" target="_blank">
+      <img src="https://img.shields.io/badge/-Portfolio-%23000000?style=for-the-badge&logo=codepen&logoColor=white">
   </a>
   <a href="mailto:muhammaddawoodmoria@gmail.com">
     <img src="https://img.shields.io/badge/-Email-%23D14836?style=for-the-badge&logo=gmail&logoColor=white">
