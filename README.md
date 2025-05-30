@@ -48,7 +48,7 @@ I'm Muhammad Dawood, a Visionary Architect of AI Innovations with a passion for 
 | ![DefrauderAI](https://your-project-image.com/project2.gif) | **DefrauderAI**<br>Real-time fraud detection for secure banking.<br>[![View Project](https://img.shields.io/badge/-View%20Project-%23FF6F91?style=for-the-badge&logo=python)](https://ai-fraud-detector-for-banking-system-by-dawood-moria.streamlit.app/) |
 | ![AutoMLX](https://your-project-image.com/project3.gif)    | **AutoMLX 🧠**<br>Ultimate Platform for Machine Learning, Deep Learning.<br>[![View Project](https://img.shields.io/badge/-View%20Project-%23FFD700?style=for-the-badge&logo=jupyter)](https://data-science-app-by-dawood-moria.streamlit.app/) |
 | ![StockFlow](https://your-project-image.com/project4.gif)  | **StockFlow 💰**<br>🔍 Fetch Historical Stock Data predictions for decisions.<br>[![View Project](https://img.shields.io/badge/-View%20Project-%233FA9F5?style=for-the-badge&logo=analytics)](https://stockflow.streamlit.app/) |
-| ![AquaSentix](https://your-project-image.com/project5.gif) | **AquaSentix **<br>AI-powered sentiment analysis for feedback <br>[![View Project](https://img.shields.io/badge/-View%20Project-%2300B7EB?style=for-the-badge&logo=tensorflow)](https://aquasentix.streamlit.app/) |
+| ![AquaSentix](https://your-project-image.com/project5.gif) | **AquaSentix**<br>AI-powered sentiment analysis for feedback.<br>[![View Project](https://img.shields.io/badge/-View%20Project-%2300B7EB?style=for-the-badge&logo=tensorflow)](https://aquasentix.streamlit.app/) |
 | ![Health Report Analyzer](https://your-project-image.com/project6.gif) | **Health Report Analyzer**<br>The Advanced Health Analytics platform is a pioneering tool designed to enhance comprehension of medical reports.<br>[![View Project](https://img.shields.io/badge/-View%20Project-%23FF4500?style=for-the-badge&logo=chat)](https://health-report-analyzer.streamlit.app/) |
 
 ---
@@ -60,9 +60,6 @@ I'm Muhammad Dawood, a Visionary Architect of AI Innovations with a passion for 
   <img src="https://img.icons8.com/color/48/000000/pandas.png" alt="Pandas"/>
   <img src="https://img.icons8.com/color/48/000000/numpy.png" alt="NumPy"/>
   <img src="https://img.icons8.com/color/48/000000/seaborn.png" alt="Seaborn"/>
-  <img src="https://img.icons8.com/color/48/000000/jupyter.png" alt="Jupyter"/>
-  <img src="https://img.icons8.com/color/48/000000/keras.png" alt="Keras"/>
-  <img src="https://img.icons8.com/color/48/000000/pytorch.png" alt="PyTorch"/>
   <img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker"/>
   <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub"/>
   <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git"/>
@@ -70,7 +67,6 @@ I'm Muhammad Dawood, a Visionary Architect of AI Innovations with a passion for 
   <img src="https://img.icons8.com/color/48/000000/postgreesql.png" alt="PostgreSQL"/>
   <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS"/>
   <img src="https://img.icons8.com/color/48/000000/tableau-software.png" alt="Tableau"/>
-  <img src="https://img.icons8.com/color/48/000000/microsoft-power-bi.png" alt="Power BI"/>
 </p>
 
 ---
