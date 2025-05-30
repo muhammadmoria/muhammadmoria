@@ -1,45 +1,4 @@
-<style>
-  .hero-section {
-    position: relative;
-    overflow: hidden;
-    padding: 80px;
-    border-radius: 40px;
-    background: linear-gradient(145deg, #1A1A1D, #0B0C10);
-    box-shadow: 0px 30px 70px rgba(0, 0, 0, 0.9);
-  }
-  .hero-section::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, #00FFDD 10%, #FF3E6B 30%, #FFD700 50%, #40C4FF 70%, transparent 100%);
-    animation: rotateGradient 7s linear infinite;
-    z-index: -1;
-    opacity: 0.5;
-  }
-  @keyframes rotateGradient {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 6rem;
-    color: #00FFDD;
-    text-shadow: 0 0 30px #00FFDD;
-  }
-  .project-box {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .project-box:hover {
-    transform: translateY(-20px);
-    box-shadow: 0px 25px 60px rgba(0, 255, 221, 0.9);
-  }
-</style>
-
 <div class="hero-section" align="center">
-  <img src="https://your-banner-link.com/futuristic-banner.gif" alt="Futuristic Banner" width="100%" style="border-radius: 20px;">
   <h1>🌌 Welcome to Muhammad Dawood's Tech Universe 🌌</h1>
   <h3>
     🚀 <span style="color: #FFD700;">AI Visionary</span> | 
