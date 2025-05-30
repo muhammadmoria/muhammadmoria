@@ -8,9 +8,6 @@
   <p>Pioneering intelligent technologies to reshape the future.</p>
 </div>
 
-<p class="typing-animation" align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=3000&pause=500&color=00FFC6&center=true&vCenter=true&width=1000&height=120&lines=🔍+Crafting+AI-powered+innovations...;🚀+Building+a+smarter+tomorrow,+today!;✨+Join+me+on+a+journey+of+limitless+possibilities!" alt="Typing Animation">
-</p>
 
 <div align="center">
   <img src="https://your-animation-link.com/ai-globe.gif" alt="AI Globe Animation" width="90%" style="border-radius: 25px; border: 6px solid #FFD700; box-shadow: 0px 12px 35px rgba(255, 215, 0, 0.8);">
@@ -62,12 +59,8 @@ I'm Muhammad Dawood, a Visionary Architect of AI Innovations with a passion for 
   <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python"/>
   <img src="https://img.icons8.com/color/48/000000/pandas.png" alt="Pandas"/>
   <img src="https://img.icons8.com/color/48/000000/numpy.png" alt="NumPy"/>
-  <img src="https://img.icons8.com/color/48/000000/scikit-learn.png" alt="Scikit-learn"/>
-  <img src="https://img.icons8.com/color/48/000000/matplotlib.png" alt="Matplotlib"/>
   <img src="https://img.icons8.com/color/48/000000/seaborn.png" alt="Seaborn"/>
   <img src="https://img.icons8.com/color/48/000000/jupyter.png" alt="Jupyter"/>
-  <img src="https://img.icons8.com/color/48/000000/vs-code.png" alt="VS Code"/>
-  <img src="https://img.icons8.com/color/48/000000/tensorflow.png" alt="TensorFlow"/>
   <img src="https://img.icons8.com/color/48/000000/keras.png" alt="Keras"/>
   <img src="https://img.icons8.com/color/48/000000/pytorch.png" alt="PyTorch"/>
   <img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker"/>
@@ -75,9 +68,7 @@ I'm Muhammad Dawood, a Visionary Architect of AI Innovations with a passion for 
   <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git"/>
   <img src="https://img.icons8.com/color/48/000000/mysql-logo.png" alt="MySQL"/>
   <img src="https://img.icons8.com/color/48/000000/postgreesql.png" alt="PostgreSQL"/>
-  <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB"/>
   <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS"/>
-  <img src="https://img.icons8.com/color/48/000000/google-cloud.png" alt="GCP"/>
   <img src="https://img.icons8.com/color/48/000000/tableau-software.png" alt="Tableau"/>
   <img src="https://img.icons8.com/color/48/000000/microsoft-power-bi.png" alt="Power BI"/>
 </p>
