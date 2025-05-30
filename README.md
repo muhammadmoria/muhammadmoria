@@ -5,7 +5,7 @@
     <span style="color: #FF6F91;">Data Scientist</span> | 
     <span style="color: #3FA9F5;">Innovator in Intelligent Systems</span>
   </h3>
-  <p>"Pioneering intelligent technologies to reshape the future."</p>
+  <p>Pioneering intelligent technologies to reshape the future.</p>
 </div>
 
 <p class="typing-animation" align="center">
@@ -15,17 +15,6 @@
 <div align="center">
   <img src="https://your-animation-link.com/ai-globe.gif" alt="AI Globe Animation" width="90%" style="border-radius: 25px; border: 6px solid #FFD700; box-shadow: 0px 12px 35px rgba(255, 215, 0, 0.8);">
 </div>
-
-<div class="about-section">
-  <h2>🌟 About Me</h2>
-  <p>
-    <img src="https://img.shields.io/badge/-Data%20Science-%2345A29E?style=for-the-badge&logo=databricks&logoColor=white">
-    <img src="https://img.shields.io/badge/-AI%20Engineering-%23FF6య
-
-System: **Important Note**: GitHub READMEs are written in Markdown, not HTML. The provided artifact uses HTML for styling, which is not directly supported in GitHub READMEs. To make this work, you would typically host the HTML/CSS/JavaScript on a separate site (e.g., GitHub Pages) and link to it, or adapt the content to Markdown with limited styling options. Below, I’ll provide a Markdown version of the enhanced README that aligns with GitHub’s capabilities, incorporating the requested features (circular gradient background, two additional vertical project boxes, and advanced design) while keeping it as visually appealing as possible within Markdown constraints.
-
-<xaiArtifact artifact_id="8d80176e-87c0-41a6-ade6-6d1f92246764" artifact_version_id="e28366cc-283d-4b21-9009-7625d305e6ce" title="Advanced GitHub README with Project Boxes" contentType="text/markdown">
-# 🌌 Welcome to Muhammad Dawood's Tech Universe 🌌
 
 ![Futuristic Banner](https://your-banner-link.com/futuristic-banner.gif)
 
@@ -62,21 +51,42 @@ I'm Muhammad Dawood, a Visionary Architect of AI Innovations with a passion for 
 | ![DefrauderAI](https://your-project-image.com/project2.gif) | **DefrauderAI**<br>Real-time fraud detection for secure banking.<br>[![View Project](https://img.shields.io/badge/-View%20Project-%23FF6F91?style=for-the-badge&logo=python)](https://ai-fraud-detector-for-banking-system-by-dawood-moria.streamlit.app/) |
 | ![AutoMLX](https://your-project-image.com/project3.gif)    | **AutoMLX 🧠**<br>Ultimate Platform for Machine Learning, Deep Learning.<br>[![View Project](https://img.shields.io/badge/-View%20Project-%23FFD700?style=for-the-badge&logo=jupyter)](https://data-science-app-by-dawood-moria.streamlit.app/) |
 | ![StockFlow](https://your-project-image.com/project4.gif)  | **StockFlow 💰**<br>🔍 Fetch Historical Stock Data predictions for decisions.<br>[![View Project](https://img.shields.io/badge/-View%20Project-%233FA9F5?style=for-the-badge&logo=analytics)](https://stockflow.streamlit.app/) |
-| ![NeuralTrend](https://your-project-image.com/project5.gif) | **NeuralTrend**<br>Predictive analytics for market trends using neural networks.<br>[![View Project](https://img.shields.io/badge/-View%20Project-%2300B7EB?style=for-the-badge&logo=tensorflow)](https://neuraltrend-dawood-moria.streamlit.app/) |
-| ![AIChatGenix](https://your-project-image.com/project6.gif) | **AIChatGenix**<br>Advanced conversational AI for dynamic user interactions.<br>[![View Project](https://img.shields.io/badge/-View%20Project-%23FF4500?style=for-the-badge&logo=chat)](https://aichatgenix-dawood-moria.streamlit.app/) |
+| ![AquaSentix](https://your-project-image.com/project5.gif) | **AquaSentix **<br>AI-powered sentiment analysis for feedback <br>[![View Project](https://img.shields.io/badge/-View%20Project-%2300B7EB?style=for-the-badge&logo=tensorflow)](https://aquasentix.streamlit.app/) |
+| ![Health Report Analyzer](https://your-project-image.com/project6.gif) | **Health Report Analyzer**<br>The Advanced Health Analytics platform is a pioneering tool designed to enhance comprehension of medical reports.<br>[![View Project](https://img.shields.io/badge/-View%20Project-%23FF4500?style=for-the-badge&logo=chat)](https://health-report-analyzer.streamlit.app/) |
 
 ---
 
 ## 🛠️ **Technologies & Tools**
 
-![Pandas](https://img.icons8.com/color/48/000000/pandas.png) ![NumPy](https://img.icons8.com/color/48/000000/numpy.png) ![Python](https://img.icons8.com/color/48/000000/python.png) ![TensorFlow](https://img.icons8.com/color/ howling48/000000/tensorflow.png) ![Docker](https://img.icons8.com/color/48/000000/docker.png) ![Git](https://img.icons8.com/color/48/000000/git.png) ![AWS](https://img.icons8.com/color/48/000000/amazon-web-services.png)
+<p align="center">
+  <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python"/>
+  <img src="https://img.icons8.com/color/48/000000/pandas.png" alt="Pandas"/>
+  <img src="https://img.icons8.com/color/48/000000/numpy.png" alt="NumPy"/>
+  <img src="https://img.icons8.com/color/48/000000/scikit-learn.png" alt="Scikit-learn"/>
+  <img src="https://img.icons8.com/color/48/000000/matplotlib.png" alt="Matplotlib"/>
+  <img src="https://img.icons8.com/color/48/000000/seaborn.png" alt="Seaborn"/>
+  <img src="https://img.icons8.com/color/48/000000/jupyter.png" alt="Jupyter"/>
+  <img src="https://img.icons8.com/color/48/000000/vs-code.png" alt="VS Code"/>
+  <img src="https://img.icons8.com/color/48/000000/tensorflow.png" alt="TensorFlow"/>
+  <img src="https://img.icons8.com/color/48/000000/keras.png" alt="Keras"/>
+  <img src="https://img.icons8.com/color/48/000000/pytorch.png" alt="PyTorch"/>
+  <img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker"/>
+  <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub"/>
+  <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git"/>
+  <img src="https://img.icons8.com/color/48/000000/mysql-logo.png" alt="MySQL"/>
+  <img src="https://img.icons8.com/color/48/000000/postgreesql.png" alt="PostgreSQL"/>
+  <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB"/>
+  <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS"/>
+  <img src="https://img.icons8.com/color/48/000000/google-cloud.png" alt="GCP"/>
+  <img src="https://img.icons8.com/color/48/000000/tableau-software.png" alt="Tableau"/>
+  <img src="https://img.icons8.com/color/48/000000/microsoft-power-bi.png" alt="Power BI"/>
+</p>
 
 ---
 
 ## 🌐 **Connect with Me**
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammadmoria/) 
-[![Portfolio](https://img.shields.io/badge/-Portfolio-%23000000?style=for-the-badge&logo=codepen&logoColor=white)](https://muhammadmoria.github.io/Portfolio-/) 
+[![Portfolio](https://img.shields.io/badge/-Portfolio-%23000000?style=for-the-badge&logo=codepen&logoColor=white)](https://muhammadmoria.github.io/Portfolio--/) 
 [![Email](https://img.shields.io/badge/-Email-%23D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muhammaddawoodmoria@gmail.com) 
 [![GitHub](https://img.shields.io/badge/-GitHub-%23181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/muhammadmoria)
 
