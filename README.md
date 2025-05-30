@@ -59,7 +59,6 @@ I'm Muhammad Dawood, a Visionary Architect of AI Innovations with a passion for 
   <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python"/>
   <img src="https://img.icons8.com/color/48/000000/pandas.png" alt="Pandas"/>
   <img src="https://img.icons8.com/color/48/000000/numpy.png" alt="NumPy"/>
-  <img src="https://img.icons8.com/color/48/000000/seaborn.png" alt="Seaborn"/>
   <img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker"/>
   <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub"/>
   <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git"/>
