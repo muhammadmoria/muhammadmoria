@@ -1,81 +1,279 @@
-<div class="hero-section" align="center">
-  <h1>🌌 Welcome to Muhammad Dawood's Tech Universe 🌌</h1>
-  <h3>
-    🚀 <span style="color: #FFD700;">AI Visionary</span> | 
-    <span style="color: #FF6F91;">Data Scientist</span> | 
-    <span style="color: #3FA9F5;">Innovator in Intelligent Systems</span>
-  </h3>
-  <p>Pioneering intelligent technologies to reshape the future.</p>
+<div align="center">
+
+<img src="assets/hero.svg" width="100%"/>
+
+<br/>
+
+<table border="0" cellborder="0" cellspacing="0">
+<tr>
+<td width="240" align="center" valign="middle">
+<img src="assets/avatar-frame.svg" width="200"/>
+</td>
+<td align="left" valign="middle">
+
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=00F5D4&center=false&vCenter=true&width=780&lines=Freelance+AI%2FML+Engineer+%E2%80%A2+Karachi%2C+Pakistan;Designing+NLP+%2B+Computer+Vision+%2B+LLM+Pipelines;From+Notebook+to+Production+%E2%80%94+Systems+That+Ship;Currently+Building%3A+Enterprise+ERP+%2B+Applied+AI+Tools" alt="Typing SVG" />
+</a>
+
+<br/><br/>
+
+<img src="https://komarev.com/ghpvc/?username=muhammadmoria&label=PROFILE%20VIEWS&color=302b63&style=for-the-badge&labelColor=0f0c29" alt="profile views"/>
+<a href="https://github.com/muhammadmoria?tab=followers"><img src="https://img.shields.io/github/followers/muhammadmoria?label=FOLLOWERS&style=for-the-badge&color=0f0c29&labelColor=302b63" alt="followers"/></a>
+<img src="https://img.shields.io/badge/STATUS-OPEN%20FOR%20WORK-FFD700?style=for-the-badge&logo=vercel&logoColor=black" alt="status"/>
+
+</td>
+</tr>
+</table>
+
 </div>
 
+<br/>
+
+<img src="assets/divider.svg" width="100%"/>
+
+<!-- ============================ ABOUT ============================ -->
+
+## 🧬 &nbsp;System Overview
 
 <div align="center">
-  <img src="https://your-animation-link.com/ai-globe.gif" alt="AI Globe Animation" width="90%" style="border-radius: 25px; border: 6px solid #FFD700; box-shadow: 0px 12px 35px rgba(255, 215, 0, 0.8);">
+<i>"Innovation is not just a goal — it's a mindset."</i>
 </div>
 
-![Futuristic Banner](https://your-banner-link.com/futuristic-banner.gif)
+<br/>
 
-> **🚀 AI Visionary | Data Scientist | Innovator in Intelligent Systems**  
-> *"Pioneering intelligent technologies to reshape the future."*
+<table width="100%">
+<tr>
+<td width="25%" valign="top" align="center">
 
-![Typing Animation](https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=3000&pause=500&color=00FFC6&center=true&vCenter=true&width=1000&height=120&lines=🔍+Crafting+AI-powered+innovations...;🚀+Building+a+smarter+tomorrow,+today!;✨+Join+me+on+a+journey+of+limitless+possibilities!)
+### 🎯 Mission
+Turn raw data and ambiguous problems into deployed, reliable AI systems — not notebooks that never ship.
 
-![AI Globe Animation](https://your-animation-link.com/ai-globe.gif)
+</td>
+<td width="25%" valign="top" align="center">
 
----
+### 🔮 Vision
+A practice built on applied NLP, CV, and LLM engineering that clients trust with production stakes.
 
-## 🌟 **About Me**
+</td>
+<td width="25%" valign="top" align="center">
 
-![Data Science](https://img.shields.io/badge/-Data%20Science-%2345A29E?style=for-the-badge&logo=databricks&logoColor=white) ![AI Engineering](https://img.shields.io/badge/-AI%20Engineering-%23FF6F91?style=for-the-badge&logo=deeplearning&logoColor=white) ![Innovator](https://img.shields.io/badge/-Innovator-%23FFD700?style=for-the-badge&logo=innovation&logoColor=black) ![Technologist](https://img.shields.io/badge/-Technologist-%233FA9F5?style=for-the-badge&logo=tech&logoColor=white)
+### ⚙️ Current Focus
+Enterprise Django systems (ERP UI/UX), LLM-powered document pipelines, and applied ML tooling.
 
-I'm Muhammad Dawood, a Visionary Architect of AI Innovations with a passion for creating smarter technologies for a better future. My expertise spans:
+</td>
+<td width="25%" valign="top" align="center">
 
-- 🚀 Machine Learning Solutions that redefine industries.
-- 🤖 NLP and Conversational AI for seamless human-machine interactions.
-- 🧠 Generative AI for groundbreaking creativity.
-- 🌐 Real-World Applications that impact lives globally.
+### 🧭 Engineering Principle
+Preserve what already works. Elevate everything else. Never break the logic to chase the aesthetic.
 
-> 🌟 *"Innovation is not just a goal; it's a mindset."*
+</td>
+</tr>
+</table>
 
----
+<img src="assets/divider.svg" width="100%"/>
 
-## 🚀 **Interactive Project Showcase**
+- 🔭 Currently building **client-facing AI/ML tools and enterprise-grade web systems**
+- 🤖 Focused on **NLP, Computer Vision, and Generative AI** with real-world deployment paths
+- 🌐 Delivering **full-stack + AI-integrated products** — from data pipeline to polished UI
+- 📄 Regularly engineering **document-generation pipelines** (PDF, DOCX) for professional/academic use
+- 📍 Based in **Karachi, Pakistan**
+- 💬 Ask me about **LLM app architecture, ML deployment, or Django system design**
 
-![Projects Animation](https://your-projects-animation-link.com/showcase.gif)
+<br/>
 
-| ![CineMancer](https://your-project-image.com/project1.gif) | **CineMancer**<br>Smart suggestions using embeddings and collaborative filtering.<br>[![View Project](https://img.shields.io/badge/-View%20Project-%2300FFC6?style=for-the-badge&logo=streamlit)](https://movie-recommendation-system-dawood-moria.streamlit.app/) |
-|-----------------------------------------------------------|-----------------------------------------------------------|
-| ![DefrauderAI](https://your-project-image.com/project2.gif) | **DefrauderAI**<br>Real-time fraud detection for secure banking.<br>[![View Project](https://img.shields.io/badge/-View%20Project-%23FF6F91?style=for-the-badge&logo=python)](https://ai-fraud-detector-for-banking-system-by-dawood-moria.streamlit.app/) |
-| ![AutoMLX](https://your-project-image.com/project3.gif)    | **AutoMLX 🧠**<br>Ultimate Platform for Machine Learning, Deep Learning.<br>[![View Project](https://img.shields.io/badge/-View%20Project-%23FFD700?style=for-the-badge&logo=jupyter)](https://data-science-app-by-dawood-moria.streamlit.app/) |
-| ![StockFlow](https://your-project-image.com/project4.gif)  | **StockFlow 💰**<br>🔍 Fetch Historical Stock Data predictions for decisions.<br>[![View Project](https://img.shields.io/badge/-View%20Project-%233FA9F5?style=for-the-badge&logo=analytics)](https://stockflow.streamlit.app/) |
-| ![AquaSentix](https://your-project-image.com/project5.gif) | **AquaSentix**<br>AI-powered sentiment analysis for feedback.<br>[![View Project](https://img.shields.io/badge/-View%20Project-%2300B7EB?style=for-the-badge&logo=tensorflow)](https://aquasentix.streamlit.app/) |
-| ![Health Report Analyzer](https://your-project-image.com/project6.gif) | **Health Report Analyzer**<br>The Advanced Health Analytics platform is a pioneering tool designed to enhance comprehension of medical reports.<br>[![View Project](https://img.shields.io/badge/-View%20Project-%23FF4500?style=for-the-badge&logo=chat)](https://health-report-analyzer.streamlit.app/) |
+<!-- ============================ TECH STACK ============================ -->
 
----
+## 🧠 &nbsp;Technology Modules
 
-## 🛠️ **Technologies & Tools**
+<div align="center">
 
-<p align="center">
-  <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python"/>
-  <img src="https://img.icons8.com/color/48/000000/pandas.png" alt="Pandas"/>
-  <img src="https://img.icons8.com/color/48/000000/numpy.png" alt="NumPy"/>
-  <img src="https://img.icons8.com/color/48/000000/docker.png" alt="Docker"/>
-  <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub"/>
-  <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git"/>
-  <img src="https://img.icons8.com/color/48/000000/mysql-logo.png" alt="MySQL"/>
-  <img src="https://img.icons8.com/color/48/000000/postgreesql.png" alt="PostgreSQL"/>
-  <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS"/>
-  <img src="https://img.icons8.com/color/48/000000/tableau-software.png" alt="Tableau"/>
-</p>
+**⟨ AI &nbsp;/&nbsp; MACHINE LEARNING CORE ⟩**
+<br/>
+<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,opencv&theme=dark" />
 
----
+<br/><br/>
 
-## 🌐 **Connect with Me**
+**⟨ BACKEND &nbsp;/&nbsp; APPLICATION LAYER ⟩**
+<br/>
+<img src="https://skillicons.dev/icons?i=django,flask,fastapi,nodejs&theme=dark" />
 
-[![Portfolio](https://img.shields.io/badge/-Portfolio-%23000000?style=for-the-badge&logo=codepen&logoColor=white)](https://muhammadmoria.github.io/Portfolio--/) 
-[![Email](https://img.shields.io/badge/-Email-%23D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muhammaddawoodmoria@gmail.com) 
-[![GitHub](https://img.shields.io/badge/-GitHub-%23181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/muhammadmoria)
+<br/><br/>
 
----
+**⟨ FRONTEND &nbsp;/&nbsp; INTERFACE LAYER ⟩**
+<br/>
+<img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind&theme=dark" />
 
-> 🚀 *Let's transform the future together. Dive into the world of cutting-edge technologies and join me in making groundbreaking innovations.* 🌟
+<br/><br/>
+
+**⟨ DATA &nbsp;/&nbsp; CLOUD &nbsp;/&nbsp; DEVOPS ⟩**
+<br/>
+<img src="https://skillicons.dev/icons?i=mysql,postgres,docker,aws,git,github,linux,bash&theme=dark" />
+
+</div>
+
+<img src="assets/divider.svg" width="100%"/>
+
+<!-- ============================ PROJECTS ============================ -->
+
+## 🚀 &nbsp;Project Showcase
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00F5D4,100:302b63&height=55&text=CineMancer&fontSize=20&fontColor=0f0c29&fontAlignY=60" width="100%"/>
+
+Smart movie recommendation engine using embeddings and collaborative filtering.
+
+`Python` `Streamlit` `Embeddings`
+
+[![Live Demo](https://img.shields.io/badge/-LIVE%20DEMO-00FFC6?style=for-the-badge&logo=streamlit&logoColor=black)](https://movie-recommendation-system-dawood-moria.streamlit.app/)
+
+</td>
+<td width="50%" valign="top">
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF6F91,100:302b63&height=55&text=DefrauderAI&fontSize=20&fontColor=0f0c29&fontAlignY=60" width="100%"/>
+
+Real-time fraud detection engine built for secure banking transaction systems.
+
+`Python` `ML Classification` `Security`
+
+[![Live Demo](https://img.shields.io/badge/-LIVE%20DEMO-FF6F91?style=for-the-badge&logo=python&logoColor=white)](https://ai-fraud-detector-for-banking-system-by-dawood-moria.streamlit.app/)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:FFD700,100:302b63&height=55&text=AutoMLX&fontSize=20&fontColor=0f0c29&fontAlignY=60" width="100%"/>
+
+End-to-end platform automating Machine Learning & Deep Learning workflows.
+
+`Python` `AutoML` `Jupyter`
+
+[![Live Demo](https://img.shields.io/badge/-LIVE%20DEMO-FFD700?style=for-the-badge&logo=jupyter&logoColor=black)](https://data-science-app-by-dawood-moria.streamlit.app/)
+
+</td>
+<td width="50%" valign="top">
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:3FA9F5,100:302b63&height=55&text=StockFlow&fontSize=20&fontColor=0f0c29&fontAlignY=60" width="100%"/>
+
+Historical stock data retrieval with predictive analytics for smarter decisions.
+
+`Python` `Time Series` `Analytics`
+
+[![Live Demo](https://img.shields.io/badge/-LIVE%20DEMO-3FA9F5?style=for-the-badge&logo=googleanalytics&logoColor=white)](https://stockflow.streamlit.app/)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00B7EB,100:302b63&height=55&text=AquaSentix&fontSize=20&fontColor=0f0c29&fontAlignY=60" width="100%"/>
+
+AI-powered sentiment analysis engine built for customer feedback at scale.
+
+`NLP` `TensorFlow` `Sentiment Analysis`
+
+[![Live Demo](https://img.shields.io/badge/-LIVE%20DEMO-00B7EB?style=for-the-badge&logo=tensorflow&logoColor=white)](https://aquasentix.streamlit.app/)
+
+</td>
+<td width="50%" valign="top">
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF4500,100:302b63&height=55&text=Health+Report+Analyzer&fontSize=18&fontColor=0f0c29&fontAlignY=60" width="100%"/>
+
+Analytics platform that translates dense medical reports into plain-language insight.
+
+`NLP` `Healthcare AI` `Document Parsing`
+
+[![Live Demo](https://img.shields.io/badge/-LIVE%20DEMO-FF4500?style=for-the-badge&logo=googlechat&logoColor=white)](https://health-report-analyzer.streamlit.app/)
+
+</td>
+</tr>
+</table>
+
+<img src="assets/divider.svg" width="100%"/>
+
+<!-- ============================ ANALYTICS ============================ -->
+
+## 📊 &nbsp;Analytics Center
+
+<div align="center">
+
+<img height="165em" src="https://github-readme-stats.vercel.app/api?username=muhammadmoria&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f0c29&title_color=00F5D4&icon_color=FFD700&text_color=c9d1d9"/>
+<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=muhammadmoria&layout=compact&theme=tokyonight&hide_border=true&bg_color=0f0c29&title_color=00F5D4&text_color=c9d1d9"/>
+
+<br/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=muhammadmoria&theme=tokyonight&hide_border=true&background=0f0c29&ring=00F5D4&fire=FFD700&currStreakLabel=00F5D4"/>
+
+<br/>
+
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=muhammadmoria&theme=tokyo-night&hide_border=true&bg_color=0f0c29&color=00F5D4&line=FFD700&point=FF6F91"/>
+
+</div>
+
+<details>
+<summary><b>🏆 &nbsp;Trophy Case (click to expand)</b></summary>
+<br/>
+<div align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=muhammadmoria&theme=tokyonight&no-frame=true&column=7&margin-w=15&margin-h=15"/>
+</div>
+</details>
+
+<details>
+<summary><b>🐍 &nbsp;Contribution Snake (optional — one-time setup)</b></summary>
+<br/>
+
+GitHub doesn't let a README run code on its own, but the animated contribution snake is generated by a scheduled **GitHub Action** in this same repository. Add this workflow once at `.github/workflows/snake.yml`:
+
+```yaml
+name: generate-snake
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [ main ]
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: muhammadmoria
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+Then embed it here:
+
+```md
+<img src="https://raw.githubusercontent.com/muhammadmoria/muhammadmoria/output/github-contribution-grid-snake-dark.svg" width="100%"/>
+```
+
+</details>
+
+<img src="assets/divider.svg" width="100%"/>
+
+<!-- ============================ CONNECT ============================ -->
+
+## 🌐 &nbsp;Connect
+
+<div align="center">
+
+[![Portfolio](https://img.shields.io/badge/-PORTFOLIO-000000?style=for-the-badge&logo=codepen&logoColor=white)](https://muhammadmoria.github.io/Portfolio--/)
+[![Email](https://img.shields.io/badge/-EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muhammaddawoodmoria@gmail.com)
+[![GitHub](https://img.shields.io/badge/-GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/muhammadmoria)
+
+</div>
+
+<img src="assets/footer.svg" width="100%"/>
