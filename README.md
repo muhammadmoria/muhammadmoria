@@ -1,14 +1,11 @@
 <div align="center">
 
 <img src="assets/hero.svg" width="100%"/>
-
 <br/>
 
 <table border="0" cellborder="0" cellspacing="0">
 <tr>
-<td width="240" align="center" valign="middle">
-<img src="assets/avatar-frame.svg" width="200"/>
-</td>
+
 <td align="left" valign="middle">
 
 <a href="https://git.io/typing-svg">
