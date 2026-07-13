@@ -1,0 +1,42 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="avClip">
+      <circle cx="120" cy="120" r="78"/>
+    </clipPath>
+    <radialGradient id="haloGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F5D4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#00F5D4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blurHalo" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <circle cx="120" cy="120" r="112" fill="url(#haloGrad)" filter="url(#blurHalo)"/>
+
+  <g stroke="#00F5D4" stroke-width="1.5" opacity="0.55" fill="none">
+    <circle cx="120" cy="120" r="104"/>
+  </g>
+
+  <g stroke="#FFD700" stroke-width="2" opacity="0.8" fill="none" stroke-dasharray="4 10">
+    <circle cx="120" cy="120" r="96">
+      <animateTransform attributeName="transform" type="rotate" from="0 120 120" to="360 120 120" dur="18s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g stroke="#00F5D4" stroke-width="1.5" opacity="0.7" fill="none" stroke-dasharray="2 6">
+    <circle cx="120" cy="120" r="88">
+      <animateTransform attributeName="transform" type="rotate" from="360 120 120" to="0 120 120" dur="13s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <circle cx="120" cy="120" r="80" fill="none" stroke="#0f0c29" stroke-width="4"/>
+  <image href="https://github.com/muhammadmoria.png" x="42" y="42" width="156" height="156" clip-path="url(#avClip)"/>
+  <circle cx="120" cy="120" r="78" fill="none" stroke="#00F5D4" stroke-width="2" opacity="0.9"/>
+
+  <g fill="#FFD700">
+    <circle cx="120" cy="120" r="4">
+      <animateMotion path="M 0,-104 A 104,104 0 1,1 -0.1,-104 A 104,104 0 1,1 0,-104" dur="9s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
