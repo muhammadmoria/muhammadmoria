@@ -1,0 +1,21 @@
+<svg viewBox="0 0 1000 10" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lineBase" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F5D4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00F5D4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00F5D4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sweep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFD700" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glowLine" x="-50%" y="-200%" width="200%" height="500%">
+      <feGaussianBlur stdDeviation="1.4"/>
+    </filter>
+  </defs>
+  <rect x="0" y="4" width="1000" height="1.5" fill="url(#lineBase)"/>
+  <rect x="-250" y="3" width="250" height="3" fill="url(#sweep)" filter="url(#glowLine)">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 1250,0; 1250,0" keyTimes="0;0.85;1" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
+</svg>
