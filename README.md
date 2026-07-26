@@ -80,35 +80,9 @@ Preserve what already works. Elevate everything else. Never break the logic to c
 
 <!-- ============================ TECH STACK ============================ -->
 
-## 🧠 &nbsp;Technology Modules
 
-<div align="center">
-
-**⟨ AI &nbsp;/&nbsp; MACHINE LEARNING CORE ⟩**
+<img src="technology-matrix.svg" width="100%" alt="Muhammad Dawood — AI/ML Systems Engineer"/>
 <br/>
-<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,opencv&theme=dark" alt="AI/ML core stack"/>
-
-<br/><br/>
-
-**⟨ BACKEND &nbsp;/&nbsp; APPLICATION LAYER ⟩**
-<br/>
-<img src="https://skillicons.dev/icons?i=django,flask,fastapi,nodejs&theme=dark" alt="backend stack"/>
-
-<br/><br/>
-
-**⟨ FRONTEND &nbsp;/&nbsp; INTERFACE LAYER ⟩**
-<br/>
-<img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind&theme=dark" alt="frontend stack"/>
-
-<br/><br/>
-
-**⟨ DATA &nbsp;/&nbsp; CLOUD &nbsp;/&nbsp; DEVOPS ⟩**
-<br/>
-<img src="https://skillicons.dev/icons?i=mysql,postgres,docker,aws,git,github,linux,bash&theme=dark" alt="data/cloud/devops stack"/>
-
-</div>
-
-<img src="assets/divider.svg" width="100%" alt="section divider"/>
 
 <!-- ============================ PROJECTS ============================ -->
 
