@@ -79,11 +79,11 @@ Preserve what already works. Elevate everything else. Never break the logic to c
 <br/>
 
 <!-- ============================ TECH STACK ============================ -->
-
+<img src="assets/divider.svg" width="100%" alt="section divider"/>
 
 <img src="technology-matrix.svg" width="100%" alt="Muhammad Dawood — AI/ML Systems Engineer"/>
 <br/>
-
+<img src="assets/divider.svg" width="100%" alt="section divider"/>
 <!-- ============================ PROJECTS ============================ -->
 
 ## 🚀 &nbsp;Project Showcase
@@ -164,7 +164,8 @@ Analytics platform that translates dense medical reports into plain-language ins
 </table>
 
 <img src="assets/divider.svg" width="100%" alt="section divider"/>
-
+<img src="aii.svg" width="100%" alt="section"/>
+<img src="assets/divider.svg" width="100%" alt="section divider"/>
 <!-- ============================ ANALYTICS ============================ -->
 
 ## 📊 &nbsp;Analytics Center
