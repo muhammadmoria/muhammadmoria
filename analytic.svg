@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" width="1200" height="180" font-family="'Segoe UI', 'SF Pro Display', system-ui, -apple-system, sans-serif">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="gCyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00F5FF"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="gPurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#FF00FF"/>
+    </linearGradient>
+    <linearGradient id="gEmerald" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00FFC6"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF8A00"/>
+      <stop offset="100%" stop-color="#FF00FF"/>
+    </linearGradient>
+    <linearGradient id="gGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050816" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#050816" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="gStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#00F5FF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="gTextStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00F5FF"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#FF00FF"/>
+    </linearGradient>
+    <radialGradient id="gBloom" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.15"/>
+      <stop offset="60%" stop-color="#7C3AED" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#050816" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Filters -->
+    <filter id="fGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="fGlowStrong" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="fBloom" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="fTextGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Patterns -->
+    <pattern id="pHex" x="0" y="0" width="30" height="26" patternUnits="userSpaceOnUse">
+      <path d="M15 0 L30 7.5 L30 17.5 L15 25 L0 17.5 L0 7.5 Z" fill="none" stroke="#3B82F6" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+    <pattern id="pDots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.8" fill="#00F5FF" opacity="0.2"/>
+    </pattern>
+    <pattern id="pScan" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#00F5FF" opacity="0.03"/>
+    </pattern>
+
+    <!-- Reusable Elements -->
+    <g id="hexNode">
+      <polygon points="0,-6 5.2,-3 5.2,3 0,6 -5.2,3 -5.2,-3" fill="#050816" stroke="#00F5FF" stroke-width="1" filter="url(#fGlow)"/>
+      <circle cx="0" cy="0" r="1.5" fill="#FFFFFF"/>
+    </g>
+    <g id="cross">
+      <path d="M-3,0 L3,0 M0,-3 L0,3" stroke="#00F5FF" stroke-width="1" opacity="0.7" filter="url(#fGlow)"/>
+    </g>
+    <g id="cube">
+      <path d="M0,-8 L6.9,-4 L6.9,4 L0,8 L-6.9,4 L-6.9,-4 Z" fill="none" stroke="#FF00FF" stroke-width="1" opacity="0.8"/>
+      <path d="M0,-8 L0,0 L-6.9,4 M0,0 L6.9,4 M0,0 L0,8" fill="none" stroke="#FF00FF" stroke-width="0.6" opacity="0.5"/>
+    </g>
+  </defs>
+
+  <!-- Background Volumetric Glow -->
+  <ellipse cx="600" cy="90" rx="550" ry="110" fill="url(#gBloom)"/>
+
+  <!-- Blueprint Grid & Dots -->
+  <rect x="0" y="0" width="1200" height="180" fill="url(#pScan)"/>
+  <rect x="50" y="15" width="350" height="150" fill="url(#pHex)" opacity="0.5"/>
+  <rect x="800" y="15" width="350" height="150" fill="url(#pHex)" opacity="0.5"/>
+  <rect x="50" y="15" width="350" height="150" fill="url(#pDots)" opacity="0.6"/>
+  <rect x="800" y="15" width="350" height="150" fill="url(#pDots)" opacity="0.6"/>
+
+  <!-- Main Center HUD Frame -->
+  <path d="M 380,20 L 820,20 L 840,40 L 840,140 L 820,160 L 380,160 L 360,140 L 360,40 Z" fill="url(#gGlass)" stroke="url(#gTextStroke)" stroke-width="1.5" opacity="0.9"/>
+  <path d="M 380,20 L 820,20 L 840,40 L 840,140 L 820,160 L 380,160 L 360,140 L 360,40 Z" fill="none" stroke="#00F5FF" stroke-width="0.5" opacity="0.5"/>
+  <path d="M 360,40 L 380,20 M 840,40 L 820,20 M 360,140 L 380,160 M 840,140 L 820,160" stroke="#00F5FF" stroke-width="2" fill="none" filter="url(#fGlow)"/>
+
+  <!-- Canvas HUD Corners -->
+  <path d="M 10,40 L 10,10 L 40,10" fill="none" stroke="#00F5FF" stroke-width="2" filter="url(#fGlow)"/>
+  <path d="M 1190,40 L 1190,10 L 1160,10" fill="none" stroke="#FF00FF" stroke-width="2" filter="url(#fGlow)"/>
+  <path d="M 10,140 L 10,170 L 40,170" fill="none" stroke="#00FFC6" stroke-width="2" filter="url(#fGlow)"/>
+  <path d="M 1190,140 L 1190,170 L 1160,170" fill="none" stroke="#7C3AED" stroke-width="2" filter="url(#fGlow)"/>
+
+  <!-- LEFT SIDE ANALYTICS -->
+  <g transform="translate(60, 30)">
+    <!-- Radar Circles -->
+    <circle cx="45" cy="60" r="40" fill="none" stroke="#3B82F6" stroke-width="1" opacity="0.3"/>
+    <circle cx="45" cy="60" r="25" fill="none" stroke="#00F5FF" stroke-width="1" opacity="0.4"/>
+    <circle cx="45" cy="60" r="10" fill="none" stroke="#00F5FF" stroke-width="1" opacity="0.6"/>
+    <path d="M 45,60 L 85,20 A 40,40 0 0,1 85,100 Z" fill="#00F5FF" opacity="0.1"/>
+    <line x1="5" y1="60" x2="85" y2="60" stroke="#3B82F6" stroke-width="0.5" opacity="0.5"/>
+    <line x1="45" y1="20" x2="45" y2="100" stroke="#3B82F6" stroke-width="0.5" opacity="0.5"/>
+    <circle cx="45" cy="60" r="3" fill="#00F5FF" filter="url(#fGlowStrong)"/>
+
+    <!-- Circuit Traces -->
+    <path d="M 90,60 L 110,60 L 110,30 L 130,30 L 130,50 L 150,50 L 150,80 L 170,80" fill="none" stroke="#FF00FF" stroke-width="1.5" opacity="0.8" filter="url(#fGlow)"/>
+    <circle cx="110" cy="30" r="2" fill="#FF00FF"/>
+    <circle cx="130" cy="50" r="2" fill="#FF00FF"/>
+    <path d="M 90,60 L 130,60 L 130,100 L 180,100" fill="none" stroke="#00F5FF" stroke-width="1" opacity="0.6"/>
+    <use href="#hexNode" x="180" y="100"/>
+
+    <!-- Bar Chart Panel -->
+    <rect x="190" y="30" width="110" height="80" rx="4" fill="#050816" opacity="0.6" stroke="#3B82F6" stroke-width="0.8"/>
+    <rect x="200" y="80" width="12" height="20" fill="url(#gCyan)" filter="url(#fGlow)"/>
+    <rect x="216" y="65" width="12" height="35" fill="url(#gCyan)" filter="url(#fGlow)"/>
+    <rect x="232" y="50" width="12" height="50" fill="url(#gPurple)" filter="url(#fGlow)"/>
+    <rect x="248" y="70" width="12" height="30" fill="url(#gEmerald)" filter="url(#fGlow)"/>
+    <rect x="264" y="55" width="12" height="45" fill="url(#gOrange)" filter="url(#fGlow)"/>
+    <rect x="280" y="40" width="12" height="60" fill="url(#gCyan)" filter="url(#fGlow)"/>
+    <line x1="195" y1="100" x2="295" y2="100" stroke="#FFFFFF" stroke-width="1" opacity="0.5"/>
+    
+    <!-- KPI Block -->
+    <rect x="190" y="115" width="110" height="25" rx="4" fill="#050816" opacity="0.6" stroke="#00FFC6" stroke-width="0.8"/>
+    <text x="200" y="132" fill="#FFFFFF" font-size="12" font-weight="800" letter-spacing="1">98.7%</text>
+    <rect x="240" y="124" width="50" height="8" rx="4" fill="#00FFC6" opacity="0.2"/>
+    <rect x="240" y="124" width="44" height="8" rx="4" fill="#00FFC6" filter="url(#fGlow)"/>
+    
+    <use href="#cross" x="40" y="115"/>
+    <use href="#cube" x="310" y="40"/>
+  </g>
+
+  <!-- RIGHT SIDE ANALYTICS -->
+  <g transform="translate(830, 30)">
+    <!-- Neural Network -->
+    <g transform="translate(20, 60)">
+      <line x1="0" y1="0" x2="30" y2="-20" stroke="#3B82F6" stroke-width="0.8" opacity="0.6"/>
+      <line x1="0" y1="0" x2="30" y2="20" stroke="#3B82F6" stroke-width="0.8" opacity="0.6"/>
+      <line x1="30" y1="-20" x2="60" y2="0" stroke="#7C3AED" stroke-width="0.8" opacity="0.6"/>
+      <line x1="30" y1="20" x2="60" y2="0" stroke="#7C3AED" stroke-width="0.8" opacity="0.6"/>
+      <line x1="60" y1="0" x2="90" y2="-30" stroke="#FF00FF" stroke-width="0.8" opacity="0.6"/>
+      <line x1="60" y1="0" x2="90" y2="30" stroke="#FF00FF" stroke-width="0.8" opacity="0.6"/>
+      <circle cx="0" cy="0" r="3" fill="#00F5FF" filter="url(#fGlow)"/>
+      <circle cx="30" cy="-20" r="3" fill="#3B82F6" filter="url(#fGlow)"/>
+      <circle cx="30" cy="20" r="3" fill="#3B82F6" filter="url(#fGlow)"/>
+      <circle cx="60" cy="0" r="3" fill="#7C3AED" filter="url(#fGlow)"/>
+      <circle cx="90" cy="-30" r="3" fill="#FF00FF" filter="url(#fGlow)"/>
+      <circle cx="90" cy="30" r="3" fill="#FF00FF" filter="url(#fGlow)"/>
+    </g>
+
+    <!-- Line Graph Panel -->
+    <rect x="130" y="20" width="120" height="60" rx="4" fill="#050816" opacity="0.6" stroke="#3B82F6" stroke-width="0.8"/>
+    <path d="M 140,70 L 160,55 L 180,65 L 200,40 L 220,50 L 240,30 L 240,75 L 140,75 Z" fill="url(#gPurple)" opacity="0.2"/>
+    <path d="M 140,70 L 160,55 L 180,65 L 200,40 L 220,50 L 240,30" fill="none" stroke="url(#gCyan)" stroke-width="2" filter="url(#fGlow)"/>
+    <circle cx="160" cy="55" r="2" fill="#00F5FF"/>
+    <circle cx="200" cy="40" r="2.5" fill="#FFFFFF" filter="url(#fGlow)"/>
+    <circle cx="240" cy="30" r="2" fill="#00F5FF"/>
+    <line x1="130" y1="80" x2="250" y2="80" stroke="#FFFFFF" stroke-width="1" opacity="0.5"/>
+
+    <!-- Progress Rings & Chip -->
+    <g transform="translate(190, 110)">
+      <circle cx="0" cy="0" r="20" fill="none" stroke="#7C3AED" stroke-width="3" opacity="0.3"/>
+      <circle cx="0" cy="0" r="20" fill="none" stroke="url(#gPurple)" stroke-width="3" stroke-dasharray="94 125" stroke-linecap="round" transform="rotate(-90)" filter="url(#fGlow)"/>
+      <circle cx="35" cy="0" r="15" fill="none" stroke="#00FFC6" stroke-width="3" opacity="0.3"/>
+      <circle cx="35" cy="0" r="15" fill="none" stroke="url(#gEmerald)" stroke-width="3" stroke-dasharray="60 94" stroke-linecap="round" transform="rotate(-90)" filter="url(#fGlow)"/>
+    </g>
+
+    <!-- AI Chip Icon -->
+    <g transform="translate(270, 60)">
+      <rect x="-15" y="-15" width="30" height="30" rx="2" fill="none" stroke="#FF8A00" stroke-width="1.5" filter="url(#fGlow)"/>
+      <rect x="-8" y="-8" width="16" height="16" fill="none" stroke="#FF8A00" stroke-width="0.8"/>
+      <path d="M -4,0 L 4,0 M 0,-4 L 0,4" stroke="#FF8A00" stroke-width="0.8"/>
+      <path d="M -15,-8 L -20,-8 M -15,0 L -20,0 M -15,8 L -20,8 M 15,-8 L 20,-8 M 15,0 L 20,0 M 15,8 L 20,8 M -8,-15 L -8,-20 M 0,-15 L 0,-20 M 8,-15 L 8,-20 M -8,15 L -8,20 M 0,15 L 0,20 M 8,15 L 8,20" stroke="#FF8A00" stroke-width="1"/>
+    </g>
+
+    <use href="#cross" x="110" y="130"/>
+    <use href="#cube" x="30" y="130"/>
+  </g>
+
+  <!-- Floating Particles & Stream Lines -->
+  <g filter="url(#fGlow)">
+    <path d="M 360,150 L 380,150 L 390,145 L 420,145" fill="none" stroke="#00F5FF" stroke-width="1" opacity="0.8"/>
+    <path d="M 840,30 L 820,30 L 810,35 L 780,35" fill="none" stroke="#FF00FF" stroke-width="1" opacity="0.8"/>
+    <circle cx="390" cy="145" r="1.5" fill="#00F5FF"/>
+    <circle cx="810" cy="35" r="1.5" fill="#FF00FF"/>
+    <circle cx="350" cy="50" r="1" fill="#FFFFFF"/>
+    <circle cx="850" cy="130" r="1" fill="#00FFC6"/>
+    <circle cx="400" cy="100" r="1.5" fill="#7C3AED"/>
+    <circle cx="800" cy="80" r="1.5" fill="#3B82F6"/>
+  </g>
+
+  <!-- MAIN TYPOGRAPHY -->
+  <g text-anchor="middle">
+    <!-- Glow Underlay -->
+    <text x="600" y="100" fill="#00F5FF" font-size="52" font-weight="900" letter-spacing="3" opacity="0.6" filter="url(#fBloom)">📊 Analytics Center</text>
+    
+    <!-- Electric Blue Highlight Outline -->
+    <text x="600" y="100" fill="none" stroke="#3B82F6" stroke-width="1.5" font-size="52" font-weight="900" letter-spacing="3" opacity="0.9">📊 Analytics Center</text>
+    
+    <!-- Main White Text -->
+    <text x="600" y="100" fill="#FFFFFF" font-size="52" font-weight="900" letter-spacing="3" filter="url(#fTextGlow)">📊 Analytics Center</text>
+    
+    <!-- Metallic Glass Reflection Sheen -->
+    <text x="600" y="100" fill="url(#gStroke)" font-size="52" font-weight="900" letter-spacing="3" opacity="0.3" style="mix-blend-mode: overlay;">📊 Analytics Center</text>
+  </g>
+
+  <!-- Title Underline Accent -->
+  <g transform="translate(600, 120)">
+    <line x1="-160" y1="0" x2="-30" y2="0" stroke="url(#gTextStroke)" stroke-width="1.5" opacity="0.8"/>
+    <line x1="30" y1="0" x2="160" y2="0" stroke="url(#gTextStroke)" stroke-width="1.5" opacity="0.8"/>
+    <rect x="-25" y="-4" width="50" height="8" rx="4" fill="none" stroke="#00F5FF" stroke-width="1" filter="url(#fGlow)"/>
+    <circle cx="0" cy="0" r="1.5" fill="#00F5FF" filter="url(#fGlow)"/>
+  </g>
+
+  <!-- Top & Bottom Light Streaks -->
+  <path d="M 400,15 L 800,15" fill="none" stroke="#00F5FF" stroke-width="0.5" opacity="0.5"/>
+  <path d="M 400,165 L 800,165" fill="none" stroke="#FF00FF" stroke-width="0.5" opacity="0.5"/>
+  
+</svg>
