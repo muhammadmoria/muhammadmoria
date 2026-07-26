@@ -1,0 +1,1113 @@
+<svg viewBox="0 0 1800 1200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="Arial, sans-serif">
+<defs>
+
+    <radialGradient id="bgGlowPurple" cx="18%" cy="16%" r="55%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgGlowCyan" cx="86%" cy="82%" r="55%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgGlowPink" cx="50%" cy="8%" r="40%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bgBase" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#0A0E1C"/>
+      <stop offset="45%" stop-color="#05070F"/>
+      <stop offset="100%" stop-color="#020308"/>
+    </linearGradient>
+
+    <linearGradient id="panelGlass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.10"/>
+      <stop offset="45%" stop-color="#8FA3C7" stop-opacity="0.035"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="panelBorder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.9"/>
+      <stop offset="35%" stop-color="#8B5CF6" stop-opacity="0.55"/>
+      <stop offset="70%" stop-color="#EC4899" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8ee9ff"/>
+      <stop offset="25%" stop-color="#4FC3F7"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="75%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+      <animate attributeName="x1" values="-40%;100%;-40%" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="60%;200%;60%" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="zoneHeaderGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="tickerFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#05070F" stop-opacity="1"/>
+      <stop offset="8%" stop-color="#05070F" stop-opacity="0"/>
+      <stop offset="92%" stop-color="#05070F" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#05070F" stop-opacity="1"/>
+    </linearGradient>
+
+
+    <filter id="glowSm" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowMd" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowLg" x="-160%" y="-160%" width="420%" height="420%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="14" result="b1"/>
+      <feColorMatrix in="b1" type="matrix"
+        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1.4 0" result="b2"/>
+      <feMerge><feMergeNode in="b2"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="fineShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <filter id="grainTexture" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="7" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+        values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.025 0"/>
+    </filter>
+    <filter id="dispWobble" x="-40%" y="-40%" width="180%" height="180%">
+      <feTurbulence type="turbulence" baseFrequency="0.012 0.03" numOctaves="1" seed="3" result="t"/>
+      <feDisplacementMap in="SourceGraphic" in2="t" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="panelGlassFilter" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="16" result="shadowBlur"/>
+      <feOffset in="shadowBlur" dx="0" dy="16" result="shadowOffset"/>
+      <feColorMatrix in="shadowOffset" type="matrix"
+        values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0" result="shadowFinal"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="specBlur"/>
+      <feSpecularLighting in="specBlur" surfaceScale="5" specularConstant="0.65" specularExponent="16"
+        lighting-color="#dff4ff" result="spec">
+        <fePointLight x="900" y="10" z="240"/>
+      </feSpecularLighting>
+      <feComposite in="spec" in2="SourceAlpha" operator="in" result="specClipped"/>
+      <feMerge>
+        <feMergeNode in="shadowFinal"/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="specClipped"/>
+      </feMerge>
+    </filter>
+    <filter id="panelSheen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="34" result="soft"/>
+      <feDiffuseLighting in="soft" surfaceScale="2.2" diffuseConstant="1.05" lighting-color="#bfe4ff" result="light">
+        <feDistantLight azimuth="235" elevation="55"/>
+      </feDiffuseLighting>
+      <feBlend in="SourceGraphic" in2="light" mode="screen"/>
+    </filter>
+    <filter id="chunkyGlow" x="-70%" y="-70%" width="240%" height="240%">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="1.4" result="dilated"/>
+      <feGaussianBlur in="dilated" stdDeviation="4" result="blurred"/>
+      <feColorMatrix in="blurred" type="matrix"
+        values="0 0 0 0 0.35  0 0 0 0 0.8  0 0 0 0 1  0 0 0 1 0" result="tinted"/>
+      <feMerge><feMergeNode in="tinted"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+
+    <path id="platformShape" d="M -28.0 -50.0 h 56.0 a22 22 0 0 1 22 22 v 56.0 a22 22 0 0 1 -22 22 h -56.0 a22 22 0 0 1 -22 -22 v -56.0 a22 22 0 0 1 22 -22 z"/>
+    <path id="platformHighlight" d="M -32.0 -40.0 a 34.0 34.0 0 0 1 64.0 6 q -36.0 -14 -68.0 -2 z" opacity="1"/>
+    <circle id="accRing" r="8" fill="none" stroke-width="3.4"/>
+    <polygon id="accTri" points="0,-9 8,7 -8,7"/>
+    <polygon id="accHex" points="9,0 4.5,7.8 -4.5,7.8 -9,0 -4.5,-7.8 4.5,-7.8"/>
+    <rect id="accDiamond" x="-7" y="-7" width="14" height="14" transform="rotate(45)"/>
+    <circle id="star" r="1.3" fill="#FFFFFF"/>
+    <circle id="dnode" r="3.2"/>
+    <polygon id="hexOutline" points="17,0 8.5,14.7 -8.5,14.7 -17,0 -8.5,-14.7 8.5,-14.7" fill="none" stroke-width="1.4"/>
+
+
+    <linearGradient id="iconGrad0" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4FC3F7" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#F5D742" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad0" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#4FC3F7"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#F97316" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#F97316" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F97316" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#4FC3F7" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F97316"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#4FC3F7" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5D742" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5D742"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad7" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#4FC3F7" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad7" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad8" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#0B3D26" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad8" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad9" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E5E7EB" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad9" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E5E7EB"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad10" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#0EA5A5" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad10" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad11" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#F5D742" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad11" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad12" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9CA3AF" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad12" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#9CA3AF"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad13" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4FC3F7" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad13" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#4FC3F7"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad14" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F97316" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad14" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F97316"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad15" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4FC3F7" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad15" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#4FC3F7"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad16" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5D742" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad16" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5D742"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad17" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4FC3F7" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad17" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#4FC3F7"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad18" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#4FC3F7" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad18" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad19" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#0EA5A5" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad19" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad20" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E5E7EB" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad20" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E5E7EB"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad21" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4FC3F7" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#F97316" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad21" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#4FC3F7"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad22" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4FC3F7" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad22" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#4FC3F7"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad23" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4FC3F7" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad23" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#4FC3F7"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad24" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad24" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad25" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F97316" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad25" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F97316"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad26" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E5E7EB" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad26" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E5E7EB"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad27" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5D742" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad27" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5D742"/>
+    </linearGradient>
+
+    <linearGradient id="iconGrad28" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="monoGrad28" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+</defs>
+<g id="background"><rect x="0" y="0" width="1800" height="1200" fill="url(#bgBase)"/>
+<rect x="0" y="0" width="1800" height="1200" fill="url(#bgGlowPurple)"/>
+<rect x="0" y="0" width="1800" height="1200" fill="url(#bgGlowCyan)"/>
+<rect x="0" y="0" width="1800" height="1200" fill="url(#bgGlowPink)"/>
+<rect x="0" y="0" width="1800" height="1200" fill="#8fa3c7" filter="url(#grainTexture)" opacity="0.5"/>
+<g><use href="#star" x="590" y="195" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.7s" begin="-0.27s" repeatCount="indefinite"/></use><use href="#star" x="963" y="444" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.33s" begin="-1.18s" repeatCount="indefinite"/></use><use href="#star" x="86" y="523" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.36s" begin="-0.21s" repeatCount="indefinite"/></use><use href="#star" x="767" y="979" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.48s" begin="-0.55s" repeatCount="indefinite"/></use><use href="#star" x="1124" y="1119" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.53s" begin="-1.4s" repeatCount="indefinite"/></use><use href="#star" x="1738" y="74" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="4.17s" begin="-1.21s" repeatCount="indefinite"/></use><use href="#star" x="274" y="157" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.91s" begin="-2.37s" repeatCount="indefinite"/></use><use href="#star" x="338" y="695" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.67s" begin="-1.37s" repeatCount="indefinite"/></use><use href="#star" x="984" y="93" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.34s" begin="-0.48s" repeatCount="indefinite"/></use><use href="#star" x="1218" y="516" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.92s" begin="-1.71s" repeatCount="indefinite"/></use><use href="#star" x="818" y="368" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="4.03s" begin="-2.82s" repeatCount="indefinite"/></use><use href="#star" x="450" y="686" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.41s" begin="-2.98s" repeatCount="indefinite"/></use><use href="#star" x="1304" y="354" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="4.45s" begin="-0.53s" repeatCount="indefinite"/></use><use href="#star" x="756" y="898" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.55s" begin="-1.25s" repeatCount="indefinite"/></use><use href="#star" x="89" y="795" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.96s" begin="-2.27s" repeatCount="indefinite"/></use><use href="#star" x="1561" y="384" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.8s" begin="-2.26s" repeatCount="indefinite"/></use><use href="#star" x="1041" y="549" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="4.13s" begin="-3.9s" repeatCount="indefinite"/></use><use href="#star" x="854" y="790" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.34s" begin="-1.64s" repeatCount="indefinite"/></use><use href="#star" x="1159" y="1172" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="4.09s" begin="-1.16s" repeatCount="indefinite"/></use><use href="#star" x="699" y="796" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.25s" begin="-1.04s" repeatCount="indefinite"/></use><use href="#star" x="316" y="156" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.34s" begin="-1.8s" repeatCount="indefinite"/></use><use href="#star" x="248" y="307" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.1s" begin="-2.7s" repeatCount="indefinite"/></use><use href="#star" x="162" y="541" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.46s" begin="-3.06s" repeatCount="indefinite"/></use><use href="#star" x="1462" y="1022" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.84s" begin="-1.18s" repeatCount="indefinite"/></use><use href="#star" x="651" y="1046" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="4.4s" begin="-0.66s" repeatCount="indefinite"/></use><use href="#star" x="330" y="289" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.74s" begin="-1.33s" repeatCount="indefinite"/></use><use href="#star" x="1057" y="325" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.21s" begin="-0.93s" repeatCount="indefinite"/></use><use href="#star" x="670" y="677" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="4.39s" begin="-3.03s" repeatCount="indefinite"/></use><use href="#star" x="927" y="736" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.76s" begin="-0.2s" repeatCount="indefinite"/></use><use href="#star" x="1603" y="925" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="4.21s" begin="-3.36s" repeatCount="indefinite"/></use><use href="#star" x="711" y="483" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.44s" begin="-1.55s" repeatCount="indefinite"/></use><use href="#star" x="130" y="98" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.68s" begin="-0.43s" repeatCount="indefinite"/></use><use href="#star" x="618" y="81" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.2s" begin="-0.33s" repeatCount="indefinite"/></use><use href="#star" x="199" y="442" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.26s" begin="-1.98s" repeatCount="indefinite"/></use><use href="#star" x="1101" y="192" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.78s" begin="-0.97s" repeatCount="indefinite"/></use><use href="#star" x="661" y="162" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="4.15s" begin="-4.12s" repeatCount="indefinite"/></use><use href="#star" x="840" y="581" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.4s" begin="-0.25s" repeatCount="indefinite"/></use><use href="#star" x="623" y="327" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="4.11s" begin="-0.66s" repeatCount="indefinite"/></use><use href="#star" x="61" y="1123" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.41s" begin="-0.5s" repeatCount="indefinite"/></use><use href="#star" x="976" y="51" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.41s" begin="-3.34s" repeatCount="indefinite"/></use><use href="#star" x="1539" y="828" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.8s" begin="-1.03s" repeatCount="indefinite"/></use><use href="#star" x="314" y="915" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.42s" begin="-2.66s" repeatCount="indefinite"/></use><use href="#star" x="600" y="279" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="4.07s" begin="-4.01s" repeatCount="indefinite"/></use><use href="#star" x="1521" y="955" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="4.08s" begin="-3.02s" repeatCount="indefinite"/></use><use href="#star" x="419" y="620" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.02s" begin="-0.09s" repeatCount="indefinite"/></use><use href="#star" x="69" y="344" opacity="0.5"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="2.8s" begin="-1.94s" repeatCount="indefinite"/></use></g>
+<g><use href="#dnode" x="1711" y="483" fill="#22D3EE" opacity="0.55"/></g>
+<g filter="url(#dispWobble)"><g opacity="0.22"><animateTransform attributeName="transform" type="rotate" values="0 280 75;360 280 75" dur="28.9s" begin="-8.99s" repeatCount="indefinite"/><use href="#hexOutline" x="280" y="75" stroke="#4FC3F7" transform="translate(280 75) scale(1.77)" transform-origin="280 75"/></g></g>
+<g><path d="M40,40 h120 v60 h80" fill="none" stroke="#22D3EE" stroke-width="1.6" opacity="0.32" stroke-dasharray="6 10" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="0;-160" dur="4.0s" repeatCount="indefinite"/></path><path d="M1760,40 h-120 v90 h-60" fill="none" stroke="#22D3EE" stroke-width="1.6" opacity="0.32" stroke-dasharray="6 10" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="0;-160" dur="4.6s" repeatCount="indefinite"/></path><path d="M40,1160 h100 v-70 h90" fill="none" stroke="#22D3EE" stroke-width="1.6" opacity="0.32" stroke-dasharray="6 10" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="0;-160" dur="5.2s" repeatCount="indefinite"/></path><path d="M1760,1160 h-140 v-50 h-70" fill="none" stroke="#22D3EE" stroke-width="1.6" opacity="0.32" stroke-dasharray="6 10" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="0;-160" dur="5.8s" repeatCount="indefinite"/></path></g>
+<g><text x="939" y="80" font-family="Consolas, monospace" font-size="13" fill="#4FC3F7" opacity="0">01001<animate attributeName="opacity" values="0;0.28;0" dur="6.32s" begin="-1.16s" repeatCount="indefinite"/></text></g></g>
+<g id="panel"><rect x="90" y="200" width="1620" height="940" rx="42" fill="url(#panelGlass)" stroke="url(#panelBorder)" stroke-width="2" filter="url(#panelGlassFilter)"/>
+<rect x="90" y="200" width="1620" height="220" rx="42" fill="#FFFFFF" opacity="0.05" filter="url(#panelSheen)"/></g>
+<g id="title"><text x="900" y="119" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="68" letter-spacing="10" fill="rgb(31,35,49)">TECHNOLOGY MATRIX</text>
+<text x="900" y="118" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="68" letter-spacing="10" fill="rgb(28,32,46)">TECHNOLOGY MATRIX</text>
+<text x="900" y="117" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="68" letter-spacing="10" fill="rgb(25,29,43)">TECHNOLOGY MATRIX</text>
+<text x="900" y="116" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="68" letter-spacing="10" fill="rgb(22,26,40)">TECHNOLOGY MATRIX</text>
+<text x="900" y="115" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="68" letter-spacing="10" fill="rgb(19,23,37)">TECHNOLOGY MATRIX</text>
+<text x="900" y="114" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="68" letter-spacing="10" fill="rgb(16,20,34)">TECHNOLOGY MATRIX</text>
+<text x="900" y="113" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="68" letter-spacing="10" fill="rgb(13,17,31)">TECHNOLOGY MATRIX</text>
+<text x="900" y="112" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="68" letter-spacing="10" fill="url(#titleGrad)" filter="url(#glowLg)">TECHNOLOGY MATRIX</text>
+<text x="900" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="5" fill="#9FB3D9" opacity="0.85" filter="url(#glowSm)">AI &#8226; Backend &#8226; Frontend &#8226; DevOps &#8226; Cloud</text></g>
+<g id="zoneAI">
+<rect x="110" y="220" width="770" height="430" rx="26" fill="#FFFFFF" opacity="0.025" stroke="#4FC3F7" stroke-opacity="0.28" stroke-width="1.3"/>
+<text x="144" y="266" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="30" fill="#4FC3F7" opacity="0.9" filter="url(#chunkyGlow)">01</text>
+<text x="202" y="262" font-family="Arial, sans-serif" font-weight="700" font-size="19" letter-spacing="1.5" fill="url(#zoneHeaderGrad)">AI / MACHINE LEARNING CORE</text>
+<line x1="144" y1="286" x2="846" y2="286" stroke="#4FC3F7" stroke-opacity="0.4" stroke-width="1.2"/>
+
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="231.8,392.0; 231.8,385.0; 231.8,392.0"
+        dur="4.49s" begin="-2.04s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#4FC3F7" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="7.81s" begin="-5.51s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad0)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accRing" transform="translate(32,-32)" stroke="#F5D742" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="3.28s" begin="-1.42s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad0)" filter="url(#glowSm)">Py</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">PYTHON</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="407.2,392.0; 407.2,385.0; 407.2,392.0"
+        dur="5.36s" begin="-1.04s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#EC4899" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="8.4s" begin="-7.76s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad1)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accTri" transform="translate(32,-32)" fill="#F97316" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="2.96s" begin="-1.96s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad1)" filter="url(#glowSm)">Pt</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">PYTORCH</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="582.8,392.0; 582.8,385.0; 582.8,392.0"
+        dur="4.5s" begin="-2.77s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#F59E0B" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="6.01s" begin="-4.28s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad2)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accHex" transform="translate(32,-32)" fill="#F97316" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="3.13s" begin="-1.2s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad2)" filter="url(#glowSm)">Tf</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">TENSORFLOW</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="758.2,392.0; 758.2,385.0; 758.2,392.0"
+        dur="6.16s" begin="-2.81s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#F97316" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="7.66s" begin="-5.63s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad3)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accDiamond" transform="translate(32,-32)" fill="#4FC3F7" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="2.66s" begin="-0.21s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad3)" filter="url(#glowSm)">Sk</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">SCIKIT-LEARN</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="231.8,544.0; 231.8,537.0; 231.8,544.0"
+        dur="6.12s" begin="-5.34s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#22C55E" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="7.7s" begin="-1.75s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad4)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accRing" transform="translate(32,-32)" stroke="#4FC3F7" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="2.8s" begin="-2.0s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad4)" filter="url(#glowSm)">Cv</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">OPENCV</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="407.2,544.0; 407.2,537.0; 407.2,544.0"
+        dur="5.96s" begin="-2.08s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#22C55E" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="7.87s" begin="-7.49s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad5)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accTri" transform="translate(32,-32)" fill="#8B5CF6" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="2.77s" begin="-2.13s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad5)" filter="url(#glowSm)">Lc</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">LANGCHAIN</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="582.8,544.0; 582.8,537.0; 582.8,544.0"
+        dur="5.62s" begin="-5.06s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#F5D742" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="5.55s" begin="-5.23s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad6)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accHex" transform="translate(32,-32)" fill="#EC4899" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="3.39s" begin="-0.19s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad6)" filter="url(#glowSm)">Hf</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">HUGGINGFACE</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="758.2,544.0; 758.2,537.0; 758.2,544.0"
+        dur="4.69s" begin="-2.73s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#8B5CF6" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="8.42s" begin="-5.54s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad7)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accDiamond" transform="translate(32,-32)" fill="#4FC3F7" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="2.98s" begin="-0.92s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad7)" filter="url(#glowSm)">Ox</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">ONNX</text>
+    </g>
+</g>
+<g id="zoneBackend">
+<rect x="920" y="220" width="770" height="430" rx="26" fill="#FFFFFF" opacity="0.025" stroke="#22C55E" stroke-opacity="0.28" stroke-width="1.3"/>
+<text x="954" y="266" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="30" fill="#22C55E" opacity="0.9" filter="url(#chunkyGlow)">02</text>
+<text x="1012" y="262" font-family="Arial, sans-serif" font-weight="700" font-size="19" letter-spacing="1.5" fill="url(#zoneHeaderGrad)">BACKEND / APPLICATION LAYER</text>
+<line x1="954" y1="286" x2="1656" y2="286" stroke="#22C55E" stroke-opacity="0.4" stroke-width="1.2"/>
+
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="1071.0,392.0; 1071.0,385.0; 1071.0,392.0"
+        dur="4.46s" begin="-3.64s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#22C55E" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="8.14s" begin="-3.13s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad8)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accRing" transform="translate(32,-32)" stroke="#0B3D26" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="2.73s" begin="-0.53s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad8)" filter="url(#glowSm)">Dj</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">DJANGO</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="1305.0,392.0; 1305.0,385.0; 1305.0,392.0"
+        dur="4.76s" begin="-2.19s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#E5E7EB" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="7.14s" begin="-0.72s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad9)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accTri" transform="translate(32,-32)" fill="#111827" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="3.0s" begin="-2.87s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad9)" filter="url(#glowSm)">Fl</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">FLASK</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="1539.0,392.0; 1539.0,385.0; 1539.0,392.0"
+        dur="6.07s" begin="-2.36s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#22D3EE" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="7.96s" begin="-1.97s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad10)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accHex" transform="translate(32,-32)" fill="#0EA5A5" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="2.98s" begin="-0.82s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad10)" filter="url(#glowSm)">Fa</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">FASTAPI</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="1071.0,544.0; 1071.0,537.0; 1071.0,544.0"
+        dur="5.85s" begin="-1.24s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#22C55E" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="8.33s" begin="-4.11s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad11)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accDiamond" transform="translate(32,-32)" fill="#F5D742" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="2.88s" begin="-1.78s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad11)" filter="url(#glowSm)">Nd</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">NODE.JS</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="1305.0,544.0; 1305.0,537.0; 1305.0,544.0"
+        dur="5.16s" begin="-3.44s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#9CA3AF" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="7.36s" begin="-5.15s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad12)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accRing" transform="translate(32,-32)" stroke="#111827" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="3.48s" begin="-2.62s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad12)" filter="url(#glowSm)">Ex</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">EXPRESS</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="1539.0,544.0; 1539.0,537.0; 1539.0,544.0"
+        dur="4.26s" begin="-3.7s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#4FC3F7" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="7.67s" begin="-0.14s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad13)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accTri" transform="translate(32,-32)" fill="#8B5CF6" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="3.06s" begin="-0.73s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="7" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="22" font-weight="800" fill="url(#monoGrad13)" filter="url(#glowSm)">Api</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">REST API</text>
+    </g>
+</g>
+<g id="zoneFrontend">
+<rect x="110" y="690" width="770" height="430" rx="26" fill="#FFFFFF" opacity="0.025" stroke="#EC4899" stroke-opacity="0.28" stroke-width="1.3"/>
+<text x="144" y="736" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="30" fill="#EC4899" opacity="0.9" filter="url(#chunkyGlow)">03</text>
+<text x="202" y="732" font-family="Arial, sans-serif" font-weight="700" font-size="19" letter-spacing="1.5" fill="url(#zoneHeaderGrad)">FRONTEND / UI</text>
+<line x1="144" y1="756" x2="846" y2="756" stroke="#EC4899" stroke-opacity="0.4" stroke-width="1.2"/>
+
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="231.8,862.0; 231.8,855.0; 231.8,862.0"
+        dur="4.68s" begin="-0.46s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#F97316" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="7.5s" begin="-1.83s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad14)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accRing" transform="translate(32,-32)" stroke="#EC4899" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="3.15s" begin="-0.48s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad14)" filter="url(#glowSm)">H5</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">HTML5</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="407.2,862.0; 407.2,855.0; 407.2,862.0"
+        dur="5.99s" begin="-1.18s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#4FC3F7" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="5.84s" begin="-0.66s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad15)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accTri" transform="translate(32,-32)" fill="#22D3EE" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="3.31s" begin="-2.84s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad15)" filter="url(#glowSm)">C3</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">CSS3</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="582.8,862.0; 582.8,855.0; 582.8,862.0"
+        dur="5.84s" begin="-3.5s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#F5D742" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="7.67s" begin="-0.07s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad16)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accHex" transform="translate(32,-32)" fill="#F59E0B" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="3.18s" begin="-2.35s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad16)" filter="url(#glowSm)">Js</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">JAVASCRIPT</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="758.2,862.0; 758.2,855.0; 758.2,862.0"
+        dur="4.68s" begin="-0.77s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#4FC3F7" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="6.7s" begin="-1.06s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad17)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accDiamond" transform="translate(32,-32)" fill="#22D3EE" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="2.89s" begin="-0.34s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad17)" filter="url(#glowSm)">Ts</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">TYPESCRIPT</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="319.5,1014.0; 319.5,1007.0; 319.5,1014.0"
+        dur="5.62s" begin="-1.03s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#22D3EE" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="5.8s" begin="-2.1s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad18)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accRing" transform="translate(32,-32)" stroke="#4FC3F7" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="3.32s" begin="-1.01s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad18)" filter="url(#glowSm)">Rx</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">REACT</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="495.0,1014.0; 495.0,1007.0; 495.0,1014.0"
+        dur="6.05s" begin="-1.09s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#22D3EE" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="7.85s" begin="-4.23s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad19)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accTri" transform="translate(32,-32)" fill="#0EA5A5" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="3.57s" begin="-1.98s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad19)" filter="url(#glowSm)">Tw</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">TAILWINDCSS</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="670.5,1014.0; 670.5,1007.0; 670.5,1014.0"
+        dur="5.23s" begin="-0.99s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#E5E7EB" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="8.36s" begin="-5.31s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad20)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accHex" transform="translate(32,-32)" fill="#111827" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="3.11s" begin="-2.92s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad20)" filter="url(#glowSm)">Nx</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">NEXT.JS</text>
+    </g>
+</g>
+<g id="zoneData">
+<rect x="920" y="690" width="770" height="430" rx="26" fill="#FFFFFF" opacity="0.025" stroke="#F59E0B" stroke-opacity="0.28" stroke-width="1.3"/>
+<text x="954" y="736" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="30" fill="#F59E0B" opacity="0.9" filter="url(#chunkyGlow)">04</text>
+<text x="1012" y="732" font-family="Arial, sans-serif" font-weight="700" font-size="19" letter-spacing="1.5" fill="url(#zoneHeaderGrad)">DATA • CLOUD • DEVOPS</text>
+<line x1="954" y1="756" x2="1656" y2="756" stroke="#F59E0B" stroke-opacity="0.4" stroke-width="1.2"/>
+
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="1041.8,862.0; 1041.8,855.0; 1041.8,862.0"
+        dur="4.37s" begin="-2.55s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#4FC3F7" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="6.69s" begin="-6.12s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad21)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accRing" transform="translate(32,-32)" stroke="#F97316" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="3.14s" begin="-1.64s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad21)" filter="url(#glowSm)">My</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">MYSQL</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="1217.2,862.0; 1217.2,855.0; 1217.2,862.0"
+        dur="5.22s" begin="-3.12s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#4FC3F7" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="6.41s" begin="-5.96s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad22)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accTri" transform="translate(32,-32)" fill="#8B5CF6" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="3.28s" begin="-2.5s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad22)" filter="url(#glowSm)">Pg</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">POSTGRESQL</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="1392.8,862.0; 1392.8,855.0; 1392.8,862.0"
+        dur="4.3s" begin="-0.37s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#4FC3F7" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="6.72s" begin="-0.72s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad23)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accHex" transform="translate(32,-32)" fill="#22D3EE" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="3.48s" begin="-0.13s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad23)" filter="url(#glowSm)">Dk</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">DOCKER</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="1568.2,862.0; 1568.2,855.0; 1568.2,862.0"
+        dur="6.12s" begin="-3.36s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#F59E0B" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="6.03s" begin="-5.82s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad24)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accDiamond" transform="translate(32,-32)" fill="#111827" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="2.9s" begin="-2.28s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="7" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="22" font-weight="800" fill="url(#monoGrad24)" filter="url(#glowSm)">Aws</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">AWS</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="1041.8,1014.0; 1041.8,1007.0; 1041.8,1014.0"
+        dur="6.0s" begin="-1.34s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#F97316" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="7.92s" begin="-2.38s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad25)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accRing" transform="translate(32,-32)" stroke="#EC4899" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="3.28s" begin="-1.15s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad25)" filter="url(#glowSm)">Gt</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">GIT</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="1217.2,1014.0; 1217.2,1007.0; 1217.2,1014.0"
+        dur="5.35s" begin="-3.09s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#E5E7EB" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="6.87s" begin="-4.43s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad26)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accTri" transform="translate(32,-32)" fill="#8B5CF6" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="2.97s" begin="-1.4s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad26)" filter="url(#glowSm)">Gh</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">GITHUB</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="1392.8,1014.0; 1392.8,1007.0; 1392.8,1014.0"
+        dur="4.29s" begin="-2.68s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#F5D742" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="7.19s" begin="-0.71s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad27)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accHex" transform="translate(32,-32)" fill="#111827" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="2.44s" begin="-2.29s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad27)" filter="url(#glowSm)">Lx</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">LINUX</text>
+    </g>
+
+    <g filter="url(#fineShadow)">
+      <animateTransform attributeName="transform" type="translate"
+        values="1568.2,1014.0; 1568.2,1007.0; 1568.2,1014.0"
+        dur="6.08s" begin="-1.44s" repeatCount="indefinite"/>
+      <g opacity="0.9">
+        <use href="#platformShape" fill="#22C55E" opacity="0.30" filter="url(#glowMd)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-2.5;2.5;-2.5" dur="7.03s" begin="-0.94s" repeatCount="indefinite"/>
+        <use href="#platformShape" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.22)" stroke-width="1.4"/>
+        <use href="#platformShape" fill="url(#iconGrad28)"/>
+        <use href="#platformHighlight" fill="#FFFFFF" opacity="0.16"/>
+      </g>
+      <use href="#accDiamond" transform="translate(32,-32)" fill="#111827" opacity="0.85">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="2.43s" begin="-0.37s" repeatCount="indefinite"/>
+      </use>
+      <text x="0" y="10" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="30" font-weight="800" fill="url(#monoGrad28)" filter="url(#glowSm)">Sh</text>
+      <text x="0" y="74" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="12.5" letter-spacing="0.6" fill="#B8C6E0" opacity="0.88">BASH</text>
+    </g>
+</g>
+<g id="ticker"><rect x="90" y="1126" width="1620" height="30" fill="none"/>
+<clipPath id="tickerClip"><rect x="92" y="1126" width="1616" height="26"/></clipPath>
+<g clip-path="url(#tickerClip)"><text x="92" y="1145" font-family="Consolas, monospace" font-size="14" letter-spacing="2" fill="#7FA8D9" opacity="0.55">PYTHON    ✦    PYTORCH    ✦    TENSORFLOW    ✦    SCIKIT-LEARN    ✦    OPENCV    ✦    LANGCHAIN    ✦    HUGGINGFACE    ✦    ONNX    ✦    DJANGO    ✦    FLASK    ✦    FASTAPI    ✦    NODE.JS    ✦    EXPRESS    ✦    REST API    ✦    HTML5    ✦    CSS3    ✦    JAVASCRIPT    ✦    TYPESCRIPT    ✦    REACT    ✦    TAILWINDCSS    ✦    NEXT.JS    ✦    MYSQL    ✦    POSTGRESQL    ✦    DOCKER    ✦    AWS    ✦    GIT    ✦    GITHUB    ✦    LINUX    ✦    BASH    ✦    PYTHON    ✦    PYTORCH    ✦    TENSORFLOW    ✦    SCIKIT-LEARN    ✦    OPENCV    ✦    LANGCHAIN    ✦    HUGGINGFACE    ✦    ONNX    ✦    DJANGO    ✦    FLASK    ✦    FASTAPI    ✦    NODE.JS    ✦    EXPRESS    ✦    REST API    ✦    HTML5    ✦    CSS3    ✦    JAVASCRIPT    ✦    TYPESCRIPT    ✦    REACT    ✦    TAILWINDCSS    ✦    NEXT.JS    ✦    MYSQL    ✦    POSTGRESQL    ✦    DOCKER    ✦    AWS    ✦    GIT    ✦    GITHUB    ✦    LINUX    ✦    BASH<animate attributeName="x" values="92;-1808" dur="42s" repeatCount="indefinite"/></text></g></g>
+<g id="hud"><g font-family="Consolas, monospace" font-size="13" letter-spacing="1"><circle cx="112" cy="199" r="4" fill="#22C55E"><animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/></circle><text x="126" y="204" fill="#8FE0B0" opacity="0.85">SYS.CORE // ONLINE</text></g>
+<g font-family="Consolas, monospace" font-size="13" letter-spacing="1" text-anchor="end"><text x="1688" y="204" fill="#9FB3D9" opacity="0.75">BUILD 2026.07 &#183; STACK v4</text></g>
+<path d="M104,248 L104,214 L138,214" fill="none" stroke="url(#panelBorder)" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+<path d="M1696,248 L1696,214 L1662,214" fill="none" stroke="url(#panelBorder)" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+<path d="M104,1092 L104,1126 L138,1126" fill="none" stroke="url(#panelBorder)" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+<path d="M1696,1092 L1696,1126 L1662,1126" fill="none" stroke="url(#panelBorder)" stroke-width="3" stroke-linecap="round" opacity="0.9"/></g>
+</svg>
