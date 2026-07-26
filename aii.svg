@@ -1,0 +1,537 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgRadial" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#0A0E1A" />
+      <stop offset="60%" stop-color="#05070F" />
+      <stop offset="100%" stop-color="#020308" />
+    </radialGradient>
+
+    <radialGradient id="fogCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="fogPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C4DFF" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#7C4DFF" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="fogGreen" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00FFA3" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#00FFA3" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Glassmorphism & Metallic Gradients -->
+    <linearGradient id="glassReflect" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.02" />
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.06" />
+    </linearGradient>
+
+    <linearGradient id="topGloss" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="metalBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="25%" stop-color="#ffffff" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="75%" stop-color="#ffffff" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="sweepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="beamFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0" />
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="1" />
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="bloom" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComponentTransfer in="blur" result="bloom">
+        <feFuncA type="linear" slope="1.5" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="bloom" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+
+    <filter id="heavyBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+
+    <!-- Clip Paths -->
+    <clipPath id="cardClip">
+      <rect x="0" y="0" width="200" height="450" rx="16" ry="16" />
+    </clipPath>
+    <clipPath id="sideClip">
+      <rect x="0" y="0" width="140" height="450" rx="16" ry="16" />
+    </clipPath>
+
+    <!-- Patterns -->
+    <pattern id="hexGrid" width="40" height="46" patternUnits="userSpaceOnUse">
+      <path d="M 20,0 L 40,11.5 L 40,34.5 L 20,46 L 0,34.5 L 0,11.5 Z" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+
+    <!-- Reusable Base Elements -->
+    <g id="cardBase">
+      <rect x="0" y="0" width="200" height="450" rx="16" fill="#05070F" opacity="0.7" filter="url(#softShadow)" />
+      <rect x="0" y="0" width="200" height="450" rx="16" fill="url(#glassReflect)" />
+      <rect x="0" y="0" width="200" height="450" rx="16" fill="none" stroke="url(#metalBorder)" stroke-width="1.5" />
+      <path d="M 16,0 L 184,0 A 16,16 0 0,1 200,16 L 200,80 L 0,80 L 0,16 A 16,16 0 0,1 16,0 Z" fill="url(#topGloss)" />
+      <g clip-path="url(#cardClip)">
+        <g transform="skewX(-15)">
+          <rect x="0" y="0" width="60" height="450" fill="url(#sweepGrad)" opacity="0.8">
+            <animateTransform attributeName="transform" type="translate" from="-100 0" to="400 0" dur="8s" repeatCount="indefinite" />
+          </rect>
+        </g>
+      </g>
+    </g>
+
+    <g id="sideBase">
+      <rect x="0" y="0" width="140" height="450" rx="16" fill="#05070F" opacity="0.7" filter="url(#softShadow)" />
+      <rect x="0" y="0" width="140" height="450" rx="16" fill="url(#glassReflect)" />
+      <rect x="0" y="0" width="140" height="450" rx="16" fill="none" stroke="url(#metalBorder)" stroke-width="1.5" />
+      <path d="M 16,0 L 124,0 A 16,16 0 0,1 140,16 L 140,80 L 0,80 L 0,16 A 16,16 0 0,1 16,0 Z" fill="url(#topGloss)" />
+      <g clip-path="url(#sideClip)">
+        <g transform="skewX(-15)">
+          <rect x="0" y="0" width="40" height="450" fill="url(#sweepGrad)" opacity="0.8">
+            <animateTransform attributeName="transform" type="translate" from="-80 0" to="280 0" dur="7s" repeatCount="indefinite" />
+          </rect>
+        </g>
+      </g>
+    </g>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="100%" height="100%" fill="#05070F" />
+  <rect width="100%" height="100%" fill="url(#bgRadial)" />
+  <rect width="100%" height="100%" fill="url(#hexGrid)" />
+
+  <!-- Ambient Fog & Nebula -->
+  <g filter="url(#heavyBlur)">
+    <circle cx="300" cy="250" r="400" fill="url(#fogCyan)" />
+    <circle cx="1500" cy="700" r="500" fill="url(#fogPurple)" />
+    <circle cx="900" cy="500" r="600" fill="url(#fogGreen)" />
+  </g>
+
+  <!-- Background Circuit Traces & Network -->
+  <g stroke="rgba(0, 229, 255, 0.05)" stroke-width="1" fill="none">
+    <path d="M 0,200 L 150,200 L 180,230 L 350,230 L 380,200 L 550,200 L 580,170 L 750,170 L 780,200 L 950,200 L 980,230 L 1150,230 L 1180,200 L 1350,200 L 1380,170 L 1550,170 L 1580,200 L 1800,200" />
+    <path d="M 0,800 L 200,800 L 230,830 L 400,830 L 430,800 L 600,800 L 630,830 L 800,830 L 830,800 L 1000,800 L 1030,830 L 1200,830 L 1230,800 L 1400,800 L 1430,830 L 1600,830 L 1630,800 L 1800,800" />
+    <circle cx="180" cy="230" r="3" fill="rgba(0, 229, 255, 0.15)" />
+    <circle cx="380" cy="200" r="3" fill="rgba(0, 229, 255, 0.15)" />
+    <circle cx="580" cy="170" r="3" fill="rgba(0, 229, 255, 0.15)" />
+    <circle cx="780" cy="200" r="3" fill="rgba(0, 229, 255, 0.15)" />
+    <circle cx="980" cy="230" r="3" fill="rgba(0, 229, 255, 0.15)" />
+    <circle cx="1180" cy="200" r="3" fill="rgba(0, 229, 255, 0.15)" />
+    <circle cx="1380" cy="170" r="3" fill="rgba(0, 229, 255, 0.15)" />
+    <circle cx="1580" cy="200" r="3" fill="rgba(0, 229, 255, 0.15)" />
+  </g>
+
+  <!-- HEADER -->
+  <g transform="translate(900, 100)" text-anchor="middle">
+    <text font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#FFFFFF" letter-spacing="6" filter="url(#glow)">AI SYSTEM ARCHITECTURE</text>
+    <text y="35" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#00E5FF" letter-spacing="3" opacity="0.9">Notebook → Development → Training → API → Deployment → Production</text>
+    <line x1="-300" y1="55" x2="300" y2="55" stroke="url(#metalBorder)" stroke-width="1" />
+    <circle cx="0" cy="55" r="3" fill="#00E5FF" filter="url(#bloom)" />
+  </g>
+
+  <!-- LEFT PANEL: SYSTEM INPUTS -->
+  <g transform="translate(30, 250)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="6s" repeatCount="indefinite" />
+      <use href="#sideBase" />
+      <rect x="1" y="1" width="138" height="448" rx="15" fill="none" stroke="#00FFA3" stroke-width="1" opacity="0.3" />
+      <text x="70" y="40" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#00FFA3" letter-spacing="1.5">SYSTEM INPUTS</text>
+      <rect x="40" y="50" width="60" height="2" fill="#00FFA3" filter="url(#glow)" />
+      
+      <g font-family="Inter, -apple-system, sans-serif" font-size="12" fill="#FFFFFF" opacity="0.85">
+        <g transform="translate(20, 90)">
+          <circle cx="0" cy="-4" r="3" fill="#00FFA3" filter="url(#glow)" />
+          <text x="15" y="0">Images</text>
+        </g>
+        <g transform="translate(20, 140)">
+          <circle cx="0" cy="-4" r="3" fill="#00FFA3" filter="url(#glow)" />
+          <text x="15" y="0">Text</text>
+        </g>
+        <g transform="translate(20, 190)">
+          <circle cx="0" cy="-4" r="3" fill="#00FFA3" filter="url(#glow)" />
+          <text x="15" y="0">Audio</text>
+        </g>
+        <g transform="translate(20, 240)">
+          <circle cx="0" cy="-4" r="3" fill="#00FFA3" filter="url(#glow)" />
+          <text x="15" y="0">Video</text>
+        </g>
+        <g transform="translate(20, 290)">
+          <circle cx="0" cy="-4" r="3" fill="#00FFA3" filter="url(#glow)" />
+          <text x="15" y="0">PDFs</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- CONNECTION: INPUTS -> USER -->
+  <g>
+    <path d="M 170,475 L 190,475" stroke="#00FFA3" stroke-width="2" fill="none" opacity="0.4" />
+    <path d="M 170,475 L 190,475" stroke="#00FFA3" stroke-width="4" fill="none" filter="url(#glow)" opacity="0.8" stroke-dasharray="4 4">
+      <animate attributeName="stroke-dashoffset" from="8" to="0" dur="0.5s" repeatCount="indefinite" />
+    </path>
+    <circle r="3" fill="#FFFFFF" filter="url(#bloom)">
+      <animateMotion dur="1.5s" repeatCount="indefinite" path="M 170,475 L 190,475" />
+    </circle>
+  </g>
+
+  <!-- CARD 1: USER -->
+  <g transform="translate(190, 250)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-8; 0,0" dur="7s" repeatCount="indefinite" />
+      <use href="#cardBase" />
+      <rect x="1" y="1" width="198" height="448" rx="15" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.3" />
+      <text x="100" y="40" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#00E5FF" letter-spacing="1.5">USER</text>
+      <rect x="60" y="50" width="80" height="2" fill="#00E5FF" filter="url(#glow)" />
+      
+      <g font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#FFFFFF" opacity="0.9">
+        <g transform="translate(30, 110)">
+          <circle cx="0" cy="-4" r="4" fill="none" stroke="#00E5FF" stroke-width="1.5" />
+          <text x="15" y="0">Browser</text>
+        </g>
+        <g transform="translate(30, 180)">
+          <rect x="-4" y="-8" width="8" height="16" rx="2" fill="none" stroke="#00E5FF" stroke-width="1.5" />
+          <text x="15" y="0">Mobile</text>
+        </g>
+        <g transform="translate(30, 250)">
+          <rect x="-5" y="-8" width="10" height="16" rx="1" fill="none" stroke="#00E5FF" stroke-width="1.5" />
+          <text x="15" y="0">Desktop</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- CONNECTION: USER -> FRONTEND -->
+  <g>
+    <path d="M 390,475 L 430,475" stroke="#00E5FF" stroke-width="2" fill="none" opacity="0.4" />
+    <path d="M 390,475 L 430,475" stroke="#00E5FF" stroke-width="4" fill="none" filter="url(#glow)" opacity="0.8" stroke-dasharray="4 4">
+      <animate attributeName="stroke-dashoffset" from="8" to="0" dur="0.5s" repeatCount="indefinite" />
+    </path>
+    <circle r="3" fill="#FFFFFF" filter="url(#bloom)">
+      <animateMotion dur="1.5s" begin="0.2s" repeatCount="indefinite" path="M 390,475 L 430,475" />
+    </circle>
+  </g>
+
+  <!-- CARD 2: FRONTEND -->
+  <g transform="translate(430, 250)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0" dur="6.5s" repeatCount="indefinite" />
+      <use href="#cardBase" />
+      <rect x="1" y="1" width="198" height="448" rx="15" fill="none" stroke="#00FFA3" stroke-width="1" opacity="0.3" />
+      <text x="100" y="40" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#00FFA3" letter-spacing="1.5">FRONTEND</text>
+      <rect x="60" y="50" width="80" height="2" fill="#00FFA3" filter="url(#glow)" />
+      
+      <g font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#FFFFFF" opacity="0.9">
+        <g transform="translate(30, 90)">
+          <circle cx="0" cy="-4" r="3" fill="#00FFA3" filter="url(#glow)" />
+          <text x="15" y="0">React</text>
+        </g>
+        <g transform="translate(30, 140)">
+          <circle cx="0" cy="-4" r="3" fill="#00FFA3" filter="url(#glow)" />
+          <text x="15" y="0">HTML5</text>
+        </g>
+        <g transform="translate(30, 190)">
+          <circle cx="0" cy="-4" r="3" fill="#00FFA3" filter="url(#glow)" />
+          <text x="15" y="0">CSS3</text>
+        </g>
+        <g transform="translate(30, 240)">
+          <circle cx="0" cy="-4" r="3" fill="#00FFA3" filter="url(#glow)" />
+          <text x="15" y="0">JavaScript</text>
+        </g>
+        <g transform="translate(30, 290)">
+          <circle cx="0" cy="-4" r="3" fill="#00FFA3" filter="url(#glow)" />
+          <text x="15" y="0">TailwindCSS</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- CONNECTION: FRONTEND -> BACKEND -->
+  <g>
+    <path d="M 630,475 L 670,475" stroke="#00FFA3" stroke-width="2" fill="none" opacity="0.4" />
+    <path d="M 630,475 L 670,475" stroke="#00FFA3" stroke-width="4" fill="none" filter="url(#glow)" opacity="0.8" stroke-dasharray="4 4">
+      <animate attributeName="stroke-dashoffset" from="8" to="0" dur="0.5s" repeatCount="indefinite" />
+    </path>
+    <circle r="3" fill="#FFFFFF" filter="url(#bloom)">
+      <animateMotion dur="1.5s" begin="0.4s" repeatCount="indefinite" path="M 630,475 L 670,475" />
+    </circle>
+  </g>
+
+  <!-- CARD 3: BACKEND API -->
+  <g transform="translate(670, 250)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-7; 0,0" dur="7.5s" repeatCount="indefinite" />
+      <use href="#cardBase" />
+      <rect x="1" y="1" width="198" height="448" rx="15" fill="none" stroke="#7C4DFF" stroke-width="1" opacity="0.3" />
+      <text x="100" y="40" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#7C4DFF" letter-spacing="1.5">BACKEND API</text>
+      <rect x="60" y="50" width="80" height="2" fill="#7C4DFF" filter="url(#glow)" />
+      
+      <g font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#FFFFFF" opacity="0.9">
+        <g transform="translate(30, 90)">
+          <circle cx="0" cy="-4" r="3" fill="#7C4DFF" filter="url(#glow)" />
+          <text x="15" y="0">FastAPI</text>
+        </g>
+        <g transform="translate(30, 140)">
+          <circle cx="0" cy="-4" r="3" fill="#7C4DFF" filter="url(#glow)" />
+          <text x="15" y="0">Flask</text>
+        </g>
+        <g transform="translate(30, 190)">
+          <circle cx="0" cy="-4" r="3" fill="#7C4DFF" filter="url(#glow)" />
+          <text x="15" y="0">Django</text>
+        </g>
+        <g transform="translate(30, 240)">
+          <circle cx="0" cy="-4" r="3" fill="#7C4DFF" filter="url(#glow)" />
+          <text x="15" y="0">REST API</text>
+        </g>
+        <g transform="translate(30, 290)">
+          <circle cx="0" cy="-4" r="3" fill="#7C4DFF" filter="url(#glow)" />
+          <text x="15" y="0">WebSockets</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- CONNECTION: BACKEND -> AI ENGINE -->
+  <g>
+    <path d="M 870,475 L 910,475" stroke="#7C4DFF" stroke-width="2" fill="none" opacity="0.4" />
+    <path d="M 870,475 L 910,475" stroke="#7C4DFF" stroke-width="4" fill="none" filter="url(#glow)" opacity="0.8" stroke-dasharray="4 4">
+      <animate attributeName="stroke-dashoffset" from="8" to="0" dur="0.5s" repeatCount="indefinite" />
+    </path>
+    <circle r="4" fill="#FFFFFF" filter="url(#bloom)">
+      <animateMotion dur="1.5s" begin="0.6s" repeatCount="indefinite" path="M 870,475 L 910,475" />
+    </circle>
+  </g>
+
+  <!-- CARD 4: AI ENGINE -->
+  <g transform="translate(910, 250)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-10; 0,0" dur="8s" repeatCount="indefinite" />
+      <use href="#cardBase" />
+      <rect x="1" y="1" width="198" height="448" rx="15" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.4" />
+      <text x="100" y="40" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#00E5FF" letter-spacing="1.5">AI ENGINE</text>
+      <rect x="60" y="50" width="80" height="2" fill="#00E5FF" filter="url(#glow)" />
+      
+      <g font-family="Inter, -apple-system, sans-serif" font-size="12" fill="#FFFFFF" opacity="0.9">
+        <g transform="translate(20, 80)">
+          <circle cx="0" cy="-4" r="2.5" fill="#00E5FF" filter="url(#glow)" />
+          <text x="12" y="0">Python</text>
+        </g>
+        <g transform="translate(20, 115)">
+          <circle cx="0" cy="-4" r="2.5" fill="#00E5FF" filter="url(#glow)" />
+          <text x="12" y="0">TensorFlow</text>
+        </g>
+        <g transform="translate(20, 150)">
+          <circle cx="0" cy="-4" r="2.5" fill="#00E5FF" filter="url(#glow)" />
+          <text x="12" y="0">PyTorch</text>
+        </g>
+        <g transform="translate(20, 185)">
+          <circle cx="0" cy="-4" r="2.5" fill="#00E5FF" filter="url(#glow)" />
+          <text x="12" y="0">Scikit-learn</text>
+        </g>
+        <g transform="translate(20, 220)">
+          <circle cx="0" cy="-4" r="2.5" fill="#00E5FF" filter="url(#glow)" />
+          <text x="12" y="0">OpenCV</text>
+        </g>
+        <g transform="translate(20, 255)">
+          <circle cx="0" cy="-4" r="2.5" fill="#00E5FF" filter="url(#glow)" />
+          <text x="12" y="0">LangChain</text>
+        </g>
+        <g transform="translate(20, 290)">
+          <circle cx="0" cy="-4" r="2.5" fill="#00E5FF" filter="url(#glow)" />
+          <text x="12" y="0">LLMs</text>
+        </g>
+        <g transform="translate(20, 325)">
+          <circle cx="0" cy="-4" r="2.5" fill="#00E5FF" filter="url(#glow)" />
+          <text x="12" y="0">Feature Eng.</text>
+        </g>
+        <g transform="translate(20, 360)">
+          <circle cx="0" cy="-4" r="2.5" fill="#00E5FF" filter="url(#glow)" />
+          <text x="12" y="0">Inference Eng.</text>
+        </g>
+        <g transform="translate(20, 395)">
+          <circle cx="0" cy="-4" r="2.5" fill="#00E5FF" filter="url(#glow)" />
+          <text x="12" y="0">Model Serving</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- CONNECTION: AI ENGINE -> DATABASE -->
+  <g>
+    <path d="M 1110,475 L 1150,475" stroke="#00E5FF" stroke-width="2" fill="none" opacity="0.4" />
+    <path d="M 1110,475 L 1150,475" stroke="#00E5FF" stroke-width="4" fill="none" filter="url(#glow)" opacity="0.8" stroke-dasharray="4 4">
+      <animate attributeName="stroke-dashoffset" from="8" to="0" dur="0.5s" repeatCount="indefinite" />
+    </path>
+    <circle r="4" fill="#FFFFFF" filter="url(#bloom)">
+      <animateMotion dur="1.5s" begin="0.8s" repeatCount="indefinite" path="M 1110,475 L 1150,475" />
+    </circle>
+  </g>
+
+  <!-- CARD 5: DATABASE -->
+  <g transform="translate(1150, 250)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0" dur="6.8s" repeatCount="indefinite" />
+      <use href="#cardBase" />
+      <rect x="1" y="1" width="198" height="448" rx="15" fill="none" stroke="#7C4DFF" stroke-width="1" opacity="0.3" />
+      <text x="100" y="40" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#7C4DFF" letter-spacing="1.5">DATABASE</text>
+      <rect x="60" y="50" width="80" height="2" fill="#7C4DFF" filter="url(#glow)" />
+      
+      <g font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#FFFFFF" opacity="0.9">
+        <g transform="translate(30, 110)">
+          <ellipse cx="0" cy="-4" rx="5" ry="2" fill="none" stroke="#7C4DFF" stroke-width="1.5" />
+          <text x="15" y="0">PostgreSQL</text>
+        </g>
+        <g transform="translate(30, 180)">
+          <ellipse cx="0" cy="-4" rx="5" ry="2" fill="none" stroke="#7C4DFF" stroke-width="1.5" />
+          <text x="15" y="0">MySQL</text>
+        </g>
+        <g transform="translate(30, 250)">
+          <ellipse cx="0" cy="-4" rx="5" ry="2" fill="none" stroke="#7C4DFF" stroke-width="1.5" />
+          <text x="15" y="0">Redis</text>
+        </g>
+        <g transform="translate(30, 320)">
+          <ellipse cx="0" cy="-4" rx="5" ry="2" fill="none" stroke="#7C4DFF" stroke-width="1.5" />
+          <text x="15" y="0">Vector DB</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- CONNECTION: DATABASE -> DEVOPS -->
+  <g>
+    <path d="M 1350,475 L 1390,475" stroke="#7C4DFF" stroke-width="2" fill="none" opacity="0.4" />
+    <path d="M 1350,475 L 1390,475" stroke="#7C4DFF" stroke-width="4" fill="none" filter="url(#glow)" opacity="0.8" stroke-dasharray="4 4">
+      <animate attributeName="stroke-dashoffset" from="8" to="0" dur="0.5s" repeatCount="indefinite" />
+    </path>
+    <circle r="3" fill="#FFFFFF" filter="url(#bloom)">
+      <animateMotion dur="1.5s" begin="1s" repeatCount="indefinite" path="M 1350,475 L 1390,475" />
+    </circle>
+  </g>
+
+  <!-- CARD 6: DEVOPS -->
+  <g transform="translate(1390, 250)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-9; 0,0" dur="7.2s" repeatCount="indefinite" />
+      <use href="#cardBase" />
+      <rect x="1" y="1" width="198" height="448" rx="15" fill="none" stroke="#FFC107" stroke-width="1" opacity="0.3" />
+      <text x="100" y="40" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#FFC107" letter-spacing="1.5">DEVOPS</text>
+      <rect x="60" y="50" width="80" height="2" fill="#FFC107" filter="url(#glow)" />
+      
+      <g font-family="Inter, -apple-system, sans-serif" font-size="13" fill="#FFFFFF" opacity="0.9">
+        <g transform="translate(30, 90)">
+          <circle cx="0" cy="-4" r="3" fill="#FFC107" filter="url(#glow)" />
+          <text x="15" y="0">Docker</text>
+        </g>
+        <g transform="translate(30, 140)">
+          <circle cx="0" cy="-4" r="3" fill="#FFC107" filter="url(#glow)" />
+          <text x="15" y="0">GitHub</text>
+        </g>
+        <g transform="translate(30, 190)">
+          <circle cx="0" cy="-4" r="3" fill="#FFC107" filter="url(#glow)" />
+          <text x="15" y="0">Linux</text>
+        </g>
+        <g transform="translate(30, 240)">
+          <circle cx="0" cy="-4" r="3" fill="#FFC107" filter="url(#glow)" />
+          <text x="15" y="0">CI/CD</text>
+        </g>
+        <g transform="translate(30, 290)">
+          <circle cx="0" cy="-4" r="3" fill="#FFC107" filter="url(#glow)" />
+          <text x="15" y="0">AWS</text>
+        </g>
+        <g transform="translate(30, 340)">
+          <circle cx="0" cy="-4" r="3" fill="#FFC107" filter="url(#glow)" />
+          <text x="15" y="0">Cloud Deploy</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- CONNECTION: DEVOPS -> OUTPUTS -->
+  <g>
+    <path d="M 1590,475 L 1630,475" stroke="#FFC107" stroke-width="2" fill="none" opacity="0.4" />
+    <path d="M 1590,475 L 1630,475" stroke="#FFC107" stroke-width="4" fill="none" filter="url(#glow)" opacity="0.8" stroke-dasharray="4 4">
+      <animate attributeName="stroke-dashoffset" from="8" to="0" dur="0.5s" repeatCount="indefinite" />
+    </path>
+    <circle r="3" fill="#FFFFFF" filter="url(#bloom)">
+      <animateMotion dur="1.5s" begin="1.2s" repeatCount="indefinite" path="M 1590,475 L 1630,475" />
+    </circle>
+  </g>
+
+  <!-- RIGHT PANEL: SYSTEM OUTPUTS -->
+  <g transform="translate(1630, 250)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="6.3s" repeatCount="indefinite" />
+      <use href="#sideBase" />
+      <rect x="1" y="1" width="138" height="448" rx="15" fill="none" stroke="#FFC107" stroke-width="1" opacity="0.3" />
+      <text x="70" y="40" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#FFC107" letter-spacing="1.5">OUTPUTS</text>
+      <rect x="40" y="50" width="60" height="2" fill="#FFC107" filter="url(#glow)" />
+      
+      <g font-family="Inter, -apple-system, sans-serif" font-size="12" fill="#FFFFFF" opacity="0.85">
+        <g transform="translate(20, 90)">
+          <circle cx="0" cy="-4" r="3" fill="#FFC107" filter="url(#glow)" />
+          <text x="15" y="0">Predictions</text>
+        </g>
+        <g transform="translate(20, 140)">
+          <circle cx="0" cy="-4" r="3" fill="#FFC107" filter="url(#glow)" />
+          <text x="15" y="0">Reports</text>
+        </g>
+        <g transform="translate(20, 190)">
+          <circle cx="0" cy="-4" r="3" fill="#FFC107" filter="url(#glow)" />
+          <text x="15" y="0">REST API</text>
+        </g>
+        <g transform="translate(20, 240)">
+          <circle cx="0" cy="-4" r="3" fill="#FFC107" filter="url(#glow)" />
+          <text x="15" y="0">Dashboards</text>
+        </g>
+        <g transform="translate(20, 290)">
+          <circle cx="0" cy="-4" r="3" fill="#FFC107" filter="url(#glow)" />
+          <text x="15" y="0">AI Insights</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Subtle Footer / System Status -->
+  <g transform="translate(900, 850)" text-anchor="middle" font-family="monospace" opacity="0.6">
+    <circle cx="-120" cy="0" r="4" fill="#00FFA3" filter="url(#bloom)">
+      <animate attributeName="opacity" values="1; 0.3; 1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="-100" y="4" fill="#00FFA3" font-size="12" letter-spacing="2">SYSTEM ONLINE</text>
+    <text x="20" y="4" fill="#FFFFFF" font-size="12" letter-spacing="2">| LATENCY: 12ms | NODES: 48 | THROUGHPUT: 10G/s |</text>
+    <circle cx="260" cy="0" r="4" fill="#00E5FF" filter="url(#bloom)">
+      <animate attributeName="opacity" values="1; 0.3; 1" dur="2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+</svg>
