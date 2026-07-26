@@ -3,35 +3,13 @@
 <img src="assets/hero.svg" width="100%" alt="Muhammad Dawood — AI/ML Systems Engineer"/>
 
 <br/>
+<img src="assets/divider.svg" width="100%" alt="section divider"/>
+<div align="center">
 
-<table border="0" cellborder="0" cellspacing="0">
-<tr>
-
-<td align="left" valign="middle">
-
-<a href="https://git.io/typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=00F5D4&center=false&vCenter=true&width=780&lines=Freelance+AI%2FML+Engineer+%E2%80%A2+Karachi%2C+Pakistan;Designing+NLP+%2B+Computer+Vision+%2B+LLM+Pipelines;From+Notebook+to+Production+%E2%80%94+Systems+That+Ship;Currently+Building%3A+Enterprise+ERP+%2B+Applied+AI+Tools" alt="Typing SVG"/>
-</a>
-
-<br/><br/>
-
-<img src="https://komarev.com/ghpvc/?username=muhammadmoria&label=PROFILE%20VIEWS&color=101A40&style=for-the-badge&labelColor=0B1026" alt="profile views"/>
-
-<a href="https://github.com/muhammadmoria?tab=followers">
-<img src="https://img.shields.io/github/followers/muhammadmoria?label=FOLLOWERS&style=for-the-badge&color=0B1026&labelColor=101A40" alt="followers"/>
-</a>
-
-<img src="https://img.shields.io/badge/STATUS-OPEN%20FOR%20WORK-FFD700?style=for-the-badge&logo=vercel&logoColor=black" alt="status"/>
-
-</td>
-
-</tr>
-</table>
-
+<img src="https://readme-typing-svg.demolab.com?font=Sora&weight=800&size=29&duration=3000&pause=1000&color=00F5D4&center=true&vCenter=true&width=980&height=65&lines=Engineering+Intelligent+Systems.;Artificial+Intelligence+%E2%80%A2+Machine+Learning+%E2%80%A2+Cybersecurity.;Research.+Build.+Deploy."
+/>
 </div>
-
-<br/>
-
+</div>
 <img src="assets/divider.svg" width="100%" alt="section divider"/>
 
 <img src="iop.svg" width="100%" alt="Engineer"/>
@@ -44,11 +22,10 @@
 <!-- PREMIUM PROJECT SHOWCASE -->
 <div align="center">
   
-<h1>🚀 Featured Projects</h1>
-<p><strong>Production-grade AI systems, enterprise software, and intelligent automation platforms.</strong></p>
+<img src="eatuer.svg" width="100%" alt="featuer"/>
+<img src="assets/divider.svg" width="100%" alt="section divider"/>
 
 </div>
-# 🚀 Project Showcase
 
 <table width="100%">
 
@@ -194,31 +171,37 @@ AI-powered medical report interpretation platform.
 
 <img src="assets/divider.svg" width="100%" alt="section divider"/>
 
-# 📊 Analytics Center
+
+<img src="analytic.svg" width="100%" alt="analytic"/>
 <div align="center">
-
-
 
 <img
 src="https://github-readme-streak-stats.herokuapp.com/?user=muhammadmoria&hide_border=true&background=050816&ring=00F5FF&fire=FF2D95&currStreakLabel=39FF14&sideLabels=E6EDF3&currStreakNum=FFFFFF&dates=AAB8C2&sideNums=FFFFFF"/>
-
+<img src="assets/divider.svg" width="100%" alt="section divider"/>
 <img width="100%"
 src="https://github-readme-activity-graph.vercel.app/graph?username=muhammadmoria&bg_color=050816&color=00F5FF&line=8A2BE2&point=39FF14&area=true&area_color=FF2D95&hide_border=true"/>
 
 </div>
 
----
-
-# 🌐 Connect
-
+<img src="assets/divider.svg" width="100%" alt="section divider"/>
+<img src="con.svg" width="100%" alt="connect"/>
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/-PORTFOLIO-000000?style=for-the-badge&logo=codepen&logoColor=white)](https://dawoodmoria.vercel.app)
+<img src="assets/divider.svg" width="100%" alt="section divider"/>
+<div align="center">
 
-[![Email](https://img.shields.io/badge/-EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muhammaddawoodmoria@gmail.com)
+<a href="https://dawoodmoria.vercel.app">
+<img height="38" src="https://custom-icon-badges.demolab.com/badge/Portfolio-00F5D4?style=for-the-badge&logo=browser&logoColor=081018&labelColor=081018"/>
+</a>
 
-[![GitHub](https://img.shields.io/badge/-GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/muhammadmoria)
+<a href="mailto:muhammaddawoodmoria@gmail.com">
+<img height="38" src="https://custom-icon-badges.demolab.com/badge/Email-8B5CF6?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=081018"/>
+</a>
 
+<a href="https://github.com/muhammadmoria">
+<img height="38" src="https://custom-icon-badges.demolab.com/badge/GitHub-0F172A?style=for-the-badge&logo=github&logoColor=00F5D4&labelColor=081018"/>
+</a>
+<img src="assets/divider.svg" width="100%" alt="section divider"/>
 </div>
 
 <img src="assets/footer.svg" width="100%" alt="Building the future — one intelligent system at a time"/>
