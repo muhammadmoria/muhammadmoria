@@ -1,0 +1,370 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Core Background Gradients -->
+    <radialGradient id="bgRadial" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#0A0E1A" />
+      <stop offset="60%" stop-color="#05070F" />
+      <stop offset="100%" stop-color="#020308" />
+    </radialGradient>
+
+    <radialGradient id="fogCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="fogPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C4DFF" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#7C4DFF" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="fogGreen" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00FFA3" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#00FFA3" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Core Reactor Gradients -->
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="15%" stop-color="#00E5FF" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#7C4DFF" stop-opacity="0.5" />
+      <stop offset="80%" stop-color="#05070F" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#05070F" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="coreBeam" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Advanced Glass & Metal Textures -->
+    <linearGradient id="glassReflect" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.02" />
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.08" />
+    </linearGradient>
+
+    <linearGradient id="topGloss" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3" />
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="metalBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="25%" stop-color="#00E5FF" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="75%" stop-color="#7C4DFF" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="sweepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Complex Filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="bloom" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComponentTransfer in="blur" result="bloom">
+        <feFuncA type="linear" slope="1.8" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="bloom" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
+
+    <filter id="heavyBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="80" />
+    </filter>
+
+    <filter id="noiseTexture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.03 0"/>
+    </filter>
+
+    <!-- Patterns -->
+    <pattern id="hexGrid" width="40" height="46" patternUnits="userSpaceOnUse">
+      <path d="M 20,0 L 40,11.5 L 40,34.5 L 20,46 L 0,34.5 L 0,11.5 Z" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+
+    <pattern id="circuitTraces" width="200" height="200" patternUnits="userSpaceOnUse">
+      <path d="M 0,50 L 40,50 L 50,40 L 90,40 L 100,50 L 140,50 L 150,60 L 200,60 M 50,0 L 50,40 M 150,100 L 150,140 L 160,150 L 200,150" fill="none" stroke="rgba(0, 229, 255, 0.05)" stroke-width="1"/>
+      <circle cx="50" cy="40" r="2" fill="rgba(0, 229, 255, 0.1)" />
+      <circle cx="150" cy="60" r="2" fill="rgba(0, 229, 255, 0.1)" />
+      <circle cx="150" cy="140" r="2" fill="rgba(0, 229, 255, 0.1)" />
+    </pattern>
+
+    <!-- Reusable Base Elements -->
+    <g id="cardBase">
+      <rect x="0" y="0" width="380" height="220" rx="16" fill="#05070F" opacity="0.8" filter="url(#softShadow)" />
+      <rect x="0" y="0" width="380" height="220" rx="16" fill="url(#glassReflect)" />
+      <rect x="0" y="0" width="380" height="220" rx="16" fill="url(#noiseTexture)" />
+      <rect x="0" y="0" width="380" height="220" rx="16" fill="none" stroke="url(#metalBorder)" stroke-width="1.5" />
+      <path d="M 16,0 L 364,0 A 16,16 0 0,1 380,16 L 380,50 L 0,50 L 0,16 A 16,16 0 0,1 16,0 Z" fill="url(#topGloss)" />
+      <!-- Holographic Corner Brackets -->
+      <path d="M 0,20 L 0,0 L 20,0 M 380,20 L 380,0 L 360,0 M 0,200 L 0,220 L 20,220 M 380,200 L 380,220 L 360,220" fill="none" stroke="#00E5FF" stroke-width="2" opacity="0.5" filter="url(#glow)"/>
+    </g>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="100%" height="100%" fill="#05070F" />
+  <rect width="100%" height="100%" fill="url(#bgRadial)" />
+  <rect width="100%" height="100%" fill="url(#hexGrid)" />
+  <rect width="100%" height="100%" fill="url(#circuitTraces)" opacity="0.5" />
+
+  <!-- Ambient Fog & Nebula -->
+  <g filter="url(#heavyBlur)">
+    <circle cx="300" cy="250" r="450" fill="url(#fogCyan)" />
+    <circle cx="1300" cy="750" r="550" fill="url(#fogPurple)" />
+    <circle cx="800" cy="500" r="700" fill="url(#fogGreen)" />
+  </g>
+
+  <!-- HEADER -->
+  <g transform="translate(800, 60)" text-anchor="middle">
+    <text font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#FFFFFF" letter-spacing="6" filter="url(#glow)">🧬 SYSTEM OVERVIEW</text>
+    <text y="30" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#00E5FF" letter-spacing="2" opacity="0.9">Engineering intelligence. Securing systems. Shipping production-ready AI.</text>
+    <path d="M -250,45 L 250,45" stroke="url(#metalBorder)" stroke-width="1" />
+    <circle cx="0" cy="45" r="3" fill="#00E5FF" filter="url(#bloom)" />
+  </g>
+
+  <!-- CONNECTION BEAMS (Curved Paths) -->
+  <g fill="none" stroke-width="1.5" opacity="0.3">
+    <!-- Core to TL -->
+    <path id="path1" d="M 650,420 C 550,380 450,320 350,260" stroke="#00E5FF" stroke-dasharray="6 6">
+      <animate attributeName="stroke-dashoffset" from="12" to="0" dur="0.5s" repeatCount="indefinite" />
+    </path>
+    <!-- Core to TC -->
+    <path id="path2" d="M 800,400 L 800,260" stroke="#7C4DFF" stroke-dasharray="6 6">
+      <animate attributeName="stroke-dashoffset" from="12" to="0" dur="0.5s" repeatCount="indefinite" />
+    </path>
+    <!-- Core to TR -->
+    <path id="path3" d="M 950,420 C 1050,380 1150,320 1250,260" stroke="#00FFA3" stroke-dasharray="6 6">
+      <animate attributeName="stroke-dashoffset" from="12" to="0" dur="0.5s" repeatCount="indefinite" />
+    </path>
+    <!-- Core to BL -->
+    <path id="path4" d="M 650,580 C 550,620 450,680 350,740" stroke="#FFC107" stroke-dasharray="6 6">
+      <animate attributeName="stroke-dashoffset" from="12" to="0" dur="0.5s" repeatCount="indefinite" />
+    </path>
+    <!-- Core to BC -->
+    <path id="path5" d="M 800,600 L 800,740" stroke="#00E5FF" stroke-dasharray="6 6">
+      <animate attributeName="stroke-dashoffset" from="12" to="0" dur="0.5s" repeatCount="indefinite" />
+    </path>
+    <!-- Core to BR -->
+    <path id="path6" d="M 950,580 C 1050,620 1150,680 1250,740" stroke="#7C4DFF" stroke-dasharray="6 6">
+      <animate attributeName="stroke-dashoffset" from="12" to="0" dur="0.5s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- FLOWING ENERGY PARTICLES (Data Packets) -->
+  <g>
+    <circle r="4" fill="#00E5FF" filter="url(#bloom)"><animateMotion dur="3s" repeatCount="indefinite" path="M 650,420 C 550,380 450,320 350,260" /></circle>
+    <circle r="3" fill="#FFFFFF" filter="url(#bloom)"><animateMotion dur="3s" begin="1.5s" repeatCount="indefinite" path="M 650,420 C 550,380 450,320 350,260" /></circle>
+    
+    <circle r="4" fill="#7C4DFF" filter="url(#bloom)"><animateMotion dur="3.5s" repeatCount="indefinite" path="M 800,400 L 800,260" /></circle>
+    <circle r="3" fill="#FFFFFF" filter="url(#bloom)"><animateMotion dur="3.5s" begin="1.7s" repeatCount="indefinite" path="M 800,400 L 800,260" /></circle>
+
+    <circle r="4" fill="#00FFA3" filter="url(#bloom)"><animateMotion dur="4s" repeatCount="indefinite" path="M 950,420 C 1050,380 1150,320 1250,260" /></circle>
+    <circle r="3" fill="#FFFFFF" filter="url(#bloom)"><animateMotion dur="4s" begin="2s" repeatCount="indefinite" path="M 950,420 C 1050,380 1150,320 1250,260" /></circle>
+
+    <circle r="4" fill="#FFC107" filter="url(#bloom)"><animateMotion dur="3.2s" repeatCount="indefinite" path="M 650,580 C 550,620 450,680 350,740" /></circle>
+    <circle r="3" fill="#FFFFFF" filter="url(#bloom)"><animateMotion dur="3.2s" begin="1.6s" repeatCount="indefinite" path="M 650,580 C 550,620 450,680 350,740" /></circle>
+
+    <circle r="4" fill="#00E5FF" filter="url(#bloom)"><animateMotion dur="2.8s" repeatCount="indefinite" path="M 800,600 L 800,740" /></circle>
+    <circle r="3" fill="#FFFFFF" filter="url(#bloom)"><animateMotion dur="2.8s" begin="1.4s" repeatCount="indefinite" path="M 800,600 L 800,740" /></circle>
+
+    <circle r="4" fill="#7C4DFF" filter="url(#bloom)"><animateMotion dur="3.8s" repeatCount="indefinite" path="M 950,580 C 1050,620 1150,680 1250,740" /></circle>
+    <circle r="3" fill="#FFFFFF" filter="url(#bloom)"><animateMotion dur="3.8s" begin="1.9s" repeatCount="indefinite" path="M 950,580 C 1050,620 1150,680 1250,740" /></circle>
+  </g>
+
+  <!-- CENTRAL AI REACTOR CORE -->
+  <g transform="translate(800, 500)">
+    <!-- Volumetric Upward Beam -->
+    <path d="M -40,0 L 0,-300 L 40,0 Z" fill="url(#coreBeam)" opacity="0.3" filter="url(#heavyBlur)">
+      <animate attributeName="opacity" values="0.3; 0.6; 0.3" dur="4s" repeatCount="indefinite" />
+    </path>
+
+    <!-- Outer Rotating Rings -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite" />
+      <circle cx="0" cy="0" r="140" fill="none" stroke="rgba(0, 229, 255, 0.2)" stroke-width="1" stroke-dasharray="10 10" />
+      <path d="M 0,-140 L 5,-135 L -5,-135 Z" fill="#00E5FF" filter="url(#glow)" />
+      <path d="M 0,140 L 5,135 L -5,135 Z" fill="#00E5FF" filter="url(#glow)" />
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="15s" repeatCount="indefinite" />
+      <circle cx="0" cy="0" r="120" fill="none" stroke="rgba(124, 77, 255, 0.3)" stroke-width="2" stroke-dasharray="20 15" />
+      <!-- Orbiting Nodes -->
+      <circle cx="120" cy="0" r="4" fill="#7C4DFF" filter="url(#bloom)" />
+      <circle cx="-120" cy="0" r="4" fill="#7C4DFF" filter="url(#bloom)" />
+    </g>
+
+    <!-- Core Glow & Background -->
+    <circle cx="0" cy="0" r="100" fill="url(#coreGlow)" filter="url(#bloom)">
+      <animate attributeName="r" values="100; 108; 100" dur="4s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Central Holographic Geometry (3D Cube Illusion) -->
+    <g filter="url(#glow)">
+      <polygon points="0,-60 51.96,-30 51.96,30 0,60 -51.96,30 -51.96,-30" fill="rgba(0, 229, 255, 0.05)" stroke="#00E5FF" stroke-width="2" />
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite" />
+        <polygon points="0,-40 34.64,-20 34.64,20 0,40 -34.64,20 -34.64,-20" fill="none" stroke="#7C4DFF" stroke-width="1.5" opacity="0.8" />
+        <line x1="0" y1="-40" x2="0" y2="40" stroke="#00FFA3" stroke-width="1" opacity="0.6" />
+        <line x1="-34.64" y1="-20" x2="34.64" y2="20" stroke="#00FFA3" stroke-width="1" opacity="0.6" />
+        <line x1="34.64" y1="-20" x2="-34.64" y2="20" stroke="#00FFA3" stroke-width="1" opacity="0.6" />
+      </g>
+      <circle cx="0" cy="0" r="12" fill="#FFFFFF" filter="url(#bloom)">
+        <animate attributeName="r" values="12; 16; 12" dur="2s" repeatCount="indefinite" />
+      </circle>
+    </g>
+
+    <!-- Core Text -->
+    <text y="180" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#FFFFFF" letter-spacing="3" filter="url(#glow)">AI SYSTEM CORE</text>
+    <text y="205" text-anchor="middle" font-family="monospace" font-size="11" fill="#00E5FF" letter-spacing="2">STATUS: ONLINE | LATENCY: 8ms</text>
+  </g>
+
+  <!-- CARD 1: MISSION & VISION (Top Left) -->
+  <g transform="translate(140, 140)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0" dur="6s" repeatCount="indefinite" />
+      <use href="#cardBase" />
+      <rect x="1" y="1" width="378" height="218" rx="15" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.4" />
+      <text x="25" y="35" font-family="monospace" font-size="14" font-weight="bold" fill="#00E5FF" letter-spacing="1.5">🎯 MISSION &amp; VISION</text>
+      <circle cx="360" cy="30" r="4" fill="#00E5FF" filter="url(#bloom)"><animate attributeName="opacity" values="1; 0.2; 1" dur="2s" repeatCount="indefinite" /></circle>
+      
+      <g font-family="Inter, -apple-system, sans-serif" font-size="12" fill="#FFFFFF" opacity="0.9">
+        <text x="25" y="75">Transform complex data into scalable,</text>
+        <text x="25" y="93">production-grade AI solutions that deliver.</text>
+        <text x="25" y="125">Build ecosystems where AI, Cybersecurity,</text>
+        <text x="25" y="143">and Full-Stack converge for enterprise.</text>
+        
+        <path d="M 25,165 L 355,165" stroke="rgba(255,255,255,0.1)" />
+        <text x="25" y="190" fill="#00FFA3" font-weight="bold" font-size="13">📍 Base: Karachi, Pakistan 🇵🇰</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- CARD 2: ENGINEERING DOMAINS (Top Center) -->
+  <g transform="translate(610, 140)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-8; 0,0" dur="7s" repeatCount="indefinite" />
+      <use href="#cardBase" />
+      <rect x="1" y="1" width="378" height="218" rx="15" fill="none" stroke="#7C4DFF" stroke-width="1" opacity="0.4" />
+      <text x="25" y="35" font-family="monospace" font-size="14" font-weight="bold" fill="#7C4DFF" letter-spacing="1.5">⚙️ CORE DOMAINS</text>
+      <circle cx="360" cy="30" r="4" fill="#7C4DFF" filter="url(#bloom)"><animate attributeName="opacity" values="1; 0.2; 1" dur="2.5s" repeatCount="indefinite" /></circle>
+      
+      <g font-family="Inter, -apple-system, sans-serif" font-size="11" fill="#FFFFFF" opacity="0.85">
+        <g transform="translate(25, 70)"><circle cx="0" cy="-3" r="2.5" fill="#7C4DFF" filter="url(#glow)" /><text x="12" y="0">Large Language Models (LLMs)</text></g>
+        <g transform="translate(25, 95)"><circle cx="0" cy="-3" r="2.5" fill="#7C4DFF" filter="url(#glow)" /><text x="12" y="0">Generative AI &amp; Autonomous Agents</text></g>
+        <g transform="translate(25, 120)"><circle cx="0" cy="-3" r="2.5" fill="#7C4DFF" filter="url(#glow)" /><text x="12" y="0">Retrieval-Augmented Generation (RAG)</text></g>
+        <g transform="translate(25, 145)"><circle cx="0" cy="-3" r="2.5" fill="#7C4DFF" filter="url(#glow)" /><text x="12" y="0">Offensive Security &amp; Ethical Hacking</text></g>
+        <g transform="translate(25, 170)"><circle cx="0" cy="-3" r="2.5" fill="#7C4DFF" filter="url(#glow)" /><text x="12" y="0">High-Performance Backend Systems</text></g>
+        <g transform="translate(25, 195)"><circle cx="0" cy="-3" r="2.5" fill="#7C4DFF" filter="url(#glow)" /><text x="12" y="0">Cloud-Native Deployments</text></g>
+      </g>
+    </g>
+  </g>
+
+  <!-- CARD 3: CURRENT FOCUS (Top Right) -->
+  <g transform="translate(1080, 140)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-7; 0,0" dur="6.5s" repeatCount="indefinite" />
+      <use href="#cardBase" />
+      <rect x="1" y="1" width="378" height="218" rx="15" fill="none" stroke="#00FFA3" stroke-width="1" opacity="0.4" />
+      <text x="25" y="35" font-family="monospace" font-size="14" font-weight="bold" fill="#00FFA3" letter-spacing="1.5">🚀 CURRENT FOCUS</text>
+      <circle cx="360" cy="30" r="4" fill="#00FFA3" filter="url(#bloom)"><animate attributeName="opacity" values="1; 0.2; 1" dur="3s" repeatCount="indefinite" /></circle>
+      
+      <g font-family="Inter, -apple-system, sans-serif" font-size="11" fill="#FFFFFF" opacity="0.85">
+        <g transform="translate(25, 70)"><rect x="-4" y="-7" width="8" height="8" fill="#00FFA3" opacity="0.5" /><text x="12" y="0">Enterprise Django Ecosystems</text></g>
+        <g transform="translate(25, 95)"><rect x="-4" y="-7" width="8" height="8" fill="#00FFA3" opacity="0.5" /><text x="12" y="0">Production-Ready LLM Applications</text></g>
+        <g transform="translate(25, 120)"><rect x="-4" y="-7" width="8" height="8" fill="#00FFA3" opacity="0.5" /><text x="12" y="0">Multi-Agent AI Systems</text></g>
+        <g transform="translate(25, 145)"><rect x="-4" y="-7" width="8" height="8" fill="#00FFA3" opacity="0.5" /><text x="12" y="0">Intelligent Document AI (OCR)</text></g>
+        <g transform="translate(25, 170)"><rect x="-4" y="-7" width="8" height="8" fill="#00FFA3" opacity="0.5" /><text x="12" y="0">AI Workflow Automation</text></g>
+        <g transform="translate(25, 195)"><rect x="-4" y="-7" width="8" height="8" fill="#00FFA3" opacity="0.5" /><text x="12" y="0">Secure-by-Design Architecture</text></g>
+      </g>
+    </g>
+  </g>
+
+  <!-- CARD 4: CURRENTLY LEARNING (Bottom Left) -->
+  <g transform="translate(140, 640)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="6.2s" repeatCount="indefinite" />
+      <use href="#cardBase" />
+      <rect x="1" y="1" width="378" height="218" rx="15" fill="none" stroke="#FFC107" stroke-width="1" opacity="0.4" />
+      <text x="25" y="35" font-family="monospace" font-size="14" font-weight="bold" fill="#FFC107" letter-spacing="1.5">🛡️ CURRENTLY LEARNING</text>
+      <circle cx="360" cy="30" r="4" fill="#FFC107" filter="url(#bloom)"><animate attributeName="opacity" values="1; 0.2; 1" dur="2.2s" repeatCount="indefinite" /></circle>
+      
+      <g font-family="Inter, -apple-system, sans-serif" font-size="11" fill="#FFFFFF" opacity="0.85">
+        <g transform="translate(25, 70)"><path d="M 0,-4 L 4,-1 L 4,3 L 0,6 L -4,3 L -4,-1 Z" fill="none" stroke="#FFC107" stroke-width="1" /><text x="12" y="0">Advanced Ethical Hacking</text></g>
+        <g transform="translate(25, 95)"><path d="M 0,-4 L 4,-1 L 4,3 L 0,6 L -4,3 L -4,-1 Z" fill="none" stroke="#FFC107" stroke-width="1" /><text x="12" y="0">Red Team Operations</text></g>
+        <g transform="translate(25, 120)"><path d="M 0,-4 L 4,-1 L 4,3 L 0,6 L -4,3 L -4,-1 Z" fill="none" stroke="#FFC107" stroke-width="1" /><text x="12" y="0">Active Directory Security</text></g>
+        <g transform="translate(25, 145)"><path d="M 0,-4 L 4,-1 L 4,3 L 0,6 L -4,3 L -4,-1 Z" fill="none" stroke="#FFC107" stroke-width="1" /><text x="12" y="0">Adversarial Machine Learning</text></g>
+        <g transform="translate(25, 170)"><path d="M 0,-4 L 4,-1 L 4,3 L 0,6 L -4,3 L -4,-1 Z" fill="none" stroke="#FFC107" stroke-width="1" /><text x="12" y="0">Model Context Protocol (MCP)</text></g>
+        <g transform="translate(25, 195)"><path d="M 0,-4 L 4,-1 L 4,3 L 0,6 L -4,3 L -4,-1 Z" fill="none" stroke="#FFC107" stroke-width="1" /><text x="12" y="0">Distributed AI Systems</text></g>
+      </g>
+    </g>
+  </g>
+
+  <!-- CARD 5: CURRENT RESEARCH (Bottom Center) -->
+  <g transform="translate(610, 640)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-7; 0,0" dur="7.2s" repeatCount="indefinite" />
+      <use href="#cardBase" />
+      <rect x="1" y="1" width="378" height="218" rx="15" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.4" />
+      <text x="25" y="35" font-family="monospace" font-size="14" font-weight="bold" fill="#00E5FF" letter-spacing="1.5">🔬 CURRENT RESEARCH</text>
+      <circle cx="360" cy="30" r="4" fill="#00E5FF" filter="url(#bloom)"><animate attributeName="opacity" values="1; 0.2; 1" dur="2.8s" repeatCount="indefinite" /></circle>
+      
+      <g font-family="Inter, -apple-system, sans-serif" font-size="11" fill="#FFFFFF" opacity="0.85">
+        <g transform="translate(25, 70)"><circle cx="0" cy="-3" r="3" fill="none" stroke="#00E5FF" stroke-width="1.5" /><text x="12" y="0">AI Agents &amp; Autonomous Workflows</text></g>
+        <g transform="translate(25, 95)"><circle cx="0" cy="-3" r="3" fill="none" stroke="#00E5FF" stroke-width="1.5" /><text x="12" y="0">Secure LLM Applications</text></g>
+        <g transform="translate(25, 120)"><circle cx="0" cy="-3" r="3" fill="none" stroke="#00E5FF" stroke-width="1.5" /><text x="12" y="0">Vision-Language Models</text></g>
+        <g transform="translate(25, 145)"><circle cx="0" cy="-3" r="3" fill="none" stroke="#00E5FF" stroke-width="1.5" /><text x="12" y="0">Enterprise RAG Infrastructure</text></g>
+        <g transform="translate(25, 170)"><circle cx="0" cy="-3" r="3" fill="none" stroke="#00E5FF" stroke-width="1.5" /><text x="12" y="0">AI-Assisted Cybersecurity</text></g>
+        <g transform="translate(25, 195)"><circle cx="0" cy="-3" r="3" fill="none" stroke="#00E5FF" stroke-width="1.5" /><text x="12" y="0">Edge AI Deployment</text></g>
+      </g>
+    </g>
+  </g>
+
+  <!-- CARD 6: LET'S TALK ABOUT (Bottom Right) -->
+  <g transform="translate(1080, 640)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0" dur="6.8s" repeatCount="indefinite" />
+      <use href="#cardBase" />
+      <rect x="1" y="1" width="378" height="218" rx="15" fill="none" stroke="#7C4DFF" stroke-width="1" opacity="0.4" />
+      <text x="25" y="35" font-family="monospace" font-size="14" font-weight="bold" fill="#7C4DFF" letter-spacing="1.5">💬 LET'S TALK ABOUT</text>
+      <circle cx="360" cy="30" r="4" fill="#7C4DFF" filter="url(#bloom)"><animate attributeName="opacity" values="1; 0.2; 1" dur="2.6s" repeatCount="indefinite" /></circle>
+      
+      <g font-family="Inter, -apple-system, sans-serif" font-size="11" fill="#FFFFFF" opacity="0.85">
+        <g transform="translate(25, 70)"><path d="M -4,-4 L 4,-4 L 4,4 L 0,6 L -4,4 Z" fill="#7C4DFF" opacity="0.5" /><text x="12" y="0">Enterprise AI Architecture</text></g>
+        <g transform="translate(25, 95)"><path d="M -4,-4 L 4,-4 L 4,4 L 0,6 L -4,4 Z" fill="#7C4DFF" opacity="0.5" /><text x="12" y="0">Django System Design</text></g>
+        <g transform="translate(25, 120)"><path d="M -4,-4 L 4,-4 L 4,4 L 0,6 L -4,4 Z" fill="#7C4DFF" opacity="0.5" /><text x="12" y="0">LLM Applications &amp; RAG Pipelines</text></g>
+        <g transform="translate(25, 145)"><path d="M -4,-4 L 4,-4 L 4,4 L 0,6 L -4,4 Z" fill="#7C4DFF" opacity="0.5" /><text x="12" y="0">Machine Learning Engineering</text></g>
+        <g transform="translate(25, 170)"><path d="M -4,-4 L 4,-4 L 4,4 L 0,6 L -4,4 Z" fill="#7C4DFF" opacity="0.5" /><text x="12" y="0">MLOps &amp; API Design</text></g>
+        <g transform="translate(25, 195)"><path d="M -4,-4 L 4,-4 L 4,4 L 0,6 L -4,4 Z" fill="#7C4DFF" opacity="0.5" /><text x="12" y="0">Ethical Hacking &amp; Sec Engineering</text></g>
+      </g>
+    </g>
+  </g>
+
+  <!-- FOOTER STATUS BAR -->
+  <g transform="translate(800, 920)" text-anchor="middle" font-family="monospace">
+    <rect x="-500" y="-20" width="1000" height="40" rx="20" fill="#05070F" opacity="0.8" stroke="url(#metalBorder)" stroke-width="1" />
+    <text y="5" font-size="12" fill="#FFFFFF" letter-spacing="2" opacity="0.9">
+      ⚙️ ENGINEERING PHILOSOPHY: Preserve architecture · Improve performance · Reliability &gt; Complexity · Security is a requirement
+    </text>
+  </g>
+
+</svg>

@@ -1,0 +1,605 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 2400" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Core Gradients -->
+    <radialGradient id="bgRadial" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#0A0E1A" />
+      <stop offset="50%" stop-color="#05070F" />
+      <stop offset="100%" stop-color="#020308" />
+    </radialGradient>
+
+    <radialGradient id="fogCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="fogPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C4DFF" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#7C4DFF" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="fogGreen" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00FFA3" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#00FFA3" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Glassmorphism & Metallic -->
+    <linearGradient id="glassReflect" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.02" />
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.06" />
+    </linearGradient>
+
+    <linearGradient id="topGloss" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="metalBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="25%" stop-color="#00E5FF" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="75%" stop-color="#7C4DFF" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="sweepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="barGradCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#00E5FF" />
+    </linearGradient>
+
+    <linearGradient id="barGradPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C4DFF" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#7C4DFF" />
+    </linearGradient>
+
+    <linearGradient id="barGradGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FFA3" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#00FFA3" />
+    </linearGradient>
+
+    <linearGradient id="barGradOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFC107" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#FFC107" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="bloom" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComponentTransfer in="blur" result="bloom">
+        <feFuncA type="linear" slope="1.5" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="bloom" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+
+    <filter id="heavyBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+
+    <!-- Patterns -->
+    <pattern id="hexGrid" width="40" height="46" patternUnits="userSpaceOnUse">
+      <path d="M 20,0 L 40,11.5 L 40,34.5 L 20,46 L 0,34.5 L 0,11.5 Z" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+
+    <!-- Reusable Elements -->
+    <g id="cardBase">
+      <rect x="0" y="0" width="100%" height="100%" rx="16" fill="#05070F" opacity="0.7" filter="url(#softShadow)" />
+      <rect x="0" y="0" width="100%" height="100%" rx="16" fill="url(#glassReflect)" />
+      <rect x="0" y="0" width="100%" height="100%" rx="16" fill="none" stroke="url(#metalBorder)" stroke-width="1.5" />
+      <path d="M 16,0 L 984,0 A 16,16 0 0,1 1000,16 L 1000,50 L 0,50 L 0,16 A 16,16 0 0,1 16,0 Z" fill="url(#topGloss)" />
+      <!-- Holographic Corner Brackets -->
+      <path d="M 0,20 L 0,0 L 20,0 M 980,20 L 1000,0 L 980,0 M 0,230 L 0,250 L 20,250 M 980,230 L 1000,250 L 980,250" fill="none" stroke="#00E5FF" stroke-width="2" opacity="0.4" filter="url(#glow)"/>
+    </g>
+
+    <g id="chipBase">
+      <rect x="0" y="0" width="120" height="28" rx="14" fill="#05070F" opacity="0.8" />
+      <rect x="0" y="0" width="120" height="28" rx="14" fill="url(#glassReflect)" />
+      <rect x="0" y="0" width="120" height="28" rx="14" fill="none" stroke="url(#metalBorder)" stroke-width="1" />
+    </g>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="1400" height="2400" fill="#05070F" />
+  <rect width="1400" height="2400" fill="url(#bgRadial)" />
+  <rect width="1400" height="2400" fill="url(#hexGrid)" />
+
+  <!-- Ambient Fog -->
+  <g filter="url(#heavyBlur)">
+    <circle cx="300" cy="400" r="500" fill="url(#fogCyan)" />
+    <circle cx="1100" cy="1200" r="600" fill="url(#fogPurple)" />
+    <circle cx="700" cy="2000" r="500" fill="url(#fogGreen)" />
+  </g>
+
+  <!-- ========================================== -->
+  <!-- HEADER & HERO SECTION                      -->
+  <!-- ========================================== -->
+  <g transform="translate(700, 120)" text-anchor="middle">
+    <text font-family="Inter, -apple-system, sans-serif" font-size="48" font-weight="800" fill="#FFFFFF" letter-spacing="4" filter="url(#glow)">MUHAMMAD DAWOOD MORIA</text>
+    <text y="40" font-family="monospace" font-size="16" font-weight="500" fill="#00E5FF" letter-spacing="3" opacity="0.9">AI ENGINEER // ML ENGINEER // ETHICAL HACKER // FULL STACK DEVELOPER</text>
+    <text y="75" font-family="Inter, -apple-system, sans-serif" font-size="14" fill="#FFFFFF" opacity="0.7" letter-spacing="1">Building intelligent software that scales.</text>
+    <path d="M -300,95 L 300,95" stroke="url(#metalBorder)" stroke-width="1" />
+    <circle cx="0" cy="95" r="4" fill="#00E5FF" filter="url(#bloom)" />
+  </g>
+
+  <!-- ========================================== -->
+  <!-- SECTION 1: SYSTEM OVERVIEW & CORE          -->
+  <!-- ========================================== -->
+  <g transform="translate(100, 260)">
+    <!-- MISSION & VISION -->
+    <g transform="translate(0, 0)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="6s" repeatCount="indefinite" />
+        <use href="#cardBase" />
+        <text x="30" y="35" font-family="monospace" font-size="14" font-weight="bold" fill="#00E5FF" letter-spacing="1.5">🎯 SYSTEM OVERVIEW</text>
+        <rect x="30" y="45" width="60" height="2" fill="#00E5FF" filter="url(#glow)" />
+        
+        <text x="30" y="80" font-family="monospace" font-size="11" fill="#7C4DFF" letter-spacing="1">MISSION</text>
+        <text x="30" y="100" font-family="Inter, sans-serif" font-size="13" fill="#FFFFFF" opacity="0.9">Transform complex business problems into secure,</text>
+        <text x="30" y="120" font-family="Inter, sans-serif" font-size="13" fill="#FFFFFF" opacity="0.9">scalable, production-grade AI systems.</text>
+
+        <text x="30" y="155" font-family="monospace" font-size="11" fill="#00FFA3" letter-spacing="1">VISION</text>
+        <text x="30" y="175" font-family="Inter, sans-serif" font-size="13" fill="#FFFFFF" opacity="0.9">Become a globally recognized AI Engineer building</text>
+        <text x="30" y="195" font-family="Inter, sans-serif" font-size="13" fill="#FFFFFF" opacity="0.9">enterprise software trusted by millions.</text>
+
+        <text x="30" y="230" font-family="monospace" font-size="11" fill="#FFC107" letter-spacing="1">📍 LOCATION: KARACHI, PAKISTAN 🇵🇰</text>
+      </g>
+    </g>
+
+    <!-- PHILOSOPHY -->
+    <g transform="translate(350, 0)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-7; 0,0" dur="7s" repeatCount="indefinite" />
+        <use href="#cardBase" />
+        <text x="30" y="35" font-family="monospace" font-size="14" font-weight="bold" fill="#7C4DFF" letter-spacing="1.5">⚙️ ENGINEERING PHILOSOPHY</text>
+        <rect x="30" y="45" width="60" height="2" fill="#7C4DFF" filter="url(#glow)" />
+        
+        <g font-family="Inter, sans-serif" font-size="13" fill="#FFFFFF" opacity="0.9">
+          <g transform="translate(30, 80)"><circle cx="0" cy="-4" r="3" fill="#7C4DFF" filter="url(#glow)" /><text x="15" y="0">Security First</text></g>
+          <g transform="translate(30, 110)"><circle cx="0" cy="-4" r="3" fill="#7C4DFF" filter="url(#glow)" /><text x="15" y="0">Clean Architecture</text></g>
+          <g transform="translate(30, 140)"><circle cx="0" cy="-4" r="3" fill="#7C4DFF" filter="url(#glow)" /><text x="15" y="0">Production over Prototypes</text></g>
+          <g transform="translate(30, 170)"><circle cx="0" cy="-4" r="3" fill="#7C4DFF" filter="url(#glow)" /><text x="15" y="0">Reliability over Complexity</text></g>
+          <g transform="translate(30, 200)"><circle cx="0" cy="-4" r="3" fill="#7C4DFF" filter="url(#glow)" /><text x="15" y="0">Performance Matters</text></g>
+          <g transform="translate(30, 230)"><circle cx="0" cy="-4" r="3" fill="#7C4DFF" filter="url(#glow)" /><text x="15" y="0">Ship Quality Software</text></g>
+        </g>
+      </g>
+    </g>
+
+    <!-- CURRENT FOCUS -->
+    <g transform="translate(700, 0)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0" dur="6.5s" repeatCount="indefinite" />
+        <use href="#cardBase" />
+        <text x="30" y="35" font-family="monospace" font-size="14" font-weight="bold" fill="#00FFA3" letter-spacing="1.5">🚀 CURRENT FOCUS</text>
+        <rect x="30" y="45" width="60" height="2" fill="#00FFA3" filter="url(#glow)" />
+        
+        <g font-family="Inter, sans-serif" font-size="12" fill="#FFFFFF" opacity="0.85">
+          <g transform="translate(30, 80)"><rect x="-5" y="-8" width="10" height="10" fill="#00FFA3" opacity="0.5" /><text x="15" y="0">Enterprise Django ERP Systems</text></g>
+          <g transform="translate(30, 110)"><rect x="-5" y="-8" width="10" height="10" fill="#00FFA3" opacity="0.5" /><text x="15" y="0">Agentic AI &amp; Autonomous Workflows</text></g>
+          <g transform="translate(30, 140)"><rect x="-5" y="-8" width="10" height="10" fill="#00FFA3" opacity="0.5" /><text x="15" y="0">LLM Applications (RAG)</text></g>
+          <g transform="translate(30, 170)"><rect x="-5" y="-8" width="10" height="10" fill="#00FFA3" opacity="0.5" /><text x="15" y="0">Computer Vision &amp; NLP</text></g>
+          <g transform="translate(30, 200)"><rect x="-5" y="-8" width="10" height="10" fill="#00FFA3" opacity="0.5" /><text x="15" y="0">AI Automation Pipelines</text></g>
+          <g transform="translate(30, 230)"><rect x="-5" y="-8" width="10" height="10" fill="#00FFA3" opacity="0.5" /><text x="15" y="0">Full-Stack AI Products</text></g>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- SECTION 2: SKILL MATRIX & LEARNING         -->
+  <!-- ========================================== -->
+  <g transform="translate(100, 560)">
+    <!-- TECHNOLOGY MATRIX -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="0" font-family="monospace" font-size="18" font-weight="bold" fill="#FFFFFF" letter-spacing="2" filter="url(#glow)">⟁ TECHNOLOGY MATRIX</text>
+      <path d="M 0,10 L 250,10" stroke="#00E5FF" stroke-width="2" filter="url(#glow)" />
+      
+      <!-- Grid Layout for Tech -->
+      <g transform="translate(0, 40)" font-family="monospace" font-size="11">
+        <!-- AI Category -->
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="340" height="220" rx="12" fill="#05070F" opacity="0.6" stroke="rgba(0, 229, 255, 0.3)" stroke-width="1" />
+          <text x="20" y="25" fill="#00E5FF" font-weight="bold" font-size="13">ARTIFICIAL INTELLIGENCE</text>
+          <g fill="#FFFFFF" opacity="0.8">
+            <g transform="translate(20, 50)"><circle cx="0" cy="-3" r="2" fill="#00E5FF" /><text x="10" y="0">Python</text></g>
+            <g transform="translate(120, 50)"><circle cx="0" cy="-3" r="2" fill="#00E5FF" /><text x="10" y="0">TensorFlow</text></g>
+            <g transform="translate(220, 50)"><circle cx="0" cy="-3" r="2" fill="#00E5FF" /><text x="10" y="0">PyTorch</text></g>
+            <g transform="translate(20, 75)"><circle cx="0" cy="-3" r="2" fill="#00E5FF" /><text x="10" y="0">Scikit-learn</text></g>
+            <g transform="translate(120, 75)"><circle cx="0" cy="-3" r="2" fill="#00E5FF" /><text x="10" y="0">OpenCV</text></g>
+            <g transform="translate(220, 75)"><circle cx="0" cy="-3" r="2" fill="#00E5FF" /><text x="10" y="0">YOLO</text></g>
+            <g transform="translate(20, 100)"><circle cx="0" cy="-3" r="2" fill="#00E5FF" /><text x="10" y="0">LangChain</text></g>
+            <g transform="translate(120, 100)"><circle cx="0" cy="-3" r="2" fill="#00E5FF" /><text x="10" y="0">Hugging Face</text></g>
+            <g transform="translate(220, 100)"><circle cx="0" cy="-3" r="2" fill="#00E5FF" /><text x="10" y="0">LlamaIndex</text></g>
+          </g>
+        </g>
+
+        <!-- Backend Category -->
+        <g transform="translate(360, 0)">
+          <rect x="0" y="0" width="340" height="220" rx="12" fill="#05070F" opacity="0.6" stroke="rgba(124, 77, 255, 0.3)" stroke-width="1" />
+          <text x="20" y="25" fill="#7C4DFF" font-weight="bold" font-size="13">BACKEND &amp; DATABASES</text>
+          <g fill="#FFFFFF" opacity="0.8">
+            <g transform="translate(20, 50)"><circle cx="0" cy="-3" r="2" fill="#7C4DFF" /><text x="10" y="0">Django</text></g>
+            <g transform="translate(120, 50)"><circle cx="0" cy="-3" r="2" fill="#7C4DFF" /><text x="10" y="0">FastAPI</text></g>
+            <g transform="translate(220, 50)"><circle cx="0" cy="-3" r="2" fill="#7C4DFF" /><text x="10" y="0">Flask</text></g>
+            <g transform="translate(20, 75)"><circle cx="0" cy="-3" r="2" fill="#7C4DFF" /><text x="10" y="0">REST API</text></g>
+            <g transform="translate(120, 75)"><circle cx="0" cy="-3" r="2" fill="#7C4DFF" /><text x="10" y="0">WebSockets</text></g>
+            <g transform="translate(220, 75)"><circle cx="0" cy="-3" r="2" fill="#7C4DFF" /><text x="10" y="0">PostgreSQL</text></g>
+            <g transform="translate(20, 100)"><circle cx="0" cy="-3" r="2" fill="#7C4DFF" /><text x="10" y="0">MySQL</text></g>
+            <g transform="translate(120, 100)"><circle cx="0" cy="-3" r="2" fill="#7C4DFF" /><text x="10" y="0">SQLite</text></g>
+            <g transform="translate(220, 100)"><circle cx="0" cy="-3" r="2" fill="#7C4DFF" /><text x="10" y="0">MongoDB</text></g>
+            <g transform="translate(20, 125)"><circle cx="0" cy="-3" r="2" fill="#7C4DFF" /><text x="10" y="0">Redis</text></g>
+          </g>
+        </g>
+
+        <!-- DevOps & Sec Category -->
+        <g transform="translate(720, 0)">
+          <rect x="0" y="0" width="340" height="220" rx="12" fill="#05070F" opacity="0.6" stroke="rgba(255, 193, 7, 0.3)" stroke-width="1" />
+          <text x="20" y="25" fill="#FFC107" font-weight="bold" font-size="13">DEVOPS &amp; CYBERSECURITY</text>
+          <g fill="#FFFFFF" opacity="0.8">
+            <g transform="translate(20, 50)"><circle cx="0" cy="-3" r="2" fill="#FFC107" /><text x="10" y="0">Docker</text></g>
+            <g transform="translate(120, 50)"><circle cx="0" cy="-3" r="2" fill="#FFC107" /><text x="10" y="0">Git / GitHub</text></g>
+            <g transform="translate(220, 50)"><circle cx="0" cy="-3" r="2" fill="#FFC107" /><text x="10" y="0">Linux</text></g>
+            <g transform="translate(20, 75)"><circle cx="0" cy="-3" r="2" fill="#FFC107" /><text x="10" y="0">Nginx</text></g>
+            <g transform="translate(120, 75)"><circle cx="0" cy="-3" r="2" fill="#FFC107" /><text x="10" y="0">Nmap</text></g>
+            <g transform="translate(220, 75)"><circle cx="0" cy="-3" r="2" fill="#FFC107" /><text x="10" y="0">Wireshark</text></g>
+            <g transform="translate(20, 100)"><circle cx="0" cy="-3" r="2" fill="#FFC107" /><text x="10" y="0">Burp Suite</text></g>
+            <g transform="translate(120, 100)"><circle cx="0" cy="-3" r="2" fill="#FFC107" /><text x="10" y="0">Metasploit</text></g>
+            <g transform="translate(220, 100)"><circle cx="0" cy="-3" r="2" fill="#FFC107" /><text x="10" y="0">OWASP</text></g>
+            <g transform="translate(20, 125)"><circle cx="0" cy="-3" r="2" fill="#FFC107" /><text x="10" y="0">Kali Linux</text></g>
+          </g>
+        </g>
+      </g>
+    </g>
+
+    <!-- CURRENTLY LEARNING (Progress Bars) -->
+    <g transform="translate(0, 300)">
+      <text x="0" y="0" font-family="monospace" font-size="18" font-weight="bold" fill="#FFFFFF" letter-spacing="2" filter="url(#glow)">⟁ SKILL ACQUISITION PROTOCOL</text>
+      <path d="M 0,10 L 300,10" stroke="#7C4DFF" stroke-width="2" filter="url(#glow)" />
+      
+      <g transform="translate(0, 40)">
+        <rect x="0" y="0" width="1060" height="280" rx="16" fill="#05070F" opacity="0.6" stroke="url(#metalBorder)" stroke-width="1" />
+        
+        <g font-family="monospace" font-size="11" fill="#FFFFFF" opacity="0.9">
+          <!-- Bar 1 -->
+          <g transform="translate(30, 40)">
+            <text y="-5" fill="#00E5FF">Advanced Ethical Hacking</text>
+            <rect x="0" y="0" width="400" height="8" rx="4" fill="rgba(255,255,255,0.1)" />
+            <rect x="0" y="0" width="340" height="8" rx="4" fill="url(#barGradCyan)" filter="url(#glow)">
+              <animate attributeName="width" from="0" to="340" dur="2s" fill="freeze" />
+            </rect>
+            <text x="410" y="6" fill="#FFFFFF">85%</text>
+          </g>
+
+          <!-- Bar 2 -->
+          <g transform="translate(530, 40)">
+            <text y="-5" fill="#7C4DFF">Red Team Operations</text>
+            <rect x="0" y="0" width="400" height="8" rx="4" fill="rgba(255,255,255,0.1)" />
+            <rect x="0" y="0" width="280" height="8" rx="4" fill="url(#barGradPurple)" filter="url(#glow)">
+              <animate attributeName="width" from="0" to="280" dur="2.2s" fill="freeze" />
+            </rect>
+            <text x="410" y="6" fill="#FFFFFF">70%</text>
+          </g>
+
+          <!-- Bar 3 -->
+          <g transform="translate(30, 100)">
+            <text y="-5" fill="#00FFA3">Model Context Protocol (MCP)</text>
+            <rect x="0" y="0" width="400" height="8" rx="4" fill="rgba(255,255,255,0.1)" />
+            <rect x="0" y="0" width="240" height="8" rx="4" fill="url(#barGradGreen)" filter="url(#glow)">
+              <animate attributeName="width" from="0" to="240" dur="2.5s" fill="freeze" />
+            </rect>
+            <text x="410" y="6" fill="#FFFFFF">60%</text>
+          </g>
+
+          <!-- Bar 4 -->
+          <g transform="translate(530, 100)">
+            <text y="-5" fill="#FFC107">Malware Analysis</text>
+            <rect x="0" y="0" width="400" height="8" rx="4" fill="rgba(255,255,255,0.1)" />
+            <rect x="0" y="0" width="200" height="8" rx="4" fill="url(#barGradOrange)" filter="url(#glow)">
+              <animate attributeName="width" from="0" to="200" dur="2.8s" fill="freeze" />
+            </rect>
+            <text x="410" y="6" fill="#FFFFFF">50%</text>
+          </g>
+
+          <!-- Bar 5 -->
+          <g transform="translate(30, 160)">
+            <text y="-5" fill="#00E5FF">Advanced RAG &amp; Vector DBs</text>
+            <rect x="0" y="0" width="400" height="8" rx="4" fill="rgba(255,255,255,0.1)" />
+            <rect x="0" y="0" width="360" height="8" rx="4" fill="url(#barGradCyan)" filter="url(#glow)">
+              <animate attributeName="width" from="0" to="360" dur="3s" fill="freeze" />
+            </rect>
+            <text x="410" y="6" fill="#FFFFFF">90%</text>
+          </g>
+
+          <!-- Bar 6 -->
+          <g transform="translate(530, 160)">
+            <text y="-5" fill="#7C4DFF">Kubernetes &amp; MLOps</text>
+            <rect x="0" y="0" width="400" height="8" rx="4" fill="rgba(255,255,255,0.1)" />
+            <rect x="0" y="0" width="180" height="8" rx="4" fill="url(#barGradPurple)" filter="url(#glow)">
+              <animate attributeName="width" from="0" to="180" dur="3.2s" fill="freeze" />
+            </rect>
+            <text x="410" y="6" fill="#FFFFFF">45%</text>
+          </g>
+          
+          <!-- Bar 7 -->
+          <g transform="translate(30, 220)">
+            <text y="-5" fill="#00FFA3">Distributed AI Systems</text>
+            <rect x="0" y="0" width="400" height="8" rx="4" fill="rgba(255,255,255,0.1)" />
+            <rect x="0" y="0" width="160" height="8" rx="4" fill="url(#barGradGreen)" filter="url(#glow)">
+              <animate attributeName="width" from="0" to="160" dur="3.5s" fill="freeze" />
+            </rect>
+            <text x="410" y="6" fill="#FFFFFF">40%</text>
+          </g>
+
+          <!-- Bar 8 -->
+          <g transform="translate(530, 220)">
+            <text y="-5" fill="#FFC107">AI Security &amp; Adversarial ML</text>
+            <rect x="0" y="0" width="400" height="8" rx="4" fill="rgba(255,255,255,0.1)" />
+            <rect x="0" y="0" width="260" height="8" rx="4" fill="url(#barGradOrange)" filter="url(#glow)">
+              <animate attributeName="width" from="0" to="260" dur="3.8s" fill="freeze" />
+            </rect>
+            <text x="410" y="6" fill="#FFFFFF">65%</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- SECTION 3: CYBERSECURITY LAB (SOC)         -->
+  <!-- ========================================== -->
+  <g transform="translate(100, 1280)">
+    <text x="0" y="0" font-family="monospace" font-size="18" font-weight="bold" fill="#FFFFFF" letter-spacing="2" filter="url(#glow)">🛡️ CYBERSECURITY OPERATIONS CENTER (SOC)</text>
+    <path d="M 0,10 L 400,10" stroke="#FFC107" stroke-width="2" filter="url(#glow)" />
+
+    <g transform="translate(0, 40)">
+      <rect x="0" y="0" width="1060" height="220" rx="16" fill="#05070F" opacity="0.7" stroke="url(#metalBorder)" stroke-width="1" filter="url(#softShadow)" />
+      <rect x="0" y="0" width="1060" height="220" rx="16" fill="url(#glassReflect)" />
+      
+      <!-- Radar -->
+      <g transform="translate(150, 110)">
+        <circle r="80" fill="none" stroke="rgba(255, 193, 7, 0.2)" stroke-width="1" />
+        <circle r="50" fill="none" stroke="rgba(255, 193, 7, 0.3)" stroke-width="1" />
+        <circle r="20" fill="none" stroke="rgba(255, 193, 7, 0.4)" stroke-width="1" />
+        <line x1="-80" y1="0" x2="80" y2="0" stroke="rgba(255, 193, 7, 0.1)" />
+        <line x1="0" y1="-80" x2="0" y2="80" stroke="rgba(255, 193, 7, 0.1)" />
+        
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4s" repeatCount="indefinite" />
+          <path d="M 0,0 L 80,0 A 80,80 0 0,0 56.56,-56.56 Z" fill="rgba(255, 193, 7, 0.2)" filter="url(#glow)" />
+          <line x1="0" y1="0" x2="80" y2="0" stroke="#FFC107" stroke-width="2" filter="url(#glow)" />
+        </g>
+        
+        <circle cx="30" cy="-30" r="3" fill="#FFC107" filter="url(#bloom)">
+          <animate attributeName="opacity" values="1; 0.2; 1" dur="1s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="-40" cy="20" r="3" fill="#FFC107" filter="url(#bloom)">
+          <animate attributeName="opacity" values="1; 0.2; 1" dur="1.5s" repeatCount="indefinite" />
+        </circle>
+      </g>
+
+      <!-- Domains List -->
+      <g font-family="monospace" font-size="12" fill="#FFFFFF" opacity="0.85">
+        <g transform="translate(300, 50)">
+          <circle cx="0" cy="-4" r="3" fill="#FFC107" filter="url(#glow)" /><text x="15" y="0">Ethical Hacking &amp; Penetration Testing</text>
+          <rect x="15" y="10" width="200" height="3" fill="rgba(255, 193, 7, 0.2)" />
+          <rect x="15" y="10" width="160" height="3" fill="#FFC107" filter="url(#glow)" />
+        </g>
+        <g transform="translate(300, 90)">
+          <circle cx="0" cy="-4" r="3" fill="#FFC107" filter="url(#glow)" /><text x="15" y="0">Web &amp; Network Security</text>
+          <rect x="15" y="10" width="200" height="3" fill="rgba(255, 193, 7, 0.2)" />
+          <rect x="15" y="10" width="180" height="3" fill="#FFC107" filter="url(#glow)" />
+        </g>
+        <g transform="translate(300, 130)">
+          <circle cx="0" cy="-4" r="3" fill="#FFC107" filter="url(#glow)" /><text x="15" y="0">OSINT &amp; Digital Forensics</text>
+          <rect x="15" y="10" width="200" height="3" fill="rgba(255, 193, 7, 0.2)" />
+          <rect x="15" y="10" width="120" height="3" fill="#FFC107" filter="url(#glow)" />
+        </g>
+        <g transform="translate(300, 170)">
+          <circle cx="0" cy="-4" r="3" fill="#FFC107" filter="url(#glow)" /><text x="15" y="0">Malware Analysis &amp; Reverse Engineering</text>
+          <rect x="15" y="10" width="200" height="3" fill="rgba(255, 193, 7, 0.2)" />
+          <rect x="15" y="10" width="90" height="3" fill="#FFC107" filter="url(#glow)" />
+        </g>
+        
+        <!-- Terminal Log Style -->
+        <g transform="translate(680, 40)" fill="#00FFA3" opacity="0.7">
+          <text>&gt; INITIATING SCAN...</text>
+          <text y="20">&gt; PORT 80: OPEN</text>
+          <text y="40">&gt; PORT 443: OPEN</text>
+          <text y="60">&gt; FIREWALL: ACTIVE</text>
+          <text y="80">&gt; THREAT LEVEL: LOW</text>
+          <text y="100" fill="#FFC107">&gt; STATUS: SECURED</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- SECTION 4: FEATURED PROJECTS               -->
+  <!-- ========================================== -->
+  <g transform="translate(100, 1600)">
+    <text x="0" y="0" font-family="monospace" font-size="18" font-weight="bold" fill="#FFFFFF" letter-spacing="2" filter="url(#glow)">💻 FEATURED PROJECTS</text>
+    <path d="M 0,10 L 200,10" stroke="#00E5FF" stroke-width="2" filter="url(#glow)" />
+
+    <!-- Project 1 -->
+    <g transform="translate(0, 40)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="6s" repeatCount="indefinite" />
+        <rect x="0" y="0" width="340" height="260" rx="16" fill="#05070F" opacity="0.7" stroke="url(#metalBorder)" stroke-width="1" filter="url(#softShadow)" />
+        <rect x="0" y="0" width="340" height="260" rx="16" fill="url(#glassReflect)" />
+        <path d="M 16,0 L 324,0 A 16,16 0 0,1 340,16 L 340,40 L 0,40 L 0,16 A 16,16 0 0,1 16,0 Z" fill="url(#topGloss)" />
+        
+        <text x="20" y="30" font-family="monospace" font-size="14" font-weight="bold" fill="#00E5FF">AI Fraud Detection System</text>
+        <line x1="20" y1="45" x2="320" y2="45" stroke="rgba(255,255,255,0.1)" />
+        <text x="20" y="65" font-family="Inter, sans-serif" font-size="11" fill="#FFFFFF" opacity="0.8">Real-time anomaly detection pipeline.</text>
+        
+        <g transform="translate(20, 85)" font-family="monospace" font-size="9">
+          <use href="#chipBase" x="0" y="0" />
+          <text x="60" y="18" text-anchor="middle" fill="#00E5FF" font-size="9">Python</text>
+          <use href="#chipBase" x="130" y="0" />
+          <text x="190" y="18" text-anchor="middle" fill="#00E5FF" font-size="9">Scikit-learn</text>
+          <use href="#chipBase" x="0" y="35" />
+          <text x="60" y="53" text-anchor="middle" fill="#00E5FF" font-size="9">FastAPI</text>
+          <use href="#chipBase" x="130" y="35" />
+          <text x="190" y="53" text-anchor="middle" fill="#00E5FF" font-size="9">React</text>
+        </g>
+
+        <text x="20" y="190" font-family="monospace" font-size="10" fill="#7C4DFF">STATUS: &lt;tspan fill="#00FFA3"&gt;DEPLOYED&lt;/tspan&gt;</text>
+        <text x="20" y="210" font-family="monospace" font-size="10" fill="#7C4DFF">DIFFICULTY: &lt;tspan fill="#FFC107"&gt;ADVANCED&lt;/tspan&gt;</text>
+        <text x="20" y="230" font-family="monospace" font-size="10" fill="#7C4DFF">ARCH: &lt;tspan fill="#FFFFFF"&gt;MICROSERVICES&lt;/tspan&gt;</text>
+      </g>
+    </g>
+
+    <!-- Project 2 -->
+    <g transform="translate(360, 40)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-7; 0,0" dur="7s" repeatCount="indefinite" />
+        <rect x="0" y="0" width="340" height="260" rx="16" fill="#05070F" opacity="0.7" stroke="url(#metalBorder)" stroke-width="1" filter="url(#softShadow)" />
+        <rect x="0" y="0" width="340" height="260" rx="16" fill="url(#glassReflect)" />
+        <path d="M 16,0 L 324,0 A 16,16 0 0,1 340,16 L 340,40 L 0,40 L 0,16 A 16,16 0 0,1 16,0 Z" fill="url(#topGloss)" />
+        
+        <text x="20" y="30" font-family="monospace" font-size="14" font-weight="bold" fill="#7C4DFF">CineMancer AI</text>
+        <line x1="20" y1="45" x2="320" y2="45" stroke="rgba(255,255,255,0.1)" />
+        <text x="20" y="65" font-family="Inter, sans-serif" font-size="11" fill="#FFFFFF" opacity="0.8">AI Movie Recommendation System.</text>
+        
+        <g transform="translate(20, 85)" font-family="monospace" font-size="9">
+          <use href="#chipBase" x="0" y="0" />
+          <text x="60" y="18" text-anchor="middle" fill="#7C4DFF" font-size="9">TensorFlow</text>
+          <use href="#chipBase" x="130" y="0" />
+          <text x="190" y="18" text-anchor="middle" fill="#7C4DFF" font-size="9">Django</text>
+          <use href="#chipBase" x="0" y="35" />
+          <text x="60" y="53" text-anchor="middle" fill="#7C4DFF" font-size="9">PostgreSQL</text>
+          <use href="#chipBase" x="130" y="35" />
+          <text x="190" y="53" text-anchor="middle" fill="#7C4DFF" font-size="9">Redis</text>
+        </g>
+
+        <text x="20" y="190" font-family="monospace" font-size="10" fill="#00E5FF">STATUS: &lt;tspan fill="#00FFA3"&gt;ACTIVE&lt;/tspan&gt;</text>
+        <text x="20" y="210" font-family="monospace" font-size="10" fill="#00E5FF">DIFFICULTY: &lt;tspan fill="#FFC107"&gt;INTERMEDIATE&lt;/tspan&gt;</text>
+        <text x="20" y="230" font-family="monospace" font-size="10" fill="#00E5FF">ARCH: &lt;tspan fill="#FFFFFF"&gt;MONOLITHIC&lt;/tspan&gt;</text>
+      </g>
+    </g>
+
+    <!-- Project 3 -->
+    <g transform="translate(720, 40)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0" dur="6.5s" repeatCount="indefinite" />
+        <rect x="0" y="0" width="340" height="260" rx="16" fill="#05070F" opacity="0.7" stroke="url(#metalBorder)" stroke-width="1" filter="url(#softShadow)" />
+        <rect x="0" y="0" width="340" height="260" rx="16" fill="url(#glassReflect)" />
+        <path d="M 16,0 L 324,0 A 16,16 0 0,1 340,16 L 340,40 L 0,40 L 0,16 A 16,16 0 0,1 16,0 Z" fill="url(#topGloss)" />
+        
+        <text x="20" y="30" font-family="monospace" font-size="14" font-weight="bold" fill="#00FFA3">Enterprise ERP Platform</text>
+        <line x1="20" y1="45" x2="320" y2="45" stroke="rgba(255,255,255,0.1)" />
+        <text x="20" y="65" font-family="Inter, sans-serif" font-size="11" fill="#FFFFFF" opacity="0.8">Full-scale Django ERP system.</text>
+        
+        <g transform="translate(20, 85)" font-family="monospace" font-size="9">
+          <use href="#chipBase" x="0" y="0" />
+          <text x="60" y="18" text-anchor="middle" fill="#00FFA3" font-size="9">Django</text>
+          <use href="#chipBase" x="130" y="0" />
+          <text x="190" y="18" text-anchor="middle" fill="#00FFA3" font-size="9">PostgreSQL</text>
+          <use href="#chipBase" x="0" y="35" />
+          <text x="60" y="53" text-anchor="middle" fill="#00FFA3" font-size="9">Docker</text>
+          <use href="#chipBase" x="130" y="35" />
+          <text x="190" y="53" text-anchor="middle" fill="#00FFA3" font-size="9">Nginx</text>
+        </g>
+
+        <text x="20" y="190" font-family="monospace" font-size="10" fill="#7C4DFF">STATUS: &lt;tspan fill="#00FFA3"&gt;PRODUCTION&lt;/tspan&gt;</text>
+        <text x="20" y="210" font-family="monospace" font-size="10" fill="#7C4DFF">DIFFICULTY: &lt;tspan fill="#FFC107"&gt;EXPERT&lt;/tspan&gt;</text>
+        <text x="20" y="230" font-family="monospace" font-size="10" fill="#7C4DFF">ARCH: &lt;tspan fill="#FFFFFF"&gt;LAYERED&lt;/tspan&gt;</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- SECTION 5: RESEARCH & GOALS                -->
+  <!-- ========================================== -->
+  <g transform="translate(100, 1960)">
+    <!-- Research Interests -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="0" font-family="monospace" font-size="18" font-weight="bold" fill="#FFFFFF" letter-spacing="2" filter="url(#glow)">🔬 RESEARCH INTERESTS</text>
+      <path d="M 0,10 L 250,10" stroke="#7C4DFF" stroke-width="2" filter="url(#glow)" />
+      
+      <g transform="translate(0, 40)">
+        <rect x="0" y="0" width="520" height="260" rx="16" fill="#05070F" opacity="0.7" stroke="url(#metalBorder)" stroke-width="1" filter="url(#softShadow)" />
+        <rect x="0" y="0" width="520" height="260" rx="16" fill="url(#glassReflect)" />
+        
+        <g font-family="Inter, sans-serif" font-size="13" fill="#FFFFFF" opacity="0.9">
+          <g transform="translate(30, 50)"><circle cx="0" cy="-4" r="3" fill="#7C4DFF" filter="url(#glow)" /><text x="15" y="0">Large Language Models (LLMs)</text></g>
+          <g transform="translate(30, 80)"><circle cx="0" cy="-4" r="3" fill="#7C4DFF" filter="url(#glow)" /><text x="15" y="0">Retrieval-Augmented Generation (RAG)</text></g>
+          <g transform="translate(30, 110)"><circle cx="0" cy="-4" r="3" fill="#7C4DFF" filter="url(#glow)" /><text x="15" y="0">Agentic AI &amp; Multi-Agent Systems</text></g>
+          <g transform="translate(30, 140)"><circle cx="0" cy="-4" r="3" fill="#7C4DFF" filter="url(#glow)" /><text x="15" y="0">Adversarial Machine Learning</text></g>
+          <g transform="translate(30, 170)"><circle cx="0" cy="-4" r="3" fill="#7C4DFF" filter="url(#glow)" /><text x="15" y="0">Distributed AI &amp; Reasoning Models</text></g>
+        </g>
+        
+        <!-- Visual Node Graph -->
+        <g transform="translate(360, 130)" stroke="rgba(124, 77, 255, 0.4)" fill="none">
+          <line x1="0" y1="0" x2="40" y2="-30" stroke-width="1" />
+          <line x1="0" y1="0" x2="40" y2="30" stroke-width="1" />
+          <line x1="40" y1="-30" x2="80" y2="0" stroke-width="1" />
+          <line x1="40" y1="30" x2="80" y2="0" stroke-width="1" />
+          <circle cx="0" cy="0" r="5" fill="#7C4DFF" filter="url(#bloom)" />
+          <circle cx="40" cy="-30" r="4" fill="#00E5FF" filter="url(#bloom)" />
+          <circle cx="40" cy="30" r="4" fill="#00FFA3" filter="url(#bloom)" />
+          <circle cx="80" cy="0" r="6" fill="#FFFFFF" filter="url(#bloom)" />
+        </g>
+      </g>
+    </g>
+
+    <!-- Professional Goals -->
+    <g transform="translate(540, 0)">
+      <text x="0" y="0" font-family="monospace" font-size="18" font-weight="bold" fill="#FFFFFF" letter-spacing="2" filter="url(#glow)">🎯 PROFESSIONAL GOALS</text>
+      <path d="M 0,10 L 250,10" stroke="#00FFA3" stroke-width="2" filter="url(#glow)" />
+      
+      <g transform="translate(0, 40)">
+        <rect x="0" y="0" width="520" height="260" rx="16" fill="#05070F" opacity="0.7" stroke="url(#metalBorder)" stroke-width="1" filter="url(#softShadow)" />
+        <rect x="0" y="0" width="520" height="260" rx="16" fill="url(#glassReflect)" />
+        
+        <g font-family="Inter, sans-serif" font-size="13" fill="#FFFFFF" opacity="0.9">
+          <g transform="translate(30, 50)"><path d="M -4,-4 L 4,-4 L 4,4 L 0,6 L -4,4 Z" fill="#00FFA3" filter="url(#glow)" /><text x="15" y="0">Build enterprise AI products.</text></g>
+          <g transform="translate(30, 80)"><path d="M -4,-4 L 4,-4 L 4,4 L 0,6 L -4,4 Z" fill="#00FFA3" filter="url(#glow)" /><text x="15" y="0">Contribute to open source.</text></g>
+          <g transform="translate(30, 110)"><path d="M -4,-4 L 4,-4 L 4,4 L 0,6 L -4,4 Z" fill="#00FFA3" filter="url(#glow)" /><text x="15" y="0">Create globally used SaaS platforms.</text></g>
+          <g transform="translate(30, 140)"><path d="M -4,-4 L 4,-4 L 4,4 L 0,6 L -4,4 Z" fill="#00FFA3" filter="url(#glow)" /><text x="15" y="0">Advance AI security.</text></g>
+          <g transform="translate(30, 170)"><path d="M -4,-4 L 4,-4 L 4,4 L 0,6 L -4,4 Z" fill="#00FFA3" filter="url(#glow)" /><text x="15" y="0">Deliver scalable production systems.</text></g>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- FOOTER: CONTACT                            -->
+  <!-- ========================================== -->
+  <g transform="translate(700, 2300)" text-anchor="middle" font-family="monospace">
+    <rect x="-600" y="-40" width="1200" height="80" rx="40" fill="#05070F" opacity="0.8" stroke="url(#metalBorder)" stroke-width="1" />
+    <path d="M -600,0 L 600,0" stroke="rgba(0, 229, 255, 0.2)" stroke-dasharray="4 8" />
+    
+    <text y="-10" font-size="14" fill="#FFFFFF" letter-spacing="2" opacity="0.9">CONNECT // INITIATE SECURE TRANSMISSION</text>
+    
+    <g transform="translate(0, 20)" font-size="12" fill="#00E5FF" letter-spacing="1">
+      <text x="-450" y="0">🌐 PORTFOLIO</text>
+      <text x="-225" y="0">💻 GITHUB</text>
+      <text x="0" y="0">🔗 LINKEDIN</text>
+      <text x="225" y="0">✉️ EMAIL</text>
+      <text x="450" y="0">📍 KARACHI, PK</text>
+    </g>
+  </g>
+
+</svg>
