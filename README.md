@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hero.svg" width="100%" alt="Muhammad Dawood — AI/ML Systems Engineer"/>
+<img src="assets/hero.svg" width="100%" alt="Muhammad Dawood AI/ML Systems Engineer"/>
 
 <br/>
 <img src="assets/divider.svg" width="100%" alt="section divider"/>
